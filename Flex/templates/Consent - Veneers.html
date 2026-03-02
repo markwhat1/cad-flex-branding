@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consent for Veneers and/or Crowns — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Veneers and/or Crowns</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>I understand that by signing below I am authorizing the procedure(s) to be performed and I have read and understand the entirety of this form, including the possible risks and complications of the chosen procedure(s) and the available alternatives.</strong>
+  </div>
+
+  <p>I understand that veneer and crown treatment may entail certain risks and the potential for unsuccessful results. I agree to assume those risks, possible unsuccessful results and/or failure associate with, but not limited to the following:</p>
+
+  <p>1. Reduction or roughening of tooth structure: In making preparation of teeth for the reception of porcelain veneers, it is necessary to slightly reduce or roughen the surface of the tooth to which the veneer(s) may be bonded. This preparation will be done as conservatively as possible. If the veneer covering breaks or comes off, the uncovered tooth may become more susceptible to decay and may require replacement with another veneer or crown.</p>
+
+  <p>2. The treatment may cause teeth to become sensitive. Should sensitivity occur and persist for any length of time, I will contact my doctor for an examination.</p>
+
+  <p>3. Chipping, breaking or loosening of the veneer or crown. Many factors may contribute to this occurring such as chewing of hard materials, changes in occlusal (biting) forces, traumatic blows to the mouth, break down of the bonding agents, and other such conditions over which the doctor has no control.</p>
+
+  <p>4. While every effort possible will be made to match and coordinate both the form and shade of veneers to be placed, there are some differences which may exist between the natural dentition and the materials used, making it impossible to perfectly match your natural dentition.</p>
+
+  <p>5. I understand that preparing a tooth for a crown or veneer may irritate the nerve tissue (called the pulp) in the center of the tooth, leaving my tooth feeling sensitive to heat cold or pressure. Such sensitive teeth may require additional treatment including endodontic or root canal treatment.</p>
+
+  <p>6. I understand that holding my mouth open during treatment may temporarily leave my jaw feeling stiff and sore and may make it difficult for me to open wide for several days, sometimes referred to as trismus. However, this can occasionally be an indication of a more significant condition or problem. In the event this occurs, I must notify my dentist if I experience persistent trismus or other similar concerns arise</p>
+
+  <p>7. I understand that veneers may affect the way my teeth fit together and make my jaw joint feel sore. This may require adjusting my bite by altering the biting surface of the crown, adjacent teeth or opposing teeth.</p>
+
+  <p>8. I understand that the edge of a veneer is ear the gum line, which is an area prone to gum irritation, infection or decay. Proper brushing and flossing at home, a healthy diet and regular professional cleanings are some preventative measures essential to helping control these problems.</p>
+
+  <p>9. I understand there is a risk of aspirating (inhaling) or swallowing the veneers or crowns during treatment.</p>
+
+  <h2>Anesthesia</h2>
+
+  <p>I understand that I may receive a local anesthetic and/or other medication. In rare instances, patients may have a reaction to the anesthetic, which could require emergency medical attention, or find that it reduces their ability to control swallowing. This increases the normal chance of swallowing foreign objects during treatment. Depending on the anesthesia and medications administered, I may need a designated driver to take me home. Rarely, temporary or permanent nerve injury can result from an injection.</p>
+
+  <p>I understand that all medications have the potential for accompanying risks, side effects and drug interactions. Therefore, it is critical that I tell my dentist of all medications I am currently taking.</p>
+
+  <p>I understand that every reasonable effort will be made to ensure the success of my treatment, but that success is not guaranteed. There has been no guarantee of longevity made to me. Duration and time periods may vary depending upon conditions outside of my doctor's control, the specifics of my case, and my personal habits. I understand it is my responsibility to immediately inform the doctor and seek care should any unexpected problems occur, including cosmetic dissatisfaction. I understand that all instructions must be diligently followed, including scheduling and attending all appointments.</p>
+
+  <p>I have been given the opportunity to ask any and all questions regarding the nature and purpose of my treatment and have received all answers to my satisfaction. I voluntarily assume any and all possible risks, including risk of substantial harm, if any, which may be associated with any phase of this treatment in hopes of obtaining the desired results, which may or may not be achieved.</p>
+
+  <p>No guarantees or promises have been made to me concerning the results. The fee(s) for these services have been explained to me and are satisfactory. By signing this form, I am freely giving my consent to allow and authorize my Doctor to render any treatment deemed necessary, desirable, and/or advisable to me, including the administration and/or prescribing of any anesthetics and/or medications.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

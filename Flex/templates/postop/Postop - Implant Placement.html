@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post-Op: Implant Placement — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .highlight-box { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h3 {
+      font-family: var(--font-body);
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--cad-granite);
+      line-height: 1.3;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ul, ol {
+      margin: 4px 0 10px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    li strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Call-to-action box (Mountain Lake) ── */
+    .cta-box {
+      border-left: 3px solid var(--cad-mountain);
+      background: rgba(179, 219, 226, 0.15);
+      padding: 12px 14px;
+      margin: 16px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .cta-box ul {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Implant Placement</div>
+      <div class="doc-subtitle">Post-Operative Instructions</div>
+    </div>
+  </div>
+
+  <p><strong>Please adhere to the following instructions to expedite your healing process and avoid any unnecessary discomfort or inconvenience:</strong></p>
+
+  <ul>
+    <li>
+      <div class="highlight-box"><strong>MILD BLEEDING/OOZING IS NORMAL BUT IF YOU EXPERIENCE PERSISTENT BLEEDING PLACE A NEW, DAMP PIECE OF GAUZE OVER THE SITE AND APPLY GENTLE BUT FIRM PRESSURE</strong> for 30 minutes to 1 hour. Repeat if needed. If bleeding persists, you may repeat this process with a black tea bag. Tannins in tea can help promote blood clot formation. Please call our office if you are unable to control the bleeding.</div>
+    </li>
+
+    <li>
+      <div class="highlight-box"><strong>IF POSSIBLE, DO NOT EAT UNTIL ANESTHETIC HAS WORN OFF AND BE CAREFUL WHAT YOU EAT.</strong> For the first 24 hours, do not drink anything hot, carbonated or alcoholic and do not eat anything spicy or hot. Your first meal should be a small meal with 2-3 glasses of water. Soft foods are best during this time and it is very important that you do not chew against the implant site in order to allow it to fully heal and integrate. Try to chew on the opposite side to avoid applying any pressure to the implant site.</div>
+    </li>
+
+    <li>
+      <strong>TAKE MEDICATION</strong> as instructed by the doctor. If prescribed any pain medication or antibiotics, please take as directed. To reduce pain or soreness, Ibuprofen (Motrin or Advil) up to 800mg every 6 hours can be taken unless you are allergic or have otherwise been instructed not to take it.
+    </li>
+
+    <li>
+      <strong>TO REDUCE SWELLING USE AN ICE PACK</strong> on the side of your face where the implant was placed. Repeat every 30 minutes for the first 24 hours as needed to reduce swelling.
+    </li>
+
+    <li>
+      <div class="highlight-box"><strong>DO NOT SMOKE OR USE TOBACCO</strong> for 72 hours following procedure. Smoking significantly slows down and disrupts the healing process which can result in incomplete healing or infection.</div>
+    </li>
+
+    <li>
+      <div class="highlight-box"><strong>DO NOT SPIT, SUCK THROUGH A STRAW or SUCK ON CANDIES OR LOZENGES.</strong> Doing so could disrupt the implant site and increase your risk of infection.</div>
+    </li>
+
+    <li>
+      <strong>REST.</strong> Limit your activity for the first 24 hours and elevate your head when lying down.
+    </li>
+
+    <li>
+      <strong>BE CAREFUL WHEN BRUSHING AND FLOSSING.</strong> It is important to maintain good oral hygiene during this time to prevent infection and help promote healing. However, it is important to stay away from the surgical site while brushing and flossing for at least the first 48 hours or longer if instructed by the doctor. This area may have sutures, bone graft and fragile gum tissue that should not be disturbed. Additionally, when rinsing out toothpaste, do not swish water vigorously or spit. Simply tilt head from side to side to allow water to flow from one side of the mouth to the other and then lean over the sink and allow the water to fall out of your mouth. If you use a Waterpik or other water flossing device, do not use anywhere near the implant site until the doctor instructs you it is okay to do so.
+    </li>
+
+    <li>
+      <strong>AFTER THE FIRST 24 HOURS, YOU CAN GENTLY RINSE WITH WARM SALT WATER</strong> especially after meals to help reduce swelling even further and prevent food particles from contaminating the site. Use 1 teaspoon of salt per 1 cup of water and gently rinse. If a prescription rinse is prescribed to you instead, please use as directed.
+    </li>
+
+    <li>
+      <strong>IF SUTURES (STITCHES) WERE PLACED, PLEASE AVOID TOUCHING OR PLAYING WITH THEM.</strong> Sutures help to keep the surgical site closed and prevent bleeding so it is important to not loosen these sutures by pulling on your lips or cheek to view them or by playing with them with your tongue (despite that your tongue may have a natural tendency towards that). Do not be alarmed if you notice a suture knot fall out. Some suture types dissolve on their own in 5-10 days while others require removal by the doctor. The office will inform you if you need to schedule an appointment for suture removal.
+    </li>
+
+    <li>
+      <strong>YOUR SURROUNDING TOOTH/TEETH and GUMS MAY FEEL SENSITIVE OR SORE BUT THIS IS NORMAL</strong> and should subside over the next few days. If the pain is severe please call our office as your implant site may need further evaluation.
+    </li>
+  </ul>
+
+  <div class="cta-box">
+    <h2>Please call our office:</h2>
+    <ul>
+      <li>If persistent bleeding occurs such that your mouth is filling up with blood and you are unable to stop it by biting on gauze or black tea bag.</li>
+      <li>If you are experiencing nausea and/or vomiting for more than 24 hours after implant placement.</li>
+      <li>If you have severe pain or swelling.</li>
+      <li>If numbness persists in the lower lip, chin and/or tongue for more than 24 hours.</li>
+      <li>If you have an allergic reaction to any prescribed medication.</li>
+    </ul>
+  </div>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

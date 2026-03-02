@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 Screening — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* ── Screening questions ── */
+    .screening-question {
+      margin: 14px 0;
+      padding: 10px 14px;
+      border-left: 3px solid var(--cad-sky);
+      background: rgba(179, 219, 226, 0.1);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .screening-question strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Form Controls ── */
+    .consentCheck {
+      transform: scale(1.4);
+      margin-right: 8px;
+      vertical-align: middle;
+      accent-color: var(--cad-mountain);
+    }
+    .consentTextBig {
+      border: none;
+      border-bottom: 1px solid var(--cad-sky);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 80%;
+      padding: 4px 0;
+      margin: 4px 0;
+    }
+    .consentText {
+      border: none;
+      border-bottom: 1px solid var(--cad-sky);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 40%;
+      padding: 4px 0;
+    }
+    .consentTextarea {
+      border: 1px solid var(--cad-sky);
+      border-radius: 4px;
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 100%;
+      min-height: 60px;
+      padding: 8px;
+      resize: vertical;
+    }
+    .yes-no-wrapper {
+      margin: 14px 0;
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(179, 219, 226, 0.4);
+    }
+    .yes-no-wrapper .wrapper-label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .yes-radio, .no-radio {
+      transform: scale(1.4);
+      margin-right: 6px;
+      margin-left: 16px;
+      vertical-align: middle;
+      accent-color: var(--cad-mountain);
+    }
+    .yes-radio { margin-left: 0; }
+    .yes-label, .no-label {
+      margin-right: 20px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">COVID-19 Screening</div>
+      <div class="doc-subtitle">Health Questionnaire</div>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Do you or the patient have a fever or have felt hot or feverish within the last 14-21 days?</strong></label>
+    <div>
+      <input type="radio" name="fever" id="yes-fever" class="yes-radio" required="">
+      <label class="yes-label" for="yes-fever">Yes</label>
+      <input type="radio" name="fever" id="no-fever" class="no-radio" required="">
+      <label class="no-label" for="no-fever">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Do you or the patient have shortness of breath or other difficulties breathing?</strong></label>
+    <div>
+      <input type="radio" name="breathing" id="yes-breathing" class="yes-radio" required="">
+      <label class="yes-label" for="yes-breathing">Yes</label>
+      <input type="radio" name="breathing" id="no-breathing" class="no-radio" required="">
+      <label class="no-label" for="no-breathing">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Do you or the patient have a cough?</strong></label>
+    <div>
+      <input type="radio" name="cough" id="yes-cough" class="yes-radio" required="">
+      <label class="yes-label" for="yes-cough">Yes</label>
+      <input type="radio" name="cough" id="no-cough" class="no-radio" required="">
+      <label class="no-label" for="no-cough">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Do you or the patient have any other flu-like symptoms, such as gastrointestinal upset, headache or fatigue?</strong></label>
+    <div>
+      <input type="radio" name="gasto" id="yes-gasto" class="yes-radio" required="">
+      <label class="yes-label" for="yes-gasto">Yes</label>
+      <input type="radio" name="gasto" id="no-gasto" class="no-radio" required="">
+      <label class="no-label" for="no-gasto">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Have you or the patient experienced recent loss of taste or smell?</strong></label>
+    <div>
+      <input type="radio" name="smell" id="yes-smell" class="yes-radio" required="">
+      <label class="yes-label" for="yes-smell">Yes</label>
+      <input type="radio" name="smell" id="no-smell" class="no-radio" required="">
+      <label class="no-label" for="no-smell">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Have you or the patient been in contact with any confirmed COVID-19 positive patients?</strong></label>
+    <div>
+      <input type="radio" name="confirmed" id="yes-confirmed" class="yes-radio" required="">
+      <label class="yes-label" for="yes-confirmed">Yes</label>
+      <input type="radio" name="confirmed" id="no-confirmed" class="no-radio" required="">
+      <label class="no-label" for="no-confirmed">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Do you or the patient have heart disease, lung disease, kidney disease, diabetes, or any autoimmune disorders?</strong></label>
+    <div>
+      <input type="radio" name="disease" id="yes-disease" class="yes-radio" required="">
+      <label class="yes-label" for="yes-disease">Yes</label>
+      <input type="radio" name="disease" id="no-disease" class="no-radio" required="">
+      <label class="no-label" for="no-disease">No</label>
+    </div>
+  </div>
+
+  <div class="yes-no-wrapper">
+    <label class="required wrapper-label"><strong>Have you or the patient traveled in the past 14 days to any regions affected by COVID-19?</strong></label>
+    <div>
+      <input type="radio" name="travel" id="yes-travel" class="yes-radio" required="">
+      <label class="yes-label" for="yes-travel">Yes</label>
+      <input type="radio" name="travel" id="no-travel" class="no-radio" required="">
+      <label class="no-label" for="no-travel">No</label>
+    </div>
+  </div>
+
+  <p><strong>Positive responses to any of these would likely indicate a deeper discussion with the dentist before proceeding with elective dental treatment. For testing, see <a href="https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html" target="_blank">the list of State and Territorial Health Department Websites</a> for your specific area's information.</strong></p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

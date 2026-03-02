@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consent for Oral Surgery — IV Bisphosphonates — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ol, ul {
+      margin: 8px 0 8px 20px;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Form Controls ── */
+    .consentCheck {
+      transform: scale(1.4);
+      margin-right: 8px;
+      vertical-align: middle;
+      accent-color: var(--cad-mountain);
+    }
+    .consentTextBig {
+      border: none;
+      border-bottom: 1px solid var(--cad-sky);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 80%;
+      padding: 4px 0;
+      margin: 4px 0;
+    }
+    .consentText {
+      border: none;
+      border-bottom: 1px solid var(--cad-sky);
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 40%;
+      padding: 4px 0;
+    }
+    .consentTextarea {
+      border: 1px solid var(--cad-sky);
+      border-radius: 4px;
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      color: var(--cad-granite);
+      width: 100%;
+      min-height: 60px;
+      padding: 8px;
+      resize: vertical;
+    }
+    .yes-no-wrapper {
+      margin: 14px 0;
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(179, 219, 226, 0.4);
+    }
+    .yes-no-wrapper .wrapper-label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .yes-radio, .no-radio {
+      transform: scale(1.4);
+      margin-right: 6px;
+      margin-left: 16px;
+      vertical-align: middle;
+      accent-color: var(--cad-mountain);
+    }
+    .yes-radio { margin-left: 0; }
+    .yes-label, .no-label {
+      margin-right: 20px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">IV Bisphosphonate Patients</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <p>{{fullname}}; DOB: {{dob}}</p>
+
+  <div class="highlight-box">
+    <strong>Please check the box for each paragraph after reading. If you have any questions, please ask your doctor BEFORE initialing.</strong>
+  </div>
+
+  <ol>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>You have been treated with IV Bisphosphonate drugs, and you should know that there is a large risk of future severe complications that might happen with oral surgical treatment. Jaw bones usually heal themselves very well and maintain their normal health. IV Bisphosphonate drugs seem to affect the ability of jaw bones to break down or remodel themselves, and this interferes with the jaw's ability to heal itself. This risk is increased after surgery, especially from extractions, gum surgery, implant placement or other "invasive" procedures that might cause even mild trauma to bone. Necrosis (dying cells) or Osteonecrosis (dying bone cells) may result, and an infection may occur in the soft tissue and/or bone. This is a long-term process that destroys the jawbone that is often very hard or even impossible to get rid of.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>Your medical/dental history is very important. We must know the medications and drugs that you have received or taken before and are receiving or taking now. A correct medical history, including names of physicians is important.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>The decision to stop IV Bisphosphonate drug therapy before dental treatment will not lessen the risk of developing Osteonecrosis.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>Antibiotic therapy may be used to help control possible post-operative infection. For some patients, taking antibiotics may cause allergic responses or have unwanted side effects such as stomach discomfort, diarrhea, swelling of the colon, etc.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>Even with all the precautions we take, there may be delayed healing, necrosis of the jawbone, loss of bone and soft tissues, infection, fracture of the jaw due to a medical condition, oral-cutaneous fistula (open draining wounds), or other significant complications.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>If osteonecrosis should occur, treatment may be long and difficult. You might need ongoing intensive therapy that could include hospitalization, taking antibiotics for a long time, and removal of dead bone. Reconstructive surgery may be needed, including bone grafting, metal plates and screws, and/or skin flaps and grafts.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>Even if there are no immediate complications from the proposed dental treatment, the area is always subject to breakdown by itself at any time and infection due to the unstable condition of the bone. Even the smallest trauma from a toothbrush, chewing hard food, or denture sores may set off a complication.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>We may need to see you on a long-term basis after your surgery to check your condition. It is very important that you keep all of your scheduled appointments with us. Regular and frequent dental check-ups with your dentist are important to try to prevent breakdown in your oral health.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>I have read the information above and understand the possible risks of having my planned treatment. I understand and agree to the following treatment plan:
+      <ul>
+        <li><span><input type="text" readonly="" class="consentTextBig">&nbsp;</span></li>
+        <li><span><input type="text" readonly="" class="consentTextBig">&nbsp;</span></li>
+        <li><span><input type="text" readonly="" class="consentTextBig">&nbsp;</span></li>
+      </ul>
+    </li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>I understand the importance of my health history and I have given you all information. I understand that if I don't give you true and complete health information, it may be harmful to my care and lead to unwanted complications.</li>
+    <li><span contenteditable="false"><input type="checkbox" class="consentCheck">&nbsp;</span>I realize that even though the doctors will take all precautions to avoid complications; the doctor can't guarantee the result of the proposed treatment.</li>
+  </ol>
+
+  <h2>Consent</h2>
+  <p>I certify that I speak, read and write English and have read and fully understand this consent for surgery and have had my questions answered. All of the blanks were filled in before I initialed or signed the form.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

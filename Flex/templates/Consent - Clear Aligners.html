@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Informed Consent for Clear Aligner Orthodontic Treatment — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ol, ul {
+      margin: 8px 0 8px 20px;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Clear Aligner Treatment</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <p><strong>Patient Name:</strong> {{fullname}}</p>
+
+  <p>Your doctor has recommended clear aligners for your orthodontic treatment. Although orthodontic treatment can lead to a healthier and more attractive smile, you should also be aware that any orthodontic treatment (including orthodontic treatment with aligners) has limitations and potential risks that you should consider before undergoing treatment.</p>
+
+  <h2>Device Description</h2>
+  <p>Aligner treatment consists of a series of clear plastic, removable appliances that move your teeth in small increments. Clear aligners combine your doctor's diagnosis and prescription with sophisticated computer graphics technology to develop a treatment plan which specifies the desired movements of your teeth during the course of your treatment. Upon approval of a treatment plan developed by your doctor, a series of customized aligners is produced specifically for your treatment.</p>
+
+  <h2>Procedure</h2>
+  <p>You may undergo a routine orthodontic pre-treatment examination including radiographs (xrays) and photographs. Your doctor will take impressions or intra-oral scans of your teeth to have a software model of your prescribed treatment created. Upon receipt of the treatment plan, your doctor will provide final approval. A series of customized aligners will be shipped to your doctor. The total number of aligners will vary depending on the complexity of your malocclusion and the doctor's treatment plan. The aligners will be individually numbered and will be dispensed to you by your doctor with specific instructions for use. Unless otherwise instructed by your doctor, you should wear your aligners for approximately 22 hours per day, removing them only to eat, brush and floss. As directed by your doctor, you will switch to the next aligner in the series every one to two weeks. Treatment duration varies depending on the complexity of your doctor's prescription. Unless instructed otherwise, you should follow up with your doctor at a minimum of every 6 to 8 weeks.</p>
+
+  <p>Some patients may require bonded aesthetic attachments and/or the use of elastics during treatment to facilitate specific orthodontic movements. Patients may require additional impressions, or intra-oral scans, and/or refinement aligners after the initial series of aligners.</p>
+
+  <h2>Risks and Inconveniences</h2>
+  <p>Like other orthodontic treatments, the use of clear aligners may involve some of the risks outlined below:</p>
+  <ol>
+    <li>Failure to wear the appliances for the required number of hours per day, not using the product as directed by your doctor, missing appointments, and erupting or atypically shaped teeth can lengthen the treatment time and affect the ability to achieve the desired results.</li>
+    <li>Dental tenderness may be experienced after switching to the next aligner in the series.</li>
+    <li>Gums, cheeks and lips may be scratched or irritated.</li>
+    <li>Teeth may shift position after treatment. Consistent wearing of retainers at the end of treatment should reduce this tendency.</li>
+    <li>Tooth decay, periodontal disease, inflammation of the gums or permanent markings (e.g., decalcification) may occur if patients consume foods or beverages containing sugar, do not brush and floss their teeth properly before wearing the clear aligners, or do not use proper oral hygiene and preventative maintenance.</li>
+    <li>The aligners may temporarily affect speech and may result in a lisp, although any speech impediment caused by the clear aligners should disappear within one or two weeks.</li>
+    <li>Aligners may cause a temporary increase in salivation or mouth dryness and certain medications can heighten this effect.</li>
+    <li>Attachments may be bonded to one or more teeth during the course of treatment to facilitate tooth movement and/or appliance retention. These will be removed after treatment is completed.</li>
+    <li>Attachments may fall off and require replacement.</li>
+    <li>Teeth may require interproximal recontouring or slenderizing in order to create space needed for dental alignment to occur.</li>
+    <li>The bite may change throughout the course of treatment and may result in temporary patient discomfort.</li>
+    <li>In rare instances, slight superficial wear of the aligner may occur where patients may be grinding their teeth or where the teeth may be rubbing and is generally not a problem as overall aligner integrity and strength remain intact.</li>
+    <li>At the end of orthodontic treatment, the bite may require adjustment ("occlusal adjustment").</li>
+    <li>A typically-shaped, erupting, and/or missing teeth may affect aligner adaptation and may affect the ability to achieve the desired results.</li>
+    <li>Treatment of severe open bite, severe overjet, mixed dentition, and/or skeletally narrow jaw may require supplemental treatment in addition to aligner treatment.</li>
+    <li>Supplemental orthodontic treatment, including the use of bonded buttons, orthodontic elastics, auxiliary appliances/ dental devices (e.g., temporary anchorage devices, sectional, fixed appliances), and/or restorative dental procedures may be needed for more complicated treatment plans where aligners alone may not be adequate to achieve the desired outcome.</li>
+    <li>Teeth which have been overlapped for long periods of time may be missing the gingival tissue below the interproximal contact once the teeth are aligned, leading to the appearance of a "black triangle" space.</li>
+    <li>Aligners are not effective in the movement of dental implants.</li>
+    <li>General medical conditions and use of medications can affect orthodontic treatment.</li>
+    <li>Health of the bone and gums which support the teeth may be impaired or aggravated.</li>
+    <li>Oral surgery may be necessary to correct crowding or severe jaw imbalances that are present prior to wearing the SimplyClear product. If oral surgery is required, risks associated with anesthesia and proper healing must be taken into account prior to treatment.</li>
+    <li>A tooth that has been previously traumatized, or significantly restored may be aggravated. In rare instances the useful life of the tooth may be reduced, the tooth may require additional dental treatment such as endodontic and/or additional restorative work and the tooth may be lost.</li>
+    <li>Existing dental restorations (e.g., crowns) may become dislodged and require re-cementation or in some instances, replacement.</li>
+    <li>Short clinical crowns can pose appliance retention issues and inhibit tooth movement.</li>
+    <li>The length of the roots of the teeth may be shortened during orthodontic treatment and may become a threat to the useful life of teeth.</li>
+    <li>Product breakage is more likely in patients with severe crowding and/or multiple missing teeth.</li>
+    <li>Orthodontic appliances or parts thereof may be accidentally swallowed or aspirated.</li>
+    <li>In rare instances, problems may also occur in the jaw joint, causing joint pain, headaches, or ear problems.</li>
+    <li>Allergic reactions may occur.</li>
+    <li>Teeth that are not at least partially covered by the aligner may undergo supraeruption.</li>
+    <li>In rare instances patients with hereditary angioedema (hae), a genetic disorder, may experience rapid local swelling of subcutaneous tissues including the larynx. Hae may be triggered by mild stimuli including dental procedures.</li>
+  </ol>
+
+  <h2>Consent and Authorization</h2>
+  <p>I have been given adequate time to read and have read the preceding information describing orthodontic treatment with clear aligners. I understand the benefits, risks, alternatives, and inconveniences associated with treatment as well as the option of no treatment. I have been sufficiently informed and have had the opportunity to ask questions and discuss concerns about orthodontic treatment with clear aligners with <strong>Colorado Advanced Dentistry</strong> from whom I intend to receive treatment. I understand that I should only use the clear aligners after consultation and prescription from a trained doctor, and I hereby consent to orthodontic treatment with clear aligners that have been prescribed by my doctor.</p>
+
+  <p>Due to the fact that orthodontics is not an exact science, I acknowledge that <strong>Colorado Advanced Dentistry</strong> has not and cannot make any guarantees or assurances concerning the outcome of my treatment. No assurances or guarantees of any kind have been made to me by <strong>Colorado Advanced Dentistry</strong> or representatives, successors, assigns, and agents concerning any specific outcome of my treatment.</p>
+
+  <p>I authorize <strong>Colorado Advanced Dentistry</strong> to release my medical records, including, but not be limited to, radiographs (x-rays), reports, charts, medical history, photographs, findings, plaster models, impressions of teeth, or intra-oral scans, prescriptions, diagnosis, medical testing, test results, billing, and other treatment records in my doctor's possession ("medical records") (i) to other licensed dentists or orthodontists and organizations employing licensed dentists and orthodontists for the purposes of investigating and reviewing my medical history as it pertains to orthodontic treatment with product(s) for educational and research purposes.</p>
+
+  <p>I understand that use of my medical records may result in disclosure of my "individually identifiable health information" as defined by the Health Insurance Portability and Accountability Act ("HIPAA"). I hereby consent to the disclosure(s) as set forth above. I will not, nor shall anyone on my behalf seek legal, equitable or monetary damages or remedies for such disclosure. I acknowledge that use of my medical records is without compensation and that I will not nor shall anyone on my behalf have any right of approval, claim of compensation, or seek or obtain legal, equitable or monetary damages or remedies arising out of any use such that comply with the terms of this consent.</p>
+
+  <p>A photostatic copy of this consent shall be considered as effective and valid as an original. I have read, understand, and agree to the terms set forth in this consent as indicated by my signature below.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

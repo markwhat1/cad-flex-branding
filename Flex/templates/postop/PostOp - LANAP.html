@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post-Op: LANAP Periodontal Therapy — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.5in 0.55in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10pt;
+      line-height: 1.42;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .highlight-box { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 15pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 1px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 12pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.2;
+      margin-top: 12px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h3 {
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--cad-granite);
+      line-height: 1.25;
+      margin-top: 8px;
+      margin-bottom: 3px;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 5px;
+      line-height: 1.42;
+    }
+
+    ul {
+      margin: 2px 0 6px 18px;
+    }
+    ol {
+      margin: 2px 0 6px 0;
+      padding-left: 24px;
+      list-style-position: outside;
+    }
+
+    li {
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    li strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 8px 12px;
+      margin: 6px 0;
+      font-size: 9pt;
+      line-height: 1.4;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Call-to-action box (Mountain Lake) ── */
+    .cta-box {
+      border-left: 3px solid var(--cad-mountain);
+      background: rgba(179, 219, 226, 0.15);
+      padding: 8px 12px;
+      margin: 6px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
+
+    .cta-box ul {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 14px;
+      padding-top: 8px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">LANAP Periodontal Therapy</div>
+      <div class="doc-subtitle">Post-Operative Instructions</div>
+    </div>
+  </div>
+
+  <h2>Post-Op Instructions</h2>
+  <ol>
+    <li>Do not be alarmed by any color changes or appearance of gum tissue following laser therapy. Gum tissue can turn gray, yellow, red, blue, purple, and "stringy" and reflects a normal response to laser treatments.</li>
+    <li>Do not be alarmed if one of the following occurs:
+      <ul>
+        <li>Light bleeding</li>
+        <li>Slight swelling</li>
+        <li>Some soreness, tenderness, or tooth sensitivity</li>
+        <li>Medicinal taste from Peridex</li>
+      </ul>
+    </li>
+    <li>Swelling may occur. To keep this at a minimum, gently place an ice pack on the outside of the face for 20 minutes each hour until you retire for sleep that night. Do not continue using the ice bag beyond the day of the periodontal surgery.</li>
+    <li>Do not apply excessive tongue or cheek pressure to the treated area.</li>
+    <li>Some oozing of blood may occur and will appear to be greatly exaggerated when it dissolves in saliva. Determine the side of oozing and place pressure on this area. If you cannot locate the origin of the bleeding, rinse your mouth gently with iced water and apply a wet tea bag to the general area.</li>
+    <li>
+      <div class="cta-box">
+        <p><strong>Please call the office</strong> so that we may render further treatment if any of the following occurs:</p>
+        <ul>
+          <li>Prolonged or severe pain</li>
+          <li>Prolonged or excessive bleeding</li>
+          <li>Considerably elevated or persistent temperature (fever)</li>
+          <li>Sores on the roof of your mouth (blisters)</li>
+        </ul>
+      </div>
+    </li>
+    <li>If medication has been prescribed, please take exactly as directed. Antibiotic pills are prescribed. The entire bottle or prescription should be taken for the stated number of days or weeks. Please call if experiencing nausea and additional medication can be prescribed.</li>
+    <li>If you are not allergic to Motrin – generic ibuprofen – (e.g., Advil), we will most likely prescribe it primarily to minimize tissue swelling and local inflammation that is a natural side effect of minor surgery. Ibuprofen is also good to reduce postoperative pain and sensitivity. <strong>Please take it for 3 days and then as needed for pain.</strong> Ibuprofen is non-narcotic and does not affect your ability to drive. Never place aspirin directly on the tissue of a painful area.</li>
+    <li>Reduce physical activity for several hours following the surgery to maximize healing.</li>
+    <li>Try to keep your mouth as clean as possible to help the healing process. Only brush and floss the untreated area of your mouth. <strong>Do not brush or floss the treated area for 7-10 days or as directed by your doctor.</strong></li>
+    <li>You may spit gently, but do not rinse your mouth the day of treatment. Begin rinsing your mouth gently 3 times a day with Peridex the day following treatment. In between Peridex rinses, rinse your mouth gently 3 times a day with warm salt water (1/2 teaspoon of salt dissolved in an 8 oz. glass of warm water). For the next several days rinse with both Peridex and salt water as previously mentioned but with vigor.</li>
+    <li>You will be on a liquid diet for 3 days, then a diet of "mushy"/soft foods for 4 days, and then a diet of smart food choices for the remainder of the month. It is very important to maintain a good food and fluid intake. Try to eat soft but nutritious food such as eggs, yogurt, cottage cheese, malts, ice cream, etc., until you can comfortably return to a normal diet. Please refer to the LANAP® Patient Diet Instructions (on the next page).</li>
+    <li>Do not be alarmed that beginning at just 2 weeks after therapy and extending as long as 1 year or more, the teeth may become sore and tender as the bone and ligaments around the teeth regenerate and become firmer. This is a sign of healing, but also indicates the presence of a bite imbalance that may need to be adjusted. Avoid spicy or excessively hot foods during the initial 3-day liquid diet period.</li>
+    <li>When eating, do not chew on the side of your mouth which has been treated.</li>
+    <li>"Spaces" between your teeth can result from reduction of inflammation, swelling, and the removal of diseased tissue after the LANAP® treatment. These spaces usually fill in over time, and again, bite adjustment is critical to making sure the teeth and the "papilla" are not traumatized and can regrow.</li>
+    <li>If you have been taken off blood thinners (Coumadin, Warfarin, etc.), or if your current medications have been altered at all due to your dental surgery, you must contact your physician ASAP to determine when you should resume your medicines. Delaying this telephone call could have potential life-threatening or other serious consequences. I agree I must continue to take all current medications as prescribed by my doctor(s) and must continue to take all supplements and vitamins.</li>
+  </ol>
+
+  <h2>Post-Op Home Care Instructions</h2>
+  <ol>
+    <li>Vitamins, dietary supplements, or medications may be prescribed to improve your overall health. Take any prescribed medication according to directions.</li>
+    <li>Dental laser procedures result in little or no discomfort following surgery. Take Motrin (ibuprofen) for 3 days and then as needed for discomfort if present.</li>
+    <li>Carefully avoid chewing food in the areas of the mouth where the laser has been used. One of the most important results of laser surgery is the healing that occurs following the initial procedure. It is extremely important not to dislodge the tiny clots (scabs) that form in the gums.</li>
+    <li><strong>Daily Care:</strong>
+      <ul>
+        <li>Gently brush the chewing surfaces of the teeth only. During the first day drink liquids only. A liquid dietary supplement may be recommended.</li>
+        <li>During the first week, eat only soft foods. If possible, do not chew where the surgery was performed.</li>
+        <li>Starting one week after surgery, brush the teeth by placing the bristles of the brush on the gums below the tooth and carefully rolling the bristles toward the tooth surface. Do not stick the bristles into the gums.</li>
+        <li>When instructed to begin flossing (usually one month after surgery), carefully place the floss between the teeth and avoid pushing the floss under the gums until instructed to do so.</li>
+        <li>The length of time it takes for the gums to heal depends upon the severity of the disease. Most healing in the surface areas takes 2 – 4 weeks. Deeper pocket areas may take several months to completely heal.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Patient Diet Instructions</h2>
+  <ul>
+    <li><strong>The first three</strong> days following Laser Therapy, follow only a liquid-like diet to allow healing. Anything that could be put into a blender to drink is ideal. The purpose of this is to protect the clot that is acting as a "band-aid" between the gums and the teeth. Do not drink through a straw, as this creates a vacuum in your mouth that can disturb the "band-aid". Take daily vitamins.</li>
+    <li><strong>Next four days after treatment</strong>, foods with a "mushy" consistency such as those listed below are recommended. *See below suggestions.</li>
+    <li><strong>Starting seven to ten days after treatment</strong>, soft foods may be allowable. The time to start on soft foods is dependent upon the loss of the white material that appeared around your teeth following LANAP® treatment. You were introduced to this material by your doctor or doctor's assistant during your follow-up visit immediately following your initial treatment session. It was explained to you that you must leave this material alone until it naturally heals and disappears. Once the white material has disappeared, then soft foods can be introduced. Soft foods have the consistency of pasta, fish, chicken, or steamed vegetables. You may then gradually add back your regular diet choices.</li>
+    <li><strong>Please remember</strong> that even after ten days, healing is not complete. The first month following treatment you should continue to make smart food choices. Softer foods are better.</li>
+    <li>
+      <div class="highlight-box"><strong>DO NOT</strong> - Chew gum, candy, cookies, chips, nuts, anything hard or crunchy, anything that has seeds or hard pieces, meat that shreds and can lodge under the gum and between teeth, raw vegetables/salad.</div>
+    </li>
+  </ul>
+
+  <h3>Soft "Mushy" Diet Suggestions</h3>
+  <ul>
+    <li>Daily vitamins!</li>
+    <li>Anything put through a food blender</li>
+    <li>Mashed banana, mashed avocado, or applesauce</li>
+    <li>Mashed or baked potatoes</li>
+    <li>Any mashed/blended fruit <strong>unless it has seeds</strong></li>
+    <li>Broth or creamed soup</li>
+    <li>Mashed steamed vegetables</li>
+    <li>Cottage cheese, cream cheese, or soft cheese</li>
+    <li>Mashed yams, baked sweet potato or butternut squash</li>
+    <li>Eggs any style, with or without melted cheese</li>
+    <li>Omelets can have cheese and avocado</li>
+    <li>Jell-O, pudding, ice cream or yogurt</li>
+    <li>Milk shake/smoothies – fruit is fine <strong>if it has no seeds</strong></li>
+    <li>Ensure, Slim Fast – nutritional drinks</li>
+  </ul>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

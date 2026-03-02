@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Informed Consent for Restorative Dental Treatment — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ol, ul {
+      margin: 8px 0 8px 20px;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">General Restorative Treatment</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <p>I hereby request and authorize Dr. Mark Whatcott, DDS and whomever he may designate as his assistant(s) and anesthesia professionals, to perform upon me the following procedure(s) and necessary anesthesia:</p>
+
+  <ol>
+    <li>I understand that Dr. Whatcott will use his best judgment and skill to accomplish the desired results. It has been explained, in language that I understand, my diagnosis, the anticipated procedure(s), the attendant risks and complications, alternatives, including doing nothing at all, postoperative course and possible variables to my satisfaction. I have had the opportunity of asking questions and understand that I may stop plans for this treatment at this time to ask further questions if I desire. I also understand that there may be other doctors who are specialists in these procedures and that I have the opportunity to be treated by them. However, I prefer to have my treatment performed in this office by Dr. Whatcott.</li>
+    <li>I do authorize the performance of additional procedures and changes of planned procedures if, in the judgment of the doctor, this will be necessary to improve my safety and result.</li>
+    <li>I understand that there are possible complications of which I must be aware. These include, but are not limited to: limited oral function; post operative pain, bleeding; infection or abscess which may require treatment or drainage; temporary bruising of the face, allergic reactions to metal and medications; a change in sensation or numbness to the lip, chin, face and/or tongue which may be of a temporary or permanent nature; periodontal infection or condition requiring additional treatment; injury to the teeth; temporomandibular joint (jaw) problems requiring additional treatment and poor healing which may result in an alteration or change in the planned treatment. Although unusual, an unexpected complication or less than desired result can occur and this may result in the need for further surgery, possible hospitalization, tests, prolonged recovery, loss of work time, and the possibility of further expense to me.</li>
+    <li>Although favorable results are expected, no guarantee or warranty of expectations, refunds of any kind, either expressed, or implied, has been made. This is due to human variables associated with individual healing and responses to surgery and recovery. Likewise, I understand that, although unexpected, risks and complications can occur. The attendant risks of surgery and anesthesia have been explained to me. I also have the opportunity to learn about unusual or rare risks and will be given information concerning this if I desire.</li>
+    <li>I understand that Dr. Whatcott is very much involved in the advancement of new technologies, procedures and materials and may be used if Dr. Whatcott feels that they will be beneficial and increase the chance of success.</li>
+    <li>I consent to the taking of clinical photographs which may be used for research, presentation and/or publications. I understand that my anonymity will be preserved.</li>
+    <li>I understand that basic crown and bridge preparations may result in the considerable reduction of tooth structure when properly done. Tissue and temperature sensitivity could be experienced for an extended healing period. In some instances, root canal therapy may be required to eliminate the sensitive tissues inside the tooth.</li>
+    <li>I understand that excellent home care techniques, using a variety of aids (i.e., bite guards), will add considerably to the successful outcome of my technically advanced dental restorative program, and I understand it will be important for me to follow the home care instructions, both written and oral, very carefully.</li>
+  </ol>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

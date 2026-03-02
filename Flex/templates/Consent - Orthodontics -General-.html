@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Informed Consent for Orthodontic Treatment — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Orthodontic Treatment</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <p><strong>Patient Name:</strong> {{fullname}}</p>
+
+  <h2>Results of Treatment</h2>
+  <p>We intend to do everything possible to achieve the best results for every patient. Orthodontic treatment usually proceeds as planned. However, we cannot guarantee that you will be completely satisfied with your results, nor can all complications or consequences be anticipated. The success of treatment depends on your cooperation in keeping appointments, maintaining good oral hygiene, avoiding loose, lost, or broken appliances, and following treatment instructions carefully.</p>
+
+  <h2>Treatment Time</h2>
+  <p>The length of treatment depends on severity of the problem, the patient's growth, and level of patient cooperation. Treatment may be lengthened if unanticipated growth occurs, if there are habits affecting the dentofacial structures, if periodontal or other dental problems occur, or if patient cooperation is poor. Changes in the original treatment time may be necessary. If treatment time is extended beyond the original estimate, additional fees may be assessed.</p>
+
+  <h2>Discomfort</h2>
+  <p>The mouth is overly sensitive; expect an adjustment period and some discomfort due to the introduction of orthodontic appliances. Non-prescription pain medication can be used during the adjustment period.</p>
+
+  <h2>Decalcification, Decay, or Gum Disease</h2>
+  <p>These problems may occur if the patient does not cooperate with proper brushing and flossing. Further, sugars and snacks between meals should be reduced as much as possible as well as acidic drinks. Maintaining proper dietary control is essential, especially by minimizing the intake of sugar. Smoking or chewing tobacco has been shown to increase the risk of gum disease and interfere with healing. These problems may be aggravated if the patient has not had the benefit of fluoridated water or its substitute.</p>
+
+  <h2>Root Resorption</h2>
+  <p>In some cases, the ends of some of the teeth are shortened during treatment. In the event of subsequent gum disease, this shortening could reduce the longevity of affected teeth. Under healthy circumstances, the shortened teeth suffer no disadvantage. It should be noted that not all root resorption arises from orthodontic treatment. Trauma, cuts, impaction, endocrine disorders, idiopathic reasons can also cause root resorption. Severe resorption can increase the possibility of premature tooth loss.</p>
+
+  <h2>Nerve Damage</h2>
+  <p>Sometimes a tooth may have been traumatized by an accident or deep decay may have experienced damage to the nerve of the tooth. Also, the nerve of the tooth may die for no apparent reason. This is known as "spontaneous pulpal necroses." Orthodontic tooth movement may aggravate these conditions and cause root canal treatment to be necessary. In severe cases the tooth may be lost.</p>
+
+  <h2>Periodontal Disease</h2>
+  <p>Periodontal disease can develop or worsen during orthodontic treatment due to many factors, but most often due to the lack of adequate oral hygiene. If periodontal problems arise and cannot be controlled, orthodontic treatment may be discontinued before completion.</p>
+
+  <h2>TMJ (Temporo-Mandibular Joint) Pain</h2>
+  <p>Orthodontic treatment may help remove dental causes of TMJ, but not non-dental causes. Some patients may develop jaw joint noises, discomfort and facial pain related to the jaw during or after treatment. The current belief is that these problems are caused more by habitual grinding of the teeth rather than the way in which the teeth bite. If such a problem arises, treatment by another specialist may be required.</p>
+
+  <h2>Injury from Orthodontic Appliances</h2>
+  <p>Activities or foods could damage, loosen, or dislodge orthodontic appliances and need to be avoided. Loosened or damaged orthodontic appliances can be inhaled or swallowed or cause damage to the patient. Inform your doctor of any loose or broken orthodontic appliances. Damage to the enamel or restoration is possible when orthodontic appliances are removed.</p>
+
+  <h2>Oral Surgery/Extractions</h2>
+  <p>To achieve optimal results, oral surgery or tooth extraction may be necessary together with orthodontic treatment, especially to correct jaw imbalances. Third molars (wisdom teeth) may develop and change alignment. Your dentist and orthodontist may recommend that your third molars be removed.</p>
+
+  <h2>Occlusal Adjustment</h2>
+  <p>You can expect minimal imperfections in the way your teeth come together at the end of treatment. An occlusal equilibration procedure may be necessary, which is a "polishing" method used to fine-tune the occlusion. It may also be necessary to remove a small amount of enamel in between the teeth, to reduce the possibility of a relapse.</p>
+
+  <h2>Allergies</h2>
+  <p>Although very uncommon, allergies to medicine and orthodontic materials may occur during treatment. This may require change in the treatment plan or discontinuance of treatment prior to completion.</p>
+
+  <h2>Return of the Original Problem</h2>
+  <p>We intend to obtain the best result possible. Some orthodontic problems, however, tend to return to their original condition to a small degree. Careful cooperation during the retention phase of treatment will keep this relapse to a minimum. You must wear retainers as instructed or teeth may shift. Changes can occur due to natural causes, such has tongue thrusting, mouth breathing and maturation that continue throughout life. Some changes may require additional orthodontic treatment or surgery.</p>
+
+  <h2>Non-Ideal Results</h2>
+  <p>Due to the wide variation in tooth sizes and shapes, missing teeth, etc., achieving an ideal result may not be possible. Restorative dental treatment such as bonding, crowns or bridges, or periodontal therapy may be needed.</p>
+
+  <h2>Additional Treatment</h2>
+  <p>Unforeseen circumstances (such as abnormal growth or gum disease) may cause us to recommend a form of additional treatment not previously discussed. If this occurs, we will carefully explain the reasons for a change in the treatment plan and any extra fees before proceeding.</p>
+
+  <h2>Termination of Treatment</h2>
+  <p>It is understood that treatment can be terminated for failure to cooperate, missing appointments, not wearing appliances, excessive breakage, failure to keep financial commitments, relocation, personal conflicts or for any other reason the orthodontist feels necessary. If termination is necessary, the patient will be given ample time to locate another orthodontist to continue treatment or the braces will be removed.</p>
+
+  <h2>Consent to Use Records</h2>
+  <p>I hereby give my permission for the use of orthodontic records, including photographs for purposes of professional consultations, research, education, or publication in professional journals. I have read the above and have had an opportunity to discuss this information with <strong>Colorado Advanced Dentistry</strong>. All questions have been answered to my satisfaction. I authorize <strong>Colorado Advanced Dentistry</strong> and its team to perform the necessary orthodontic treatment.</p>
+
+  <p><em>In a case where the patient is a minor, I authorize <strong>Colorado Advanced Dentistry</strong> and its team to perform the necessary treatment in my absence.</em></p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

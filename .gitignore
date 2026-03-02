@@ -1,0 +1,84 @@
+# ============================================
+# CAD Flex Branding Project - .gitignore
+# Only track branded emails, templates, & assets
+# ============================================
+
+# Claude Code internals
+.claude/
+
+# Screenshots and reference files
+*.jpeg
+*.png
+*.pdf
+!Flex/public/assets/images/**
+!Flex/public/assets/images/cad-badge.png
+
+# Preview system (local dev only)
+preview/
+docs/
+
+# ---- Flex production files (DO NOT track) ----
+
+# Executables & installers
+Flex/*.exe
+Flex/*.bat
+Flex/*.msi
+Flex/communicator/
+Flex/nssm/
+Flex/sqlite3/
+Flex/updater.exe
+
+# Database & backups
+Flex/db/
+Flex/backup/
+
+# Config files (may contain credentials)
+Flex/config.json
+Flex/secconfig.json
+Flex/ports.json
+Flex/commits.json
+Flex/version.json
+
+# Logs
+Flex/log/
+
+# Server internals
+Flex/JSON/
+Flex/NoMatch/
+Flex/dentrix/
+Flex/legacy/
+Flex/rc/
+Flex/scripts/
+Flex/static/
+Flex/updateSupportFiles/
+Flex/schema.graphql
+Flex/logos/
+Flex/pdfs/
+
+# Existing Flex app assets (already on production, not ours)
+Flex/public/assets/*.js
+Flex/public/assets/*.css
+Flex/public/assets/*.cur
+Flex/public/assets/*.txt
+Flex/public/assets/*.png
+Flex/public/assets/*.svg
+Flex/public/assets/icons/
+Flex/public/assets/images/blocks/
+Flex/public/assets/images/cursors/
+Flex/public/assets/images/*.gif
+Flex/public/assets/images/*.jpg
+Flex/public/assets/images/*.webp
+Flex/public/assets/images/*.svg
+Flex/public/assets/images/*.png
+!Flex/public/assets/images/cad-badge.png
+Flex/public/assets/font/fa-*
+Flex/public/assets/font/summernote.*
+
+# Email backups (originals before branding)
+Flex/emails/backup/
+
+# Blast emails (not part of branding project)
+Flex/emails/blast/
+
+# Other email files not part of our branding
+Flex/emails/apptBooked*

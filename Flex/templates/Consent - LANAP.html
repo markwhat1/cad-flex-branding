@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Informed Consent for LANAP Periodontal Therapy — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ol, ul {
+      margin: 8px 0 8px 20px;
+      line-height: 1.55;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">LANAP Periodontal Therapy</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <p>The Health Sciences continue to make remarkable advances in technology and techniques. These efforts to develop and introduce improvements over current health care treatments are ultimately intended for the benefit of prospective patient candidates. An essential element in these efforts is to communicate all essential information to patient candidates, so that the prospective patient is able to make a knowledgeable decision. With this premise in mind, all of the pertinent facts involved in the cooperation between the surgeon, and the prospective patient are listed in detail below, so that there is a full disclosure of the procedures and complete comprehension by the patient. It is necessary that each patient read, understand, and sign the following form before proceeding with LANAP treatment:</p>
+
+  <ol>
+    <li>I have had a consultation with Dr. Whatcott pertaining to my desire to treat my periodontal disease, which has been diagnosed as needing LANAP treatment, by participating in LANAP treatment, involving the use of a laser.</li>
+    <li>I acknowledge that Dr. Whatcott has carefully examined my mouth and diagnosed me with periodontal disease. The doctor expressed his opinion that LANAP treatment may solve the problems, stemming from my periodontal disease, from which I have been suffering.</li>
+    <li>I understand that based on a clinical study performed using the LANAP treatment, a high percentage of cases (87%) have not needed retreatment for more than five years barring any unforeseen health or accident related problems.</li>
+    <li>Dr. Whatcott has explained other alternative periodontal surgical procedures such as Widman Flap, cut and sew and other methods. I hereby state that I have tried or considered conventional methods of periodontal surgery and regard them to be unsatisfactory for me.</li>
+    <li>I acknowledge that Dr. Whatcott has explained that optimum results with LANAP treatment depends on the individual body response of each person. There is no method in present knowledge to guarantee the healing capabilities of any patient following LANAP treatment.</li>
+    <li>Dr. Whatcott has stated that smoking and/or non-moderate use of alcohol can adversely affect gum tissue healing. I am aware that observations have shown that excesses of smoking and alcohol consumption may limit the longevity of the LANAP treatment. I understand that calcium balance and hormones can affect the continued loss of bone.</li>
+    <li>Dr. Whatcott has detailed the methods, stressed the importance of proper oral hygiene, and explained how critical it is for optimal healing following LANAP treatment. I agree to comply with the methods explained to me as instructed by Dr. Whatcott or his hygienist. I further agree to follow Dr. Whatcott's diet recommendations.</li>
+    <li>Dr. Whatcott has explained that if I choose not to undergo LANAP treatment then the following sequences of events can happen:
+      <ul>
+        <li>Where no treatment is undertaken, further gum and bone degeneration of the supporting tissues can continue, increasing the severity of, and/or adding to, the problems presently suffered by the patient to include:
+          <ol>
+            <li>Loss of teeth due to traumatic occlusion and/or loss of vertical bone support.</li>
+            <li>Infections in the gums and bone such as Acute Necrotizing Ulcerative Gingivitis (ANUG).</li>
+            <li>Tarter/calculus buildup causing loss of vertical bone support.</li>
+          </ol>
+        </li>
+        <li>Where groups of teeth are missing;
+          <ol>
+            <li>Not replacing lost teeth, in areas where excessive chewing forces exist, may cause pronounced loss of bone and gum disease around the remaining teeth.</li>
+            <li>Replacement of teeth with conventional removable partial dentures may be necessary.</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li>Dr. Whatcott has explained that it is my responsibility to report for further treatment and hygiene appointments, at least once every three (3) months or at any other time the doctor requires me to. I understand these visits are for the doctor to carefully check the status of my LANAP treatment.</li>
+    <li>I submit that I have given an accurate report on my health history. To my best knowledge, I have not withheld any information regarding my medical or mental health. Any previous allergic or unusual reactions to drugs, foods, insect bites, anesthetics, pollens, dust, or any material or condition have been willingly offered to the doctor for my complete health history.</li>
+    <li>I understand that LANAP treatment involves one or more mouth surgeries. I have been informed of the complications of the surgery, anesthesia, and other necessary drugs used as part of the treatment. I am aware that there could be pain, swelling, infections, discoloration, numbness, spaces between the teeth, tissue shrinkage, recession of the gums, and exposure of roots surfaces - - the exact duration of which may not be determinable. I understand that after adequate healing some areas may need to be spot treated with LANAP treatment and occlusal adjustments.</li>
+    <li>I understand that "severe" gum disease (Case Type III &amp; IV) with "double digit" millimeter pocket measurements (e.g., 10 mm or more) will require "double" or a subsequent re-treatment at the same fee as the first fee-for-service, typically on a tooth-by-tooth basis, but could involve the entire mouth as determined by the state of active disease.</li>
+    <li>"Occlusal adjustment" and "occlusal equilibration" have been fully explained to me. I have had the opportunity to ask questions, and I fully understand that occlusal adjustments and equilibration require my 100% cooperation and compliance. It has been explained to me that failure to complete all phases of occlusal adjustments and equilibration may result in oral/facial pain, temporal mandibular joint dysfunction (TMJ) sore and painful teeth. It has also been explained that until the teeth have been fully adjusted and/or equilibrated I may experience transitional TMJ pain, muscle soreness, headaches, tooth pain, tooth sensitivity, and cheek biting. I understand adjusting crowns can remove porcelain, expose metal and/or tooth structure, and can require the replacement of any and all crowns. I understand that occlusal adjustment is part of the LANAP treatment and is an ongoing part of my regular examination appointments.</li>
+    <li>I am aware that I may receive an explanation of all risks and treatment(s) prior to starting, as well as any other questions during the progress of my treatment, just by asking the doctor who performed the LANAP treatment on me.</li>
+    <li>If Dr. Whatcott considers my case appropriate, I hereby give authorization for photos to be taken of my mouth during the course of the LANAP treatment. It has been explained to me that these photos, videos, slides, or x-rays may be used in teaching other dentists for the advancement of LANAP protocol in dentistry.</li>
+    <li>With full understanding, I authorize Dr. Whatcott and the LANAP treatment team to perform dental services for me, including LANAP treatment and other surgery deemed necessary for the planned treatment. I will also agree to the use of local or general anesthetic, sedation, and analgesia depending on the judgment of the surgeon involved in my case. Dr. Whatcott has explained that if there is a need for someone to drive me from the doctor's office following surgery, I am to arrange this myself. I agree not to operate a motor vehicle or work for 24 hours or until fully recovered from the effects of the anesthesia or drug given me for my care if it should be necessary.</li>
+    <li>I understand that Dr. Whatcott will do the very best according to all of the latest principles of Laser dentistry to perform the LANAP treatment on me. I understand that progress in LANAP dentistry is continuous and due to that fact, I authorize any modification in design, material, or care to be performed on me - if based on my doctor's experience and professional judgment, he/she feels it is in my best interest.</li>
+    <li>I understand that it is necessary to complete all phases of recommended treatment, and I agree to do so.</li>
+  </ol>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

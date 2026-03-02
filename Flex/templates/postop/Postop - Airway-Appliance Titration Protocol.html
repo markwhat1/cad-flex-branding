@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post-Op: Airway-Appliance Titration Protocol — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .highlight-box { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    h3 {
+      font-family: var(--font-body);
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--cad-granite);
+      line-height: 1.3;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    ul, ol {
+      margin: 4px 0 10px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    li strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Call-to-action box (Mountain Lake) ── */
+    .cta-box {
+      border-left: 3px solid var(--cad-mountain);
+      background: rgba(179, 219, 226, 0.15);
+      padding: 12px 14px;
+      margin: 16px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .cta-box h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .cta-box ul {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Airway-Appliance Titration Protocol</div>
+      <div class="doc-subtitle">Post-Operative Instructions</div>
+    </div>
+  </div>
+
+  <p><strong>Patient Name:</strong> {{fullname}}</p>
+
+  <h2>Phase 1: Settling In (The First Week)</h2>
+  <ul>
+    <li><strong>Getting Comfortable:</strong> The primary goal for your first week is simply to get used to the feeling of having the appliance in your mouth.</li>
+    <li><strong>Safety and Pacing:</strong> The worst thing you can do is move the appliance forward too far or too fast. This can cause jaw pain and limit your ability to return to your natural bite in the morning.</li>
+    <li><strong>A Patient Approach:</strong> View this as a marathon rather than a sprint. Because you will be wearing this for a significant part of your life, taking a few extra days to ensure your comfort is a worthwhile investment.</li>
+  </ul>
+
+  <h2>Phase 2: Finding Your "Sweet Spot" (Titration)</h2>
+  <ul>
+    <li><strong>Active Progress:</strong> Once you are comfortable wearing the appliance, you will begin the titration process to find the ideal position for your jaw.</li>
+    <li><strong>The Ultimate Goal:</strong> We are looking for the position that provides a refreshing night's sleep for both you and your bed partner.</li>
+    <li><strong>Monitoring Progress:</strong> Ask your bed partner to help assess changes in your sleep or use a phone app like SnoreLab to objectively track improvements in your snoring during this phase.</li>
+    <li><strong>Knowing When to Stop:</strong> The moment the appliance achieves that goal, you should stop the titration and continue sleeping with the appliance in that exact position.</li>
+  </ul>
+
+  <h2>Phase 3: Factors for Long-Term Success</h2>
+  <ul>
+    <li><strong>Morning Routine:</strong> You must follow the physical therapy protocol provided by our staff every single morning. This is essential for realigning your bite daily and preventing chronic bite changes.</li>
+    <li><strong>External Influences:</strong> Factors like alcohol, smoking, allergies, or temporary illness can impact how well the appliance works. Consider these variables before moving away from a position that was previously successful.</li>
+    <li><strong>Professional Evaluation:</strong> Continue to follow up with your dentist at <strong>Colorado Advanced Dentistry</strong> for professional evaluation and adjustments.</li>
+  </ul>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

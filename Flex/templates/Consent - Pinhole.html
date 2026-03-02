@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Informed Consent for Pinhole Surgical Technique — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Pinhole Surgical Technique (PST)</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <h2>Diagnosis</h2>
+  <p>After a careful oral examination and study of my dental condition, Dr. Whatcott has advised me that I have significant gum recession. I understand that with this condition, further recession of the gum may occur which could lead to sensitivity, root decay and/or premature tooth loss. Additionally, for fillings at the gumline, it is important to have sufficient width of attached gum to withstand the irritation caused by the fillings or edges. Sufficient width of attached gum is also necessary to withstand the repeated forces of tooth brushing and food.</p>
+
+  <h2>Recommended Treatment</h2>
+  <p>In order to treat this condition, Dr. Whatcott recommended that the PST procedure be performed. Local anesthetic will be administered as part of treatment. The PST procedure will involve one or more small pinholes placed under the lip in the vestibule depending on the number of teeth treated. Specially designed instruments will be used to gently loosen and drape the gum tissues over the exposed recessed areas of the teeth. Resorbable collagen will then be placed in the pinholes to increase the width of the gum and secure the tissues in place. Unforeseen circumstances may call for a change from the anticipated surgical plan. These may include but are not limited to inclusion of additional teeth not originally planned, termination of the procedure prior to completion of all the surgery originally planned and placement of sutures if indicated. These treatment changes could result in additional billable fees being charged.</p>
+
+  <h2>Expected Benefits</h2>
+  <p>The purpose of the procedure is to: create a widened zone of attached gum tissue adequate to reduce the likelihood of additional gum recession and to cover exposed root surfaces in order to enhance the appearance of the teeth and gum line and to prevent/treat root sensitivity or root decay.</p>
+
+  <h2>Principal Risks and Complications</h2>
+  <p>The amount of root coverage will depend on many factors including but not limited to: the severity of the recession, blood supply to the tissues, amount of tissue and bone loss interproximally (in between the teeth), overall systemic and oral health of the patient and compliance with the post-operative instructions. In addition, the success of PST can be affected by medical conditions, dietary and nutritional problems, smoking, alcohol consumption, clenching and grinding of the teeth, improper oral hygiene, and medications that I may be taking. There may be a need for a second procedure if the initial surgery is not satisfactory. If complete root coverage does not occur, fillings may be necessary to fully cover root areas.</p>
+
+  <p>Complications from PST may include but are not limited to bleeding, bruising and swelling, pain, infection, transient or even permanent tooth sensitivity, temporary or even permanent numbness of the lips, chin and gums, allergic reactions and accidental swallowing of foreign matter. The exact duration of any complications cannot be determined, and they may be irreversible.</p>
+
+  <p>To my knowledge I have reported to Dr. Whatcott any prior drug reactions, allergies, diseases, symptoms, habits, or conditions which might in any way relate to this surgical procedure. I understand that my diligence in providing the personal daily care recommended by Dr. Whatcott and taking all prescribed medications and following post operative instructions is important to the ultimate success of the procedure.</p>
+
+  <h2>Alternatives to Suggested Treatment</h2>
+  <p>Dr. Whatcott has explained alternative treatments for my gum recession and modification of techniques for brushing my teeth.</p>
+
+  <p>Necessary Follow-up Care and Self-Care: I understand that it is important for me to continue seeing the dentist. I recognize that natural teeth and their artificial replacements should be maintained daily in a clean, hygienic manner. I will need to come for appointments after my surgery so that my healing may be monitored so that Dr. Whatcott can evaluate and report on the outcome of the PST. I know that it is important to abide by the specific prescriptions and instructions given by Dr. Whatcott and to see Dr. Whatcott regularly for examinations.</p>
+
+  <h2>No Warranty or Guarantee</h2>
+  <p>I hereby acknowledge that no guarantee, warranty, or assurance has been given to me that the proposed treatment will be successful. In most cases, the treatment should provide benefit in reducing the cause of my condition and should produce optimum healing which will help me keep my teeth. Due to individual patient differences, Dr. Whatcott cannot predict certainty of success. Rarely, there is a risk of failure, relapse, additional treatment, or even a worsening of my present condition including the loss of certain teeth despite the best of care.</p>
+
+  <h2>Use of Records</h2>
+  <p>I authorize photos, slides, x-rays or other viewings of my care and treatment during or after its completion to be used for reimbursement or teaching purposes.</p>
+
+  <h2>Insurance Opt-Out</h2>
+  <p>I, {{fullname}}, hereby inform Colorado Advanced Dentistry that I choose to opt out of my dental benefit plan so that I may receive the dentistry I desire from Dr. Mark Whatcott without the involvement of the dental benefit plan to which I am a subscriber or the covered dependent of a subscriber. I further desire and instruct that none of the dental services noted above are to be submitted for and no information regarding them is to be provided to my dental benefit carrier in spite of any agreement between Dr. Mark Whatcott and my dental benefit carrier that might state otherwise.</p>
+
+  <h2>Patient Consent</h2>
+  <p>I have been fully informed of the nature of PST, the procedure to be utilized, the risks and benefits of PST, the alternative treatments available and the necessity of follow-up and self-care. I have had an opportunity to ask any questions I may have in connection with the treatment and to discuss my concerns with Dr. Whatcott. After thorough deliberation, I hereby consent to the performance of PST as presented to me during consultation and in the treatment plan presentation. I also consent to the performance of any additional or alternative procedures as may be deemed necessary in Dr. Whatcott's best judgement.</p>
+
+  <p>I CERTIFY THAT I HAVE READ AND FULLY UNDERSTAND THIS DOCUMENT.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Informed Consent for Extraction(s) — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.55in 0.6in;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      .signature-line { break-inside: avoid; }
+      h1, h2, h3 { break-after: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      border-bottom: 2px solid var(--cad-mountain);
+    }
+
+    .doc-header img {
+      height: 56px;
+      flex-shrink: 0;
+    }
+
+    .doc-header .doc-title {
+      font-family: var(--font-heading);
+      font-size: 17pt;
+      font-weight: 700;
+      color: var(--cad-granite);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-header .doc-subtitle {
+      font-family: var(--font-body);
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--cad-mountain);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+
+    /* ── Heading Hierarchy ── */
+    h2 {
+      font-family: var(--font-heading);
+      font-size: 13.5pt;
+      font-weight: 500;
+      color: var(--cad-mountain);
+      line-height: 1.25;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Body Text ── */
+    p {
+      margin-bottom: 8px;
+      line-height: 1.55;
+    }
+
+    /* ── Highlight Box ── */
+    .highlight-box {
+      border-left: 3px solid var(--cad-orange);
+      background: rgba(255, 234, 214, 0.3);
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 9.5pt;
+      line-height: 1.5;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong {
+      color: var(--cad-mountain);
+    }
+
+    /* ── Footer ── */
+    .doc-footer {
+      margin-top: 32px;
+      padding-top: 12px;
+      border-top: 1px solid var(--cad-sky);
+      text-align: center;
+      font-size: 8pt;
+      color: var(--cad-mountain);
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Extraction(s)</div>
+      <div class="doc-subtitle">Informed Consent</div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <strong>I understand that by signing below I am authorizing the procedure(s) to be performed and I have read and understand the entirety of this form, including the possible risks and complications of the chosen procedure(s) and the available alternatives.</strong>
+  </div>
+
+  <h2>Facts for Consideration</h2>
+
+  <p>An extraction involves removing one or more teeth. Depending on their condition, extraction may require sectioning (dividing) the teeth or trimming the gum or bone tissue. If any unexpected difficulties occur during treatment, I may refer you to an oral surgeon who is a specialist in dental surgery.</p>
+
+  <p>Once the tooth is extracted, you will have a space that you may want to fill with a fixed or removable appliance. Replacement of missing teeth may be necessary to prevent the drifting of adjacent and/or opposing teeth to maintain function or for cosmetic appearances. The options of a fixed or a removable appliance will be explained to you.</p>
+
+  <p>As in all surgical procedures, extractions are not without potential risks or complications. Because each person is unique and responds differently to surgery, the healing process may vary; no guarantees can be made.</p>
+
+  <p>Extracted teeth that are not replaced may lead to other teeth moving or drifting, creating spaces between the remaining teeth and making it difficult or impossible to replace or straighten them later. If left for a significant period of time, this drifting of teeth may lead to a "malocclusion" (bite) in which top and bottom teeth do not "fit" together as they once did.</p>
+
+  <h2>Benefits of Extraction, Not Limited to the Following</h2>
+
+  <p>The proposed treatment is intended to help relieve your symptoms and may also enable you to proceed with further proposed treatment.</p>
+
+  <h2>Risks of Extraction, Not Limited to the Following</h2>
+
+  <p>I understand that following treatment I may experience bleeding, pain, swelling and discomfort for several days, which may be treated with pain medication. It is possible infection can follow extraction and must be treated with antibiotics or other procedures. I will contact the office immediately if symptoms persist or worsen.</p>
+
+  <p>I understand that I will receive a local anesthetic and/or other medication. In rare instances, patients have a reaction to the anesthetic, which may require emergency medical attention, or find that it reduces their ability to control swallowing. This increases the chance of swallowing foreign objects during treatment. <strong>Depending on the anesthesia and medications administered, I may need a designated driver to take me home.</strong> Rarely, temporary or permanent nerve injury to the oral cavity and face can result from an injection resulting in numbness of the lip, chin, sheet, gums, teeth or tongue, including loss of taste.</p>
+
+  <p>I understand that all medications have the potential for accompanying risks, side effects and drug interactions. Therefore, it is critical that I tell my dentist of all medications and supplements I am currently taking.</p>
+
+  <p>I understand that holding my mouth open during treatment may temporarily leave my jaw feeling stiff and sore and may make it difficult for me to open wide for several days; this is sometimes referred to as trismus. However, this can occasionally be an indication of a more significant condition or problem. In the event this occurs, I must notify this office if I experience persistent trismus or other similar concerns arise.</p>
+
+  <p>I understand that the necessary blood clot that forms in the socket may disintegrate or dislodge. This painful condition, called dry socket, lasts a week or more and is treated by placing a medicated dressing in the tooth socket to aid healing. To protect against developing dry socket, I must not smoke tobacco or marijuana, drink through a straw, rinse with water or mouthwash, chew food in that area or disturb the socket in any way for 24 to 48 hours. Smoking may adversely affect the extraction site healing and may cause dry socket (an infection of the bone of the socket walls). Smokers are at higher risk for dry socket and have more dry sockets than nonsmokers.</p>
+
+  <p>I understand that the instruments used in extracting a tooth may unavoidably chip or damage adjacent teeth, which could require further treatment to restore their appearance or function.</p>
+
+  <p>I understand that upper teeth have roots that may extend close to the sinuses. Removing these teeth may temporarily leave a small opening into the sinuses. Antibiotics and additional treatment may be needed to prevent a sinus infection and help this opening to close. If such a complication occurs, I may require additional treatment by a physician or an oral and maxillofacial surgeon.</p>
+
+  <p>I understand that an extraction may cause a fracture in the surrounding bone. Occasionally, the tooth to be extracted may be fused to the surrounding bone. In both situations, additional treatment is necessary. Bone fragments called "spicules" may arise at the site following extraction and are generally easily removed.</p>
+
+  <p>I understand that tooth fragments may be left in the extraction site following treatment due to the condition and position of the tooth/teeth. Generally, this causes no problems, but on rare occasions the fragments can become infected and subsequently must be removed.</p>
+
+  <p>I understand that the nerves that control sensations in my teeth, gums, tongue, lips and chin run through my jaw. Depending on the tooth to be extracted (particularly lower teeth or third molars), occasionally it may be difficult or impossible to avoid touching, moving, stretching, bruising, cutting or severing a nerve. This could change the normal sensations in any of these areas causing itching, tingling or burning or the loss of all sensation, including numbness of the chin, cheeks, lips, gums or tongue and the loss of taste. These changes could last from several weeks to several months or, in some cases, indefinitely or permanent.</p>
+
+  <h2>Consequences if No Treatment is Administered, Not Limited to the Following</h2>
+
+  <p>I understand that if no treatment is performed, I may continue to experience symptoms, which could include pain and/or infection, deterioration of the bone surrounding my teeth, changes to my bite, discomfort in my jaw joint and possibly the premature loss of other teeth.</p>
+
+  <h2>Alternative Treatments if Extraction Is Not the Only Solution, Not Limited to the Following</h2>
+
+  <p>I understand that depending on my diagnosis, alternatives to extraction may exist that involve other disciplines in dentistry including endodontics (root canal treatment). I asked my dentist about them and their respective costs. My questions have been answered to my satisfaction regarding the procedures and their risks, benefits and costs.</p>
+
+  <p>No guarantee or assurance has been given to me by anyone that the proposed treatment or surgery will cure or improve the condition(s) listed above.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry
+  </div>
+</body>
+</html>
