@@ -1,0 +1,1 @@
+import{C as o}from"./CollectionByProviderTypeReport-BUioRS5g.js";import{j as r}from"./index-Btis4vef.js";import"./useDateRangePicker-DUpto6S8.js";import"./Refresh-BN2XvpaY.js";import"./_createAssigner-B7WRBvJI.js";import"./ThemeProvider-D5S-Mj3k.js";import"./Alert-BK47T57D.js";import"./analytics-clinic.state-DR8XCV_0.js";function l(){return r.jsx(o,{})}export{l as default};

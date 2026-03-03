@@ -1,0 +1,1 @@
+import{a as i,b as u,c as o,g as s}from"./index-Btis4vef.js";var e={},r;function v(){if(r)return e;r=1;var a=i();Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var n=a(u()),t=o();return e.default=(0,n.default)((0,t.jsx)("path",{d:"M1 21h22L12 2zm12-3h-2v-2h2zm0-4h-2v-4h2z"}),"Warning"),e}var f=v();const c=s(f);export{c as W};

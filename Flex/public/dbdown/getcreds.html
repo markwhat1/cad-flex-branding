@@ -1,0 +1,231 @@
+<style>
+.dbWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+	display: -webkit-flex;
+    flex-direction:column;
+	-webkit-flex-direction:column;
+    flex-grow: 1;
+	-webkit-flex-grow:1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    background: white;
+}
+
+:root{
+
+--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.trouble{
+  font-size:18px;
+  text-align:center;
+  margin: 1.5rem;
+}
+
+.troubleSub{
+  font-size:18px;
+  text-align:center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dbButtonsDiv{
+  display:flex;
+  display: -webkit-flex;
+	-webkit-flex-direction:row;
+  flex-direction:row;
+  flex-grow:1;
+  flex-wrap: wrap;
+  max-height: 4rem;
+}
+
+.dbButtons{
+  flex:1;
+  -webkit-flex:1;
+
+}
+
+.dbButtons:hover{cursor:pointer;}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #3487BB;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.dbForm{
+  display:flex;
+  flex-direction:column;
+  display: -webkit-flex;
+	-webkit-flex-direction:column;
+  flex-wrap:wrap;
+}
+
+.dbInputDiv{
+display:flex;
+display: -webkit-flex;
+	-webkit-flex-direction:row;
+flex-direction:row;
+flex-wrap:wrap;
+margin-top:10px;
+margin-bottom:10px;
+min-height: 40px;
+align-items: center;
+margin-left:2em;
+margin-right:2em;
+}
+
+.dbLabel{
+  flex: 1;
+  -webkit-flex:1;
+  font-size: 1.2em;
+  min-width: 150px;
+}
+
+.dbInput{
+  flex:2;
+  -webkit-flex:2;
+  min-width: 300px;
+  height: 40px;
+  font-size: 1.2em;
+  text-align:center;
+}
+
+</style>
+
+
+
+   <div class='dbWrapper'>
+    <p class="trouble"><b>Looks like we're having some trouble connecting to your database.</b></p>
+    <p class="troubleSub">
+	If you haven't recently changed the password, just click below to try again. Otherwise, let's get your 	settings updated.
+    </p>
+    <div class="dbButtonsDiv" id="dbButtons">
+      <input type="button" id="tryAgain" onClick="tryAgain()" class="dbButtons" value="Try Again">
+      <input type="button"  id="updateSettings" onClick="updateSettings()" class="dbButtons" value="Update Settings">
+    </div>
+
+	<div id="dbForm" class="dbForm" style="display:none;">
+	 <div class="dbInputDiv">
+	   <label class="dbLabel">Server Name</label>
+	   <input class="dbInput" type="text" id="host">
+	 </div>
+	 <div class="dbInputDiv">
+		<label class="dbLabel">Database Name</label>
+		<input class="dbInput" type="text" id="databaseName">
+	 </div>
+	 <div class="dbInputDiv">
+		<label class="dbLabel">Username</label>
+		<input class="dbInput" type="text" id="username">
+	 </div>
+	 <div class="dbInputDiv">
+		<label class="dbLabel">Password</label>
+		<input class="dbInput" type="text" id="password">
+	 </div>
+	 <input type="button" class="dbButtons" style="margin-top:15px;" onClick="dbUpdate()" value="Submit">
+
+	</div>
+
+
+   </div>
+
+   <script>
+
+function tryAgain(){
+  console.log('trying again')
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      if (this.status == 200)
+      {
+        location.reload();
+      }
+    }
+  }
+  xhr.open('get', location.origin +'/dbretry');
+  xhr.send()
+}
+
+
+function dbUpdate(){
+  console.log('running')
+  var host = document.getElementById('host').value
+  var databaseName = document.getElementById('databaseName').value
+  var username = document.getElementById('username').value
+  var password = document.getElementById('password').value
+
+  var obj = {host:host, databaseName: databaseName, username:username, password:password}
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      if (this.status == 200)
+      {
+       location.reload();
+      }
+	  else {
+	  console.log('failed to connect')
+	  }
+    }
+  }
+
+
+  xhr.open('POST', location.origin +'/updateSecConfig');
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(JSON.stringify(obj));
+
+
+}
+
+
+function updateSettings(){
+  document.getElementById("dbForm").style.display = "flex";
+  document.getElementById("dbButtons").style.display = "none";
+}
+
+function getData() {
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      if (this.status == 200)
+      {
+       var val = JSON.parse(this.response)
+	   document.getElementById('host').value = val.host
+       databaseName = document.getElementById('databaseName').value = val.database
+       username = document.getElementById('username').value = val.user
+      }
+    }
+  }
+
+
+  xhr.open('GET', location.origin +'/getSecConfig');
+  xhr.send()
+  }
+
+ getData()
+
+
+
+</script>

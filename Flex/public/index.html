@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Flex</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+<meta name="flex/config/environment" content="%7B%22modulePrefix%22%3A%22flex%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22flex%22%2C%22version%22%3A%22v7.24.2%2B8ef5fa92%22%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22'none'%22%2C%22script-src%22%3A%22'self'%20'unsafe-inline'%20'unsafe-eval'%22%2C%22font-src%22%3A%22'self'%22%2C%22connect-src%22%3A%22'self'%20https%3A%2F%2Fflex-announcement.s3.us-east-2.amazonaws.com%2F%20ws%3A%2F%2Flocalhost%3A7000%20localhost%3A7000%22%2C%22img-src%22%3A%22'self'%22%2C%22report-uri%22%3A%22'localhost'%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%22%2C%22frame-src%22%3A%22'none'%22%7D%2C%22pendoApiKey%22%3A%222f01427d-f545-4cdd-6f1a-0cd40caa54df%22%2C%22sentryEnvironment%22%3A%22production%22%2C%22ember-paper%22%3A%7B%22paper-toaster%22%3A%7B%22position%22%3A%22top%20right%22%2C%22duration%22%3A3000%2C%22toastClass%22%3A%22flex-ember-paper-toaster%22%7D%2C%22insertFontLinks%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-websockets%22%3A%7B%22socketIO%22%3Afalse%7D%7D" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"> <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<link integrity="" rel="stylesheet" href="/assets/vendor.css" />
+<link rel="stylesheet" href="/assets/chunk.143.a1079c1887a29235b5c2.css" integrity="sha256-9AbVVvBz7KQdvOYgXzm6Y1BS4fCu87O+oGZS84TK/A0= sha512-xUyj0OI4KRB4xAC8KeCMGSeKN7BTU6hFm7dbp6dou9IyyxooHPZjQpIMErL0EUTwmlc0codmtgwFrJICXP2Nnw==" />
+		<link integrity="" rel="stylesheet" href="/assets/flex.css" />
+		<link rel="stylesheet" href="/assets/introjs.css?v=2" />
+		<link rel="stylesheet" href="/assets/jquery-confirm.min.css" integrity="sha256-H+eunvqkW49GjX8KArScWbVW2fQWcOuavZRfYfE7WrY= sha512-iTZ58/UHyG8qgBRwHh8qFhuKvd5QP3GNsh2i90lL1UF/8aHSCz61TEyaKc8yttBZg5UNT8577Cj23MS9LFmjeg==" />
+
+		  <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="flex">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="flex">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-640x1136.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-750x1334.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-828x1792.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/apple-touch-startup-image-1125x2436.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/apple-touch-startup-image-1242x2208.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/apple-touch-startup-image-1242x2688.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-1536x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-1668x2224.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-1668x2388.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-2048x2732.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/apple-touch-startup-image-1620x2160.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-1136x640.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-1334x750.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-1792x828.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/apple-touch-startup-image-2436x1125.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/apple-touch-startup-image-2208x1242.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/apple-touch-startup-image-2688x1242.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-2048x1536.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-2224x1668.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-2388x1668.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-2732x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/apple-touch-startup-image-2160x1620.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="/coast-228x228.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="/yandex-browser-manifest.json">
+
+	</head>
+	<body>
+		
+
+		<script src="/assets/vendor.js" integrity="sha256-UJs5LIIh189gLrs6G6XWdUtBAVeI/YbUPB639ym7r2w= sha512-l8jcVLjHIjL3WAXwCeJKubf1Ax4e8PVU1m1eQdDD1ddnO9sY3dGGnruDbfNcEnS3naTgzAc44eR2jESEVQ1i3w==" ></script>
+<script src="/assets/chunk.996.35ed82890a56d67f5131.js" integrity="sha256-qpXdnrjamT8rJ45wua9sLP+C44gXw1NM6Fxa6ZG+E38= sha512-0/lyXD4tDBru9ucMTYrcouKBjihXGgnSDVUEeC8XA4Zw28pw97V1xxudGxk6iBp/ZdJsrbHv2Pd1vxByFrzZFA==" ></script>
+<script src="/assets/chunk.513.6ccf6171f638e4fb58fc.js" integrity="sha256-zwq38WS6rIxlXS3LWpovzISgzCvoW0hOcXjO+TJs4Xs= sha512-J8JqkHgBKImqLxas0jNn6YdOJ0eK0lQJ9YLi0AwDwz0yC+SanAsjqFx/ZZ/+3PRKt8ONr50bS9qlYvN28tBQQg==" ></script>
+<script src="/assets/chunk.143.a1079c1887a29235b5c2.js" integrity="sha256-YpiQAY+xSsbJBu6ECIhkEeyrieJ4fusbB0bfa+SW99g= sha512-KFRcYIViPTz+gd5cE7oauWgi1OFBPhWRHueEjBFl1ekKZuVvOR5kT+TGgYhv8EwvP2y+rNEPC0lkJVhCZL5Eeg==" ></script>
+		<script src="/assets/flex.js" integrity="sha256-fYeyWYcFCAUpDxJ9j+5Qu7zToE/AbVKDe9m02Ul5+/g= sha512-WmUKUcLDKIZUBlVgtHN7u6s7s6EHOavkrJ/c/cDkA/dZfDZKAYLuqZscoGevZvpFUhM7EknLzmQnER8uPGBs0g==" ></script>
+		<script src="/assets/jquery-3.6.0.min.js" integrity="sha256-RZfBuFNLYXbeb9PJUCGmMCGoMFuKd9WwidRPEbvypPc= sha512-RxqeNHt7gNBKNrOYV8LwmE9rZD9ncaGX0yMgxzh9ryKMNavAZ4rlohqs60Fefxl95JqYYLpy7ko/+rw16zfgQQ==" ></script>
+		<script src="/assets/jquery-ui.min.js" integrity="sha256-crG4jDkxGltaBpthM+ZkkMjv/TavLf7EoxkwWEr4huU= sha512-R2ncNB421oUBKT/9nFzg6ZgtSlYV2lVvFcrUD9x922CZK/+eognZcMcRdkhXCEbTiMOGb7CQjpNDTmla02ilfA==" ></script>
+		<script src="/assets/bootstrap.bundle.min.js" integrity="sha256-SsWPCIxmAbFyGMhfs+nYWM+5zfnjp+cdvSHZjyays8E= sha512-JZECkX3vF1pubHVyOLoxmrZieQt3cdDwJqbN3WAO2HsIbmCmtZL6DsqkPZrA092i7tELWi9MUFiEUNYMhIg5zg==" ></script>
+
+		<script src="/assets/jquery-confirm.min.js" integrity="sha256-BI/82bem//je3uvdeIfendKPaLkCslglwk/uCtkY/ss= sha512-NBiK3yyk0SjTICej5YxPlHZ16CzrjC1Sb+q592JohxC1XTo2G0qtc6g/UeAWja2oAD9jRWXUPq71q4c6xZtAJQ==" ></script>
+		<script src="/assets/intro.js" integrity="sha256-m8zAvKv4EcJMF/qHHA9cx6iZc3Xac4RaXs4F/szC1Iw= sha512-qXf+LBLOVXTwkJ6jZilopPpamuNWUjTvM+EE1pa551MJRYoA5G9PqZCb0kgpLFvRDIfYoBzX0HckfQk5K0CeVw==" ></script>
+
+		
+          <div id="ember-basic-dropdown-wormhole"></div>
+          <div id="paper-wormhole"></div>
+          <div id="paper-toast-fab-wormhole"></div>
+        
+	</body>
+</html>
+
+<script>
+	//this will override the jquery setHandleClassName function to resolve a bug when applying sortable to large lists of elements
+	(function ($) {
+		$.ui.sortable.prototype._setHandleClassName = function (
+			event,
+			noPropagation
+		) {
+			this.element
+				.find('.ui-sortable-handle')
+				.removeClass('ui-sortable-handle');
+			$.each(this.items, function () {
+				(this.instance.options.handle
+					? this.item.find(this.instance.options.handle)
+					: this.item
+				).addClass('ui-sortable-handle');
+			});
+		};
+	})(jQuery);
+
+	//main popup handler for the app
+	function popUp(obj, callback) {
+		let { title, content, button1, button2 } = obj;
+		if (button2) {
+			$.confirm({
+				backgroundDismissAnimation: '',
+				title: title,
+				content: content,
+				buttons: {
+					buttonTwo: {
+						text: button2,
+						action: function () {
+							return callback(false);
+						},
+					},
+					buttonOne: {
+						text: button1,
+						btnClass: 'btn-blue',
+						action: function () {
+							return callback(true);
+						},
+					},
+				},
+			});
+		} else {
+			$.confirm({
+				backgroundDismissAnimation: '',
+				title: title,
+				content: content,
+				buttons: {
+					buttonOne: {
+						text: button1,
+						action: function () {
+							return callback(true);
+						},
+					},
+				},
+			});
+		}
+	}
+
+	//data getter
+	function getTheData(thePath, token, callback) {
+		var xhr = new XMLHttpRequest();
+		if (token == 'shortTimeout') xhr.timeout = 1200;
+		if (thePath.startsWith('https://')) xhr.open('GET', thePath, true);
+		else {
+			xhr.open('GET', location.origin + '/' + thePath, true);
+			xhr.setRequestHeader('authorization', 'Bearer ' + token);
+			xhr.setRequestHeader('Content-type', 'application/json');
+		}
+
+		xhr.send();
+		xhr.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				if (thePath.startsWith('https://') && this.status == 200)
+					return callback(this);
+				else if (this.status == 200) return callback(JSON.parse(this.response));
+				else {
+					return callback('error');
+				}
+			}
+		};
+	}
+
+	//data poster
+	function postTheData(thePath, data, callback) {
+		var xhr = new XMLHttpRequest();
+		if (thePath.startsWith('https://')) {
+			xhr.open('POST', thePath, true);
+		} else {
+			xhr.open('POST', location.origin + '/' + thePath, true);
+		}
+		xhr.setRequestHeader('Content-type', 'application/json');
+		xhr.send(JSON.stringify(data));
+		xhr.onreadystatechange = function () {
+			if (this.readyState == 4) {
+				if (this.status == 500) {
+					if (callback) return callback('error');
+				}
+				let response = tryParseJSONObject(this.response);
+				if (callback) return callback(response);
+			}
+		};
+	}
+
+	let cheersRunning = false;
+	let lastEl;
+	function cheers(text, length) {
+		if (!text) return;
+		if (!length) length = 2000;
+		if (cheersRunning) lastEl.style.opacity = '0';
+		cheersRunning = true;
+		let html = `
+    <div style="
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    margin-top: 1em;
+    justify-content: right;
+    display: flex;">
+      <span style="
+      align-self: center;
+      background-color: rgb(var(--primary-500));
+      color: #e7e7e7;
+      min-width: 140px;
+      border-radius:2px;
+      max-width: 350px;
+      padding: 0.8em;
+      font-size:1.3em;
+      padding-top: 0.6em;
+      padding-bottom: 0.6em;
+      -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+      box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+      text-align: center;
+      font-weight: 500;">${text}</span>
+    </div>`;
+		const el = document.createElement('div');
+		el.style.transition = 'all 0.3s ease';
+		el.innerHTML = html;
+		document.getElementsByTagName('html')[0].prepend(el);
+		lastEl = el;
+
+		setTimeout(function () {
+			el.style.opacity = '0';
+			cheersRunning = false;
+		}, length);
+
+		setTimeout(function () {
+			el.remove();
+		}, length + 320);
+	}
+	/*
+    This should intercept HTTP requests so that we can route them appropriately depending on local vs cloud environments
+  */
+	let alreadyRun = false;
+	function handleXHR(cloudEnabled, cloud) {
+		const OriginalXHR = XMLHttpRequest;
+		let alertActive = false;
+		if (alreadyRun) return;
+		alreadyRun = true;
+		// wrap the XMLHttpRequest
+		XMLHttpRequest = function () {
+			let cloudObj = {};
+			let cloudObjHeaders = {};
+			let internalDataRequest = false;
+			return new Proxy(new OriginalXHR(), {
+				open(method, url, async) {
+					if (
+						url.includes('myflex.app') ||
+						url.includes(':8') ||
+						url.includes(':4')
+					)
+						internalDataRequest = true;
+					// collect URL and HTTP method
+					if (cloudEnabled && internalDataRequest) {
+						cloudObj.method = method;
+						cloudObj.url = url;
+						cloudObj.apiToken = cloud.apiToken.token;
+						url = 'https://auth.flexdental.co/API/mainHandler';
+						method = 'POST';
+					}
+					this.open(method, url, async);
+				},
+
+				setRequestHeader(name, value) {
+					if (!this.modReqHeaders) {
+						this.modReqHeaders = {};
+					}
+					//set our headers when accessing via cloud to pass these through
+					if (cloudEnabled && internalDataRequest) {
+						cloudObjHeaders[name] = value;
+					}
+					// collect headers
+
+					if (
+						this.modReqHeaders &&
+						name.toLowerCase() == 'content-type' &&
+						cloudEnabled &&
+						internalDataRequest
+					) {
+						this.modReqHeaders[name] = 'application/json';
+					} else if (
+						this.modReqHeaders &&
+						name.toLowerCase() == 'clinic' &&
+						cloudEnabled &&
+						internalDataRequest
+					) {
+						//do nothing
+					} else if (this.modReqHeaders) this.modReqHeaders[name] = value;
+				},
+
+				send(body = null) {
+					if (cloudEnabled && internalDataRequest && body) {
+						//add body
+						cloudObj.data = body;
+					}
+
+					// do the final processing
+					if (this.modReqHeaders) {
+						let contentTypeFound = false;
+						for (const [name, value] of Object.entries(this.modReqHeaders)) {
+							if ((name.toLowerCase() == 'content-type') == true)
+								contentTypeFound = true;
+							this.setRequestHeader(name, value);
+						}
+						//if we have no content-type header, set it to JSON or the server endpoint won't accept it
+						if (!contentTypeFound && cloudEnabled && internalDataRequest) {
+							this.setRequestHeader('Content-Type', 'application/json');
+						}
+					}
+
+					if (cloudEnabled && internalDataRequest) {
+						//add headers
+						cloudObj.headers = cloudObjHeaders;
+						cloudObj = JSON.stringify(cloudObj);
+						this.send(cloudObj);
+					} else {
+						this.send(body);
+					}
+				},
+				get(xhr, key) {
+					if (cloudEnabled && internalDataRequest) {
+						//set timeout is necessary here because, for whatever reason, occasionally the status is 0 initially
+						setTimeout(function () {
+							if (xhr.status && xhr.status == '429' && !alertActive) {
+								alertActive = true;
+								$.confirm({
+									theme: 'modern',
+									title: 'API limit reached',
+									content:
+										'Too many API requests have been made too quickly. This limit resets every minute, so you can continue in just a moment.',
+									buttons: {
+										ok: function () {
+											alertActive = false;
+										},
+									},
+								});
+							} else if (xhr.status && xhr.status == '401' && !alertActive) {
+								alertActive = true;
+								cloud.remove();
+								$.confirm({
+									theme: 'modern',
+									title: 'API token expired',
+									content:
+										'Your token has expired and will need to be reauthenticated',
+									buttons: {
+										ok: function () {
+											alertActive = false;
+											location.href = `/`;
+										},
+									},
+								});
+							} else if (xhr.status && xhr.status == '403' && !alertActive) {
+								alertActive = true;
+								cloud.remove();
+								$.confirm({
+									theme: 'modern',
+									title: 'Too many failed attempts',
+									content:
+										'Your IP has been temporarily restricted due to too many failed attempts',
+									buttons: {
+										ok: function () {
+											alertActive = false;
+											location.href = `/`;
+										},
+									},
+								});
+							}
+						}, 250);
+					}
+
+					if (!key in xhr) return undefined;
+					let value = xhr[key];
+
+					if (typeof value === 'function') {
+						// if wrapped, use the function in proxy
+						value = this[key] || value;
+						return (...args) => value.apply(xhr, args);
+					} else {
+						//return properties
+						return value;
+					}
+				},
+
+				set(xhr, key, value) {
+					if (key in xhr) {
+						xhr[key] = value;
+					}
+					return xhr;
+				},
+			});
+		};
+	}
+
+	function tryParseJSONObject(jsonString) {
+		try {
+			var o = JSON.parse(jsonString);
+			return o;
+		} catch (e) {}
+		return jsonString;
+	}
+
+	const convertImageToBase64 = async function (file) {
+		let reader = new FileReader();
+		reader.readAsDataURL(file);
+		let promise = new Promise((resolve, reject) => {
+			reader.onloadend = function () {
+				resolve(reader.result);
+			};
+		});
+		theResult = await promise;
+		return theResult;
+	};
+
+	function bufferToBase64(buf) {
+		var binstr = Array.prototype.map
+			.call(buf, function (ch) {
+				return String.fromCharCode(ch);
+			})
+			.join('');
+		return btoa(binstr);
+	}
+
+	const isNumericInput = event => {
+		var numarr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+		const key = event.data;
+		if (!numarr.includes(key)) return false;
+		else return true;
+	};
+
+	const isModifierKey = event => {
+		const key = event.keyCode;
+		return (
+			event.shiftKey === true ||
+			key === 35 ||
+			key === 36 || // Allow Shift, Home, End
+			key === 8 ||
+			key === 9 ||
+			key === 13 ||
+			key === 46 || // Allow Backspace, Tab, Enter, Delete
+			(key > 36 && key < 41) || // Allow left, up, right, down
+			// Allow Ctrl/Command + A,C,V,X,Z
+			((event.ctrlKey === true || event.metaKey === true) &&
+				(key === 65 || key === 67 || key === 86 || key === 88 || key === 90))
+		);
+	};
+
+	const enforceFormat = event => {
+		// Input must be of a valid number format or a modifier key, and not longer than ten digits
+		if (!isNumericInput(event)) {
+			event.preventDefault();
+		}
+	};
+
+	const formatToPhone = event => {
+		if (isModifierKey(event)) {
+			return;
+		}
+		const target = event.target;
+		const input = event.target.value.replace(/[^0-9]/g, '').substring(0, 12);
+		const prefix = input.substring(0, 1);
+		const zip = input.substring(1, 4);
+		const middle = input.substring(4, 7);
+		const last = input.substring(7, 11);
+		//console.log(input.substring(0,1))
+		//if (input.substring(0,1)!=1) {target.value = 1,`${prefix}(${zip})${middle}-${last}`}
+		if (input.length > 7) {
+			target.value = `${prefix}(${zip})${middle}-${last}`;
+		} else if (input.length > 4) {
+			target.value = `${prefix}(${zip})${middle}`;
+		} else if (input.length > 0 && prefix != 1) {
+			target.value = `1${prefix}(${zip}`;
+		} else if (input.length > 0 && prefix == 1) {
+			target.value = `${prefix}(${zip}`;
+		}
+	};
+</script>

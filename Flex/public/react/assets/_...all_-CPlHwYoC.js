@@ -1,0 +1,1 @@
+import{r as e,j as r}from"./index-Btis4vef.js";function o({to:t}){return e.useLayoutEffect(()=>{window.location.replace(`/#/${t.replace(/^\/+/,"")}`)},[t]),null}function n(){return r.jsx(o,{to:"/pats"})}export{n as default};

@@ -1,0 +1,1 @@
+import{j as r}from"./index-Btis4vef.js";import"./useDateRangePicker-DUpto6S8.js";import"./analytics-clinic.state-DR8XCV_0.js";import{C as e}from"./LegacyWrappers-vIiVd-kP.js";import"./Refresh-BN2XvpaY.js";import"./_createAssigner-B7WRBvJI.js";import"./ThemeProvider-D5S-Mj3k.js";import"./Alert-BK47T57D.js";function n(){return r.jsx(e,{})}export{n as default};
