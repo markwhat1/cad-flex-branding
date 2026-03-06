@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>[Document Title] — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Fonts ──
+       Nord: headings. Henderson Sans: body text.
+       These are served from Flex at /assets/font/ and resolve
+       when rendered inside the Flex app on iPad. When printing
+       standalone, the browser falls back to Segoe UI.
+    */
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype'); font-weight: 600; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
+
+    /* ── Brand Colors ── */
+    :root {
+      --cad-granite: #454545; --cad-mountain: #447E8A; --cad-sand: #FFEAD6;
+      --cad-sky: #B3DBE2; --cad-aspen: #B9B765; --cad-orange: #FFB456; --cad-white: #ffffff;
+      --font-heading: 'Nord', 'Segoe UI', sans-serif;
+      --font-body: 'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Print: no page numbers (education docs are typically short) ── */
+    @page { size: letter; margin: 0.5in 0.55in; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-body); color: var(--cad-granite); background: var(--cad-white); max-width: 7.5in; margin: 0 auto; font-size: 10pt; line-height: 1.45; }
+
+    /* ── Print color correction: offsets inkjet cyan drift ── */
+    @media print {
+      :root { --cad-mountain: #3D8A7E; }
+      body, * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { padding: 0; max-width: none; }
+      h1, h2, h3 { break-after: avoid; }
+      .highlight-box, .info-box { break-inside: avoid; }
+    }
+
+    /* ── Document Header ── */
+    .doc-header { display: flex; align-items: center; gap: 14px; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 2px solid var(--cad-mountain); }
+    .doc-header img { height: 56px; flex-shrink: 0; }
+    .doc-header .doc-title { font-family: var(--font-heading); font-size: 17pt; font-weight: 700; color: var(--cad-granite); line-height: 1.2; letter-spacing: -0.01em; }
+    .doc-header .doc-subtitle { font-family: var(--font-body); font-size: 10pt; font-weight: 600; color: var(--cad-mountain); text-transform: uppercase; letter-spacing: 2px; margin-top: 2px; }
+
+    /* ── Headings ── */
+    h2 { font-family: var(--font-heading); font-size: 12.5pt; font-weight: 500; color: var(--cad-mountain); line-height: 1.25; margin-top: 14px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* ── Body Text ── */
+    p { margin-bottom: 6px; line-height: 1.45; }
+    ol { margin: 3px 0 8px 18px; }
+    ul { margin: 3px 0 8px 18px; }
+    li { margin-bottom: 5px; line-height: 1.42; }
+    li strong { color: var(--cad-mountain); }
+
+    /* ── Highlight Box (for warnings or critical info) ── */
+    .highlight-box { border-left: 3px solid var(--cad-orange); background: rgba(255, 234, 214, 0.3); padding: 8px 12px; margin: 8px 0; font-size: 9.5pt; line-height: 1.42; border-radius: 0 4px 4px 0; }
+    .highlight-box strong { color: var(--cad-mountain); }
+
+    /* ── Info Box (for diagrams, visual callouts, or key facts) ── */
+    .info-box { border: 1px solid var(--cad-sky); background: rgba(179, 219, 226, 0.12); padding: 10px 14px; margin: 10px 0; font-size: 9.5pt; line-height: 1.45; border-radius: 4px; }
+    .info-box strong { color: var(--cad-mountain); }
+
+    /* ── Footer ── */
+    .doc-footer { margin-top: 16px; padding-top: 8px; border-top: 1px solid var(--cad-sky); text-align: center; font-size: 8pt; color: var(--cad-mountain); letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — Change the doc-title and doc-subtitle below.
+       Subtitle is typically "Patient Education" or a specific topic
+       like "Understanding Your Diagnosis".
+       ============================================================ -->
+  <div class="doc-header">
+    <img src="https://raw.githubusercontent.com/markwhat1/cad-flex-branding/master/Flex/public/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">[Topic Name]</div>
+      <div class="doc-subtitle">Patient Education</div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       BODY — Replace the sections below with educational content.
+       Use <h2> for section headings, <p> for paragraphs,
+       <ul>/<ol> for lists, .highlight-box for warnings,
+       and .info-box for diagrams or key visual callouts.
+       ============================================================ -->
+
+  <h2>What Is [Topic]?</h2>
+  <p>Introductory explanation in plain language. Avoid jargon where possible; define clinical terms when they must be used.</p>
+
+  <!-- ── Info Box: use for diagrams, illustrations, or key facts ── -->
+  <div class="info-box">
+    <strong>Key Fact:</strong> A concise, memorable takeaway or a placeholder for an illustration or diagram.
+  </div>
+
+  <h2>Why Does This Matter?</h2>
+  <p>Explain the clinical significance in terms the patient can relate to.</p>
+
+  <h2>What You Can Do</h2>
+  <ul>
+    <li><strong>At home:</strong> Self-care instructions or lifestyle guidance.</li>
+    <li><strong>At your visits:</strong> What the dental team will monitor or do.</li>
+  </ul>
+
+  <div class="highlight-box">
+    <strong>When to call us:</strong> Describe symptoms or situations that warrant contacting the office.
+  </div>
+
+  <h2>Questions?</h2>
+  <p>If you have any questions about this information, please ask Dr. Whatcott or any member of our team. We're happy to explain further.</p>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry &nbsp;&middot;&nbsp; (303) 986-9337 &nbsp;&middot;&nbsp; cadentistry.net
+  </div>
+</body>
+</html>
