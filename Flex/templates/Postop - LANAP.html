@@ -66,7 +66,13 @@
     /* ── Page and base rules ── */
     @page {
       size: letter;
-      margin: 0.5in 0.55in;
+      margin: 0.5in 0.55in 0.75in;
+      @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #3D8A7E;
+      }
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,7 +93,7 @@
         print-color-adjust: exact;
       }
       body { padding: 0; max-width: none; }
-      .highlight-box { break-inside: avoid; }
+      .highlight-box, .cta-box, .phase-block, .diet-grid { break-inside: avoid; }
       h1, h2, h3 { break-after: avoid; }
     }
 
@@ -95,20 +101,20 @@
     .doc-header {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding-bottom: 10px;
+      gap: 14px;
+      padding-bottom: 12px;
       margin-bottom: 14px;
       border-bottom: 2px solid var(--cad-mountain);
     }
 
     .doc-header img {
-      height: 48px;
+      height: 56px;
       flex-shrink: 0;
     }
 
     .doc-header .doc-title {
       font-family: var(--font-heading);
-      font-size: 15pt;
+      font-size: 17pt;
       font-weight: 700;
       color: var(--cad-granite);
       line-height: 1.2;
@@ -117,8 +123,8 @@
 
     .doc-header .doc-subtitle {
       font-family: var(--font-body);
-      font-size: 8pt;
-      font-weight: 300;
+      font-size: 10pt;
+      font-weight: 600;
       color: var(--cad-mountain);
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -132,7 +138,7 @@
       font-weight: 500;
       color: var(--cad-mountain);
       line-height: 1.2;
-      margin-top: 12px;
+      margin-top: 14px;
       margin-bottom: 4px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -157,11 +163,6 @@
     ul {
       margin: 2px 0 6px 18px;
     }
-    ol {
-      margin: 2px 0 6px 0;
-      padding-left: 24px;
-      list-style-position: outside;
-    }
 
     li {
       margin-bottom: 4px;
@@ -172,7 +173,24 @@
       color: var(--cad-mountain);
     }
 
-    /* ── Highlight Box ── */
+    /* ── Call-to-action box (Mountain Lake) ── */
+    .cta-box {
+      border-left: 3px solid var(--cad-mountain);
+      background: rgba(179, 219, 226, 0.15);
+      padding: 8px 12px;
+      margin: 6px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .cta-box p {
+      margin-bottom: 3px;
+    }
+
+    .cta-box ul {
+      margin-bottom: 0;
+    }
+
+    /* ── Highlight Box (Orange) ── */
     .highlight-box {
       border-left: 3px solid var(--cad-orange);
       background: rgba(255, 234, 214, 0.3);
@@ -187,22 +205,103 @@
       color: var(--cad-mountain);
     }
 
-    /* ── Call-to-action box (Mountain Lake) ── */
-    .cta-box {
-      border-left: 3px solid var(--cad-mountain);
-      background: rgba(179, 219, 226, 0.15);
-      padding: 8px 12px;
-      margin: 6px 0;
-      border-radius: 0 4px 4px 0;
+    /* ── Phase timeline blocks ── */
+    .phase-block {
+      border: 1px solid var(--cad-sky);
+      border-radius: 4px;
+      margin: 8px 0;
+      overflow: hidden;
     }
 
-    .cta-box h2 {
-      margin-top: 0;
+    .phase-header {
+      font-family: var(--font-heading);
+      font-size: 10pt;
+      font-weight: 500;
+      color: var(--cad-white);
+      background: var(--cad-mountain);
+      padding: 5px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      line-height: 1.3;
+    }
+
+    .phase-header span {
+      font-family: var(--font-body);
+      font-size: 8pt;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      opacity: 1;
+      margin-left: 6px;
+    }
+
+    .phase-body {
+      padding: 8px 12px;
+    }
+
+    .phase-body p {
       margin-bottom: 4px;
     }
 
-    .cta-box ul {
-      margin-bottom: 0;
+    .phase-body ul {
+      margin: 2px 0 4px 18px;
+    }
+
+    .phase-body h3 {
+      margin-top: 6px;
+    }
+
+    /* ── Two-column diet grid ── */
+    .diet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 8px 0 6px;
+    }
+
+    .diet-col {
+      border: 1px solid var(--cad-sky);
+      border-radius: 4px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .diet-col-header {
+      font-family: var(--font-heading);
+      font-size: 9.5pt;
+      font-weight: 500;
+      color: var(--cad-white);
+      background: var(--cad-mountain);
+      padding: 5px 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      line-height: 1.3;
+    }
+
+    .diet-col-header span {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 7.5pt;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      margin-top: 1px;
+    }
+
+    .diet-col ul {
+      margin: 6px 8px 8px 22px;
+      padding: 0;
+    }
+
+    .diet-col li {
+      font-size: 9pt;
+      margin-bottom: 2px;
+      line-height: 1.35;
+    }
+
+    .diet-col li strong {
+      color: var(--cad-granite);
+      font-weight: 600;
     }
 
     /* ── Footer ── */
@@ -215,101 +314,221 @@
       color: var(--cad-mountain);
       letter-spacing: 0.05em;
     }
+    /* ── Print color correction: warm the teal to offset inkjet cyan shift ── */
+    @media print {
+      :root {
+        --cad-mountain: #3D8A7E;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="doc-header">
-    <img src="/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <img src="https://raw.githubusercontent.com/markwhat1/cad-flex-branding/master/Flex/public/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
     <div>
       <div class="doc-title">LANAP Periodontal Therapy</div>
       <div class="doc-subtitle">Post-Operative Instructions</div>
     </div>
   </div>
 
-  <h2>Post-Op Instructions</h2>
-  <ol>
-    <li>Do not be alarmed by any color changes or appearance of gum tissue following laser therapy. Gum tissue can turn gray, yellow, red, blue, purple, and "stringy" and reflects a normal response to laser treatments.</li>
-    <li>Do not be alarmed if one of the following occurs:
+  <!-- ============ WHAT'S NORMAL ============ -->
+  <h2>What's Normal After Treatment</h2>
+  <p>Your gums may change color after laser therapy. Gray, yellow, red, blue, purple, and "stringy" tissue are all normal responses and nothing to worry about. You may also notice:</p>
+  <ul>
+    <li>Light bleeding or oozing (this looks worse than it is when mixed with saliva)</li>
+    <li>Mild swelling, soreness, or tooth sensitivity. Swelling may increase over the first 2 to 3 days before improving.</li>
+    <li>A medicinal taste from Peridex rinse. Peridex can also cause temporary staining on your teeth and tongue with prolonged use; this is harmless and can be polished off at your next visit.</li>
+  </ul>
+  <p>If you notice bleeding, apply gentle pressure to the area. If you can't pinpoint the source, rinse gently with ice water and hold a damp tea bag against the general area.</p>
+
+  <!-- ============ WHAT'S NOT NORMAL ============ -->
+  <h2>What's Not Normal</h2>
+  <p>Most patients recover smoothly, but contact us right away if you experience any of the following:</p>
+  <div class="cta-box">
+    <p><strong>Call our office at (303) 986-9337 if you notice:</strong></p>
+    <ul>
+      <li>Prolonged or severe pain that isn't managed by ibuprofen</li>
+      <li>Prolonged or excessive bleeding</li>
+      <li>Fever or persistently elevated temperature</li>
+      <li>Blisters or sores on the roof of your mouth</li>
+    </ul>
+  </div>
+
+  <!-- ============ PROTECT YOUR HEALING ============ -->
+  <h2>Protect Your Healing</h2>
+  <p>For at least one week after treatment, please <strong>avoid all of the following:</strong></p>
+  <ul>
+    <li><strong>Smoking, vaping, or any tobacco or marijuana products.</strong> These slow healing and can compromise your results.</li>
+    <li><strong>Alcohol</strong> for at least one week. Alcohol impairs your body's ability to heal tissue and increases the risk of bleeding when combined with ibuprofen.</li>
+    <li><strong>Strenuous physical activity</strong> such as heavy lifting, running, and intense exercise. An elevated heart rate increases swelling, bleeding, and discomfort.</li>
+  </ul>
+
+  <!-- ============ KEEPING YOUR RESULTS ============ -->
+  <h2>Keeping Your Results</h2>
+  <p>LANAP gives your gums a fresh start, but the long-term success of this treatment depends on what happens next. The habits that led to gum disease can lead to it again if they don't change. Here's how to protect the investment you've made in your health:</p>
+  <ul>
+    <li><strong>Commit to better daily oral hygiene.</strong> Thorough brushing, flossing, and daily Waterpik use is the single most important thing you can do. We'll help you build these habits at each visit.</li>
+    <li><strong>Keep every scheduled appointment.</strong> Your follow-up visits and periodontal maintenance cleanings are not optional. They allow us to monitor your healing, catch problems early, and clean areas you can't reach at home. Missing appointments puts your results at risk.</li>
+    <li><strong>Be patient with the process.</strong> Your gums, bone, and ligaments may continue improving for up to 18 months after treatment. Consistent care during this time makes a real difference in your outcome.</li>
+  </ul>
+
+  <div class="highlight-box">
+    <strong>Having treatment over two days?</strong> Follow the "Day of Treatment" instructions after each session. All other timelines (Days 1–3, Days 4–7, etc.) begin after your last treatment session.
+  </div>
+
+  <!-- ============ PHASE: DAY OF TREATMENT ============ -->
+  <div class="phase-block">
+    <div class="phase-header">Day of Treatment <span>Today</span></div>
+    <div class="phase-body">
+      <h3>Comfort</h3>
       <ul>
-        <li>Light bleeding</li>
-        <li>Slight swelling</li>
-        <li>Some soreness, tenderness, or tooth sensitivity</li>
-        <li>Medicinal taste from Peridex</li>
+        <li>Apply an ice pack to the outside of your face, 20 minutes per hour, until bedtime. Do not use ice beyond today.</li>
+        <li>Take your prescribed ibuprofen as directed. This helps with both swelling and pain. Ibuprofen is non-narcotic and won't affect your ability to drive.</li>
+        <li>Take it easy. Rest for the remainder of the day and avoid physical activity.</li>
       </ul>
-    </li>
-    <li>Swelling may occur. To keep this at a minimum, gently place an ice pack on the outside of the face for 20 minutes each hour until you retire for sleep that night. Do not continue using the ice bag beyond the day of the periodontal surgery.</li>
-    <li>Do not apply excessive tongue or cheek pressure to the treated area.</li>
-    <li>Some oozing of blood may occur and will appear to be greatly exaggerated when it dissolves in saliva. Determine the side of oozing and place pressure on this area. If you cannot locate the origin of the bleeding, rinse your mouth gently with iced water and apply a wet tea bag to the general area.</li>
-    <li>
-      <div class="cta-box">
-        <p><strong>Please call the office</strong> so that we may render further treatment if any of the following occurs:</p>
-        <ul>
-          <li>Prolonged or severe pain</li>
-          <li>Prolonged or excessive bleeding</li>
-          <li>Considerably elevated or persistent temperature (fever)</li>
-          <li>Sores on the roof of your mouth (blisters)</li>
-        </ul>
+      <h3>Eating</h3>
+      <ul>
+        <li><strong>Liquids only today.</strong> See the diet guide at the end of this page for ideas.</li>
+        <li>Do not use a straw. The suction can disturb the blood clots that are forming to protect your gums.</li>
+        <li>Avoid spicy and very hot foods or drinks.</li>
+      </ul>
+      <h3>Oral Care</h3>
+      <ul>
+        <li>Do not rinse your mouth today.</li>
+        <li>Do not floss or use a Waterpik on the treated area.</li>
+        <li>You may gently brush the chewing surfaces of your teeth. Keep bristles away from the gumline on treated areas.</li>
+        <li>You may brush and floss normally in areas that were not treated. If your entire mouth was treated, limit brushing to chewing surfaces only.</li>
+        <li>Avoid pressing your tongue or cheek against the treated area.</li>
+      </ul>
+
+      <div class="highlight-box" style="margin-top: 6px;">
+        <strong>If your medications were changed for this procedure:</strong> If you were taken off blood thinners (such as Coumadin or Warfarin) or had any other medications adjusted before your treatment, contact your physician as soon as possible to find out when to resume them. This is important and should not be delayed. Continue taking all other medications, vitamins, and supplements as prescribed by your doctors.
       </div>
-    </li>
-    <li>If medication has been prescribed, please take exactly as directed. Antibiotic pills are prescribed. The entire bottle or prescription should be taken for the stated number of days or weeks. Please call if experiencing nausea and additional medication can be prescribed.</li>
-    <li>If you are not allergic to Motrin – generic ibuprofen – (e.g., Advil), we will most likely prescribe it primarily to minimize tissue swelling and local inflammation that is a natural side effect of minor surgery. Ibuprofen is also good to reduce postoperative pain and sensitivity. <strong>Please take it for 3 days and then as needed for pain.</strong> Ibuprofen is non-narcotic and does not affect your ability to drive. Never place aspirin directly on the tissue of a painful area.</li>
-    <li>Reduce physical activity for several hours following the surgery to maximize healing.</li>
-    <li>Try to keep your mouth as clean as possible to help the healing process. Only brush and floss the untreated area of your mouth. <strong>Do not brush or floss the treated area for 7-10 days or as directed by your doctor.</strong></li>
-    <li>You may spit gently, but do not rinse your mouth the day of treatment. Begin rinsing your mouth gently 3 times a day with Peridex the day following treatment. In between Peridex rinses, rinse your mouth gently 3 times a day with warm salt water (1/2 teaspoon of salt dissolved in an 8 oz. glass of warm water). For the next several days rinse with both Peridex and salt water as previously mentioned but with vigor.</li>
-    <li>You will be on a liquid diet for 3 days, then a diet of "mushy"/soft foods for 4 days, and then a diet of smart food choices for the remainder of the month. It is very important to maintain a good food and fluid intake. Try to eat soft but nutritious food such as eggs, yogurt, cottage cheese, malts, ice cream, etc., until you can comfortably return to a normal diet. Please refer to the LANAP® Patient Diet Instructions (on the next page).</li>
-    <li>Do not be alarmed that beginning at just 2 weeks after therapy and extending as long as 1 year or more, the teeth may become sore and tender as the bone and ligaments around the teeth regenerate and become firmer. This is a sign of healing, but also indicates the presence of a bite imbalance that may need to be adjusted. Avoid spicy or excessively hot foods during the initial 3-day liquid diet period.</li>
-    <li>When eating, do not chew on the side of your mouth which has been treated.</li>
-    <li>"Spaces" between your teeth can result from reduction of inflammation, swelling, and the removal of diseased tissue after the LANAP® treatment. These spaces usually fill in over time, and again, bite adjustment is critical to making sure the teeth and the "papilla" are not traumatized and can regrow.</li>
-    <li>If you have been taken off blood thinners (Coumadin, Warfarin, etc.), or if your current medications have been altered at all due to your dental surgery, you must contact your physician ASAP to determine when you should resume your medicines. Delaying this telephone call could have potential life-threatening or other serious consequences. I agree I must continue to take all current medications as prescribed by my doctor(s) and must continue to take all supplements and vitamins.</li>
-  </ol>
+    </div>
+  </div>
 
-  <h2>Post-Op Home Care Instructions</h2>
-  <ol>
-    <li>Vitamins, dietary supplements, or medications may be prescribed to improve your overall health. Take any prescribed medication according to directions.</li>
-    <li>Dental laser procedures result in little or no discomfort following surgery. Take Motrin (ibuprofen) for 3 days and then as needed for discomfort if present.</li>
-    <li>Carefully avoid chewing food in the areas of the mouth where the laser has been used. One of the most important results of laser surgery is the healing that occurs following the initial procedure. It is extremely important not to dislodge the tiny clots (scabs) that form in the gums.</li>
-    <li><strong>Daily Care:</strong>
+  <!-- ============ PHASE: DAYS 1–3 ============ -->
+  <div class="phase-block">
+    <div class="phase-header">Days 1 – 3 <span>Liquid diet phase</span></div>
+    <div class="phase-body">
+      <h3>Eating</h3>
       <ul>
-        <li>Gently brush the chewing surfaces of the teeth only. During the first day drink liquids only. A liquid dietary supplement may be recommended.</li>
-        <li>During the first week, eat only soft foods. If possible, do not chew where the surgery was performed.</li>
-        <li>Starting one week after surgery, brush the teeth by placing the bristles of the brush on the gums below the tooth and carefully rolling the bristles toward the tooth surface. Do not stick the bristles into the gums.</li>
-        <li>When instructed to begin flossing (usually one month after surgery), carefully place the floss between the teeth and avoid pushing the floss under the gums until instructed to do so.</li>
-        <li>The length of time it takes for the gums to heal depends upon the severity of the disease. Most healing in the surface areas takes 2 – 4 weeks. Deeper pocket areas may take several months to completely heal.</li>
+        <li><strong>Continue a liquid-only diet.</strong> Your goal is to protect the tiny clots visible along your gumline. Think of them as a band-aid between your gums and teeth.</li>
+        <li>Still no straws. Eat with a spoon if needed.</li>
+        <li>Keep up your nutrition. Protein shakes, blended soups, and smoothies (no seeds) are all great options.</li>
       </ul>
-    </li>
-  </ol>
+      <h3>Rinsing</h3>
+      <ul>
+        <li>Starting the day after your last treatment session, gently rinse with Peridex three times a day. Do not swish aggressively or spit forcefully. Instead, let the rinse slosh gently from side to side, then open your mouth and let it fall into the sink.</li>
+        <li>Between Peridex rinses, gently rinse with warm salt water three times a day (½ teaspoon of salt in 8 oz. of warm water).</li>
+        <li>As the days progress, you can begin rinsing with a bit more vigor.</li>
+      </ul>
+      <h3>Medications</h3>
+      <ul>
+        <li>Continue taking ibuprofen for the full three days, then as needed for any discomfort.</li>
+        <li>If you were prescribed antibiotics, take the entire course as directed, even if you feel fine. Call us if you experience nausea and we can provide help with that.</li>
+        <li>Continue taking any prescribed medications, vitamins, or supplements.</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>Patient Diet Instructions</h2>
+  <!-- ============ PHASE: DAYS 4–7 ============ -->
+  <div class="phase-block">
+    <div class="phase-header">Days 4 – 7 <span>Mushy diet phase</span></div>
+    <div class="phase-body">
+      <h3>Eating</h3>
+      <ul>
+        <li><strong>You can move to soft, mushy foods</strong> like scrambled eggs, mashed potatoes, yogurt, and well-cooked pasta. See the diet guidance at the end of this page for more ideas.</li>
+        <li>If only one side of your mouth was treated, chew on the opposite side. If both sides were treated, chew carefully and stick with the softest foods on the list.</li>
+      </ul>
+      <h3>Oral Care</h3>
+      <ul>
+        <li>Gently brush the chewing surfaces of your teeth. Keep bristles away from the gumline on treated areas.</li>
+        <li>Continue your Peridex and salt water rinses.</li>
+        <li>Do not floss or use a Waterpik on the treated area.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ PHASE: DAY 8 THROUGH 1 MONTH ============ -->
+  <div class="phase-block">
+    <div class="phase-header">Day 8 through 1 Month <span>Continued healing</span></div>
+    <div class="phase-body">
+      <h3>Eating</h3>
+      <ul>
+        <li><strong>After 7 to 10 days</strong>, you will notice the white material along your gumline starting to disappear. Once it's gone, you can begin introducing soft foods like pasta, fish, chicken, and steamed vegetables.</li>
+        <li>Continue making smart food choices through the first month. Softer foods are better while healing continues beneath the surface. If your gums get sore or irritated with a certain food, move back to softer options until healing has progressed further.</li>
+      </ul>
+      <h3>Oral Care</h3>
+      <ul>
+        <li>Starting around one week, you can begin brushing near the treated area with your post-surgical toothbrush. Place your bristles on the gums below the tooth and gently roll toward the tooth surface. Do not push bristles into the gumline. You may use toothpaste.</li>
+        <li>Do not use an electric toothbrush on the treated area until your one-month appointment. We will let you know when it's safe to switch back.</li>
+        <li>Flossing the treated area typically begins around one month after treatment. We'll let you know when you're ready. When you do start, slide the floss gently between your teeth only and avoid pushing it under the gums until we give you the go-ahead.</li>
+        <li>Do not use a Waterpik until we clear you. This usually happens around three months after treatment.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>Soreness is a sign of healing.</strong> Beginning around 2 weeks after treatment (and sometimes lasting several months), your teeth may feel sore or tender as bone and ligaments regenerate. This is a good sign, but it can also mean your bite needs further adjustment. Let us know and we'll take care of it.
+      </div>
+
+      <p>You may also notice small spaces between your teeth as swelling goes down and diseased tissue is removed. These spaces often fill in over time, especially once your bite is properly balanced.</p>
+      <p>Most surface healing takes 2 to 4 weeks. Deeper areas take several months to fully heal.</p>
+    </div>
+  </div>
+
+  <!-- ============ FOODS TO AVOID ============ -->
+  <h2>Avoid These Foods for the First Month</h2>
+  <p>While your gums are healing, stay away from anything that could irritate the tissue or get stuck between your teeth:</p>
   <ul>
-    <li><strong>The first three</strong> days following Laser Therapy, follow only a liquid-like diet to allow healing. Anything that could be put into a blender to drink is ideal. The purpose of this is to protect the clot that is acting as a "band-aid" between the gums and the teeth. Do not drink through a straw, as this creates a vacuum in your mouth that can disturb the "band-aid". Take daily vitamins.</li>
-    <li><strong>Next four days after treatment</strong>, foods with a "mushy" consistency such as those listed below are recommended. *See below suggestions.</li>
-    <li><strong>Starting seven to ten days after treatment</strong>, soft foods may be allowable. The time to start on soft foods is dependent upon the loss of the white material that appeared around your teeth following LANAP® treatment. You were introduced to this material by your doctor or doctor's assistant during your follow-up visit immediately following your initial treatment session. It was explained to you that you must leave this material alone until it naturally heals and disappears. Once the white material has disappeared, then soft foods can be introduced. Soft foods have the consistency of pasta, fish, chicken, or steamed vegetables. You may then gradually add back your regular diet choices.</li>
-    <li><strong>Please remember</strong> that even after ten days, healing is not complete. The first month following treatment you should continue to make smart food choices. Softer foods are better.</li>
-    <li>
-      <div class="highlight-box"><strong>DO NOT</strong> - Chew gum, candy, cookies, chips, nuts, anything hard or crunchy, anything that has seeds or hard pieces, meat that shreds and can lodge under the gum and between teeth, raw vegetables/salad.</div>
-    </li>
+    <li>Hard, crunchy, or raw foods (chips, nuts, hard candy, croutons, raw vegetables, salads)</li>
+    <li>Chewy or sticky foods (gum, caramel, jerky)</li>
+    <li>Foods with small seeds or hard pieces (seeded berries, popcorn)</li>
+    <li>Meat that shreds and can lodge under the gumline</li>
   </ul>
 
-  <h3>Soft "Mushy" Diet Suggestions</h3>
-  <ul>
-    <li>Daily vitamins!</li>
-    <li>Anything put through a food blender</li>
-    <li>Mashed banana, mashed avocado, or applesauce</li>
-    <li>Mashed or baked potatoes</li>
-    <li>Any mashed/blended fruit <strong>unless it has seeds</strong></li>
-    <li>Broth or creamed soup</li>
-    <li>Mashed steamed vegetables</li>
-    <li>Cottage cheese, cream cheese, or soft cheese</li>
-    <li>Mashed yams, baked sweet potato or butternut squash</li>
-    <li>Eggs any style, with or without melted cheese</li>
-    <li>Omelets can have cheese and avocado</li>
-    <li>Jell-O, pudding, ice cream or yogurt</li>
-    <li>Milk shake/smoothies – fruit is fine <strong>if it has no seeds</strong></li>
-    <li>Ensure, Slim Fast – nutritional drinks</li>
-  </ul>
+  <!-- ============ DIET GRID ============ -->
+  <h2>Diet Guide by Phase</h2>
+  <p>Take your daily vitamins throughout recovery. Remember: <strong>no straws</strong> during the liquid phase.</p>
+
+  <div class="diet-grid">
+    <div class="diet-col">
+      <div class="diet-col-header">Liquid Diet<span>Days 1 – 3 after treatment</span></div>
+      <ul>
+        <li>Bone broth, chicken broth, or vegetable broth</li>
+        <li>Creamed soups blended until smooth</li>
+        <li>Protein shakes or meal replacement drinks (Ensure, Premier Protein, etc.)</li>
+        <li>Smoothies with soft fruit, <strong>no seeds</strong></li>
+        <li>Drinkable yogurt or kefir</li>
+        <li>Milkshakes (eat with a spoon, no straw)</li>
+        <li>Juice without pulp (avoid citrus/acidic juices)</li>
+        <li>Warm tea or coffee (not hot)</li>
+        <li>Pudding, custard, or mousse</li>
+        <li>Melted ice cream or frozen yogurt</li>
+        <li>Blended oatmeal thinned with milk</li>
+        <li>Miso soup (strained)</li>
+      </ul>
+    </div>
+    <div class="diet-col">
+      <div class="diet-col-header">Mushy Diet<span>Days 4 – 7 after treatment</span></div>
+      <ul>
+        <li>Scrambled eggs, omelets, or soft-boiled eggs</li>
+        <li>Mashed potatoes, sweet potatoes, or butternut squash</li>
+        <li>Mashed banana, mashed avocado, or applesauce</li>
+        <li>Cottage cheese, ricotta, or soft cheese</li>
+        <li>Yogurt, pudding, Jell-O, or ice cream</li>
+        <li>Cream of wheat, grits, or soft oatmeal</li>
+        <li>Mashed steamed vegetables (carrots, peas, squash)</li>
+        <li>Creamed soups with soft pieces</li>
+        <li>Hummus or refried beans</li>
+        <li>Ripe melon or soft canned fruit, <strong>no seeds</strong></li>
+        <li>Macaroni and cheese or well-cooked soft pasta</li>
+        <li>Mashed or pureed fruit, <strong>no seeds</strong></li>
+      </ul>
+    </div>
+  </div>
 
   <div class="doc-footer">
-    Colorado Advanced Dentistry
+    Colorado Advanced Dentistry &ensp;|&ensp; (303) 986-9337 &ensp;|&ensp; cadentistry.net
   </div>
 </body>
 </html>

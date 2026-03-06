@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consentimiento Informado para Terapia Periodontal LANAP — Colorado Advanced Dentistry</title>
+  <style>
+    /* ── Nord font family ── */
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Nord';
+      src: url('/assets/font/nord-bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Henderson Sans font family ── */
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Henderson Sans';
+      src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* ── Brand custom properties ── */
+    :root {
+      --cad-granite:      #454545;
+      --cad-mountain:     #447E8A;
+      --cad-sand:         #FFEAD6;
+      --cad-sky:          #B3DBE2;
+      --cad-aspen:        #B9B765;
+      --cad-orange:       #FFB456;
+      --cad-white:        #ffffff;
+      --font-heading:     'Nord', 'Segoe UI', sans-serif;
+      --font-body:        'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    /* ── Page and base rules ── */
+    @page {
+      size: letter;
+      margin: 0.5in 0.55in 0.75in;
+      @bottom-center {
+        content: "Página " counter(page) " de " counter(pages);
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 8pt;
+        color: #3D8A7E;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--cad-granite);
+      background: var(--cad-white);
+      max-width: 7.5in;
+      margin: 0 auto;
+      font-size: 10.5pt;
+      line-height: 1.55;
+    }
+
+    @media print {
+      :root {
+        --cad-mountain: #3D8A7E;
+      }
+      body, * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      body { padding: 0; max-width: none; }
+      h1, h2, h3 { break-after: avoid; }
+      .highlight-box { break-inside: avoid; }
+    }
+
+    .doc-header { display: flex; align-items: center; gap: 14px; padding-bottom: 12px; margin-bottom: 14px; border-bottom: 2px solid var(--cad-mountain); }
+    .doc-header img { height: 56px; flex-shrink: 0; }
+    .doc-header .doc-title { font-family: var(--font-heading); font-size: 17pt; font-weight: 700; color: var(--cad-granite); line-height: 1.2; letter-spacing: -0.01em; }
+    .doc-header .doc-subtitle { font-family: var(--font-body); font-size: 10pt; font-weight: 600; color: var(--cad-mountain); text-transform: uppercase; letter-spacing: 2px; margin-top: 2px; }
+
+    h2 { font-family: var(--font-heading); font-size: 11pt; font-weight: 500; color: var(--cad-mountain); line-height: 1.25; margin-top: 12px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.06em; }
+    p { margin-bottom: 7px; line-height: 1.55; }
+    ol, ul { margin: 6px 0 6px 20px; line-height: 1.55; }
+    li { margin-bottom: 4px; }
+
+    /* ── Numbered consent items ── */
+    .consent-list { counter-reset: consent-item; list-style: none; margin-left: 0; padding-left: 0; }
+    .consent-list > li { counter-increment: consent-item; padding-left: 22px; text-indent: -22px; margin-bottom: 6px; }
+    .consent-list > li::before { content: counter(consent-item) ". "; font-weight: 600; color: var(--cad-mountain); display: inline; min-width: 22px; }
+    .consent-list > li > ul { text-indent: 0; padding-left: 22px; margin-top: 4px; }
+
+    .highlight-box { border-left: 3px solid var(--cad-orange); background: rgba(255, 234, 214, 0.3); padding: 10px 14px; margin: 8px 0; font-size: 9.5pt; line-height: 1.5; border-radius: 0 4px 4px 0; }
+    .highlight-box strong { color: var(--cad-mountain); }
+    .doc-footer { margin-top: 8px; padding-top: 4px; border-top: 1px solid var(--cad-sky); text-align: center; font-size: 8pt; color: var(--cad-mountain); letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="https://raw.githubusercontent.com/markwhat1/cad-flex-branding/master/Flex/public/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Terapia Periodontal LANAP</div>
+      <div class="doc-subtitle">Consentimiento Informado</div>
+    </div>
+  </div>
+
+  <p>Por favor lea este documento con atención. Explica el procedimiento láser LANAP, qué esperar, los riesgos involucrados y su papel en un resultado exitoso. Consulte al Dr. Whatcott si algo no está claro.</p>
+
+  <!-- ============ DIAGNÓSTICO Y CONSULTA ============ -->
+  <h2>Su Diagnóstico</h2>
+  <ol class="consent-list">
+    <li>He tenido una consulta con el Dr. Whatcott, quien ha examinado mi boca y me ha diagnosticado enfermedad periodontal (de las encías). El Dr. Whatcott ha recomendado LANAP (Procedimiento Láser de Nueva Inserción) como tratamiento para mi condición.</li>
+    <li>El Dr. Whatcott me ha explicado otras opciones de tratamiento alternativas, incluyendo la cirugía periodontal tradicional (como cirugía de colgajo y otros métodos convencionales). He considerado estas alternativas y he elegido proceder con el tratamiento LANAP.</li>
+  </ol>
+
+  <!-- ============ SOBRE EL PROCEDIMIENTO ============ -->
+  <h2>Sobre el Procedimiento</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 2;">
+    <li>Entiendo que el tratamiento LANAP involucra una o más sesiones quirúrgicas usando un láser dental especializado. Se utilizará anestesia local, y sedación adicional o manejo del dolor podrá proporcionarse según el juicio profesional del Dr. Whatcott.</li>
+    <li>Autorizo al Dr. Whatcott y al equipo de tratamiento LANAP a realizar el tratamiento LANAP y cualquier otro procedimiento que se considere necesario durante el curso de atención planificado. Si se necesita una modificación del plan de tratamiento basada en hallazgos clínicos, autorizo al Dr. Whatcott a realizar ese ajuste en mi mejor interés.</li>
+  </ol>
+
+  <!-- ============ RESULTADOS ESPERADOS ============ -->
+  <h2>Resultados Esperados</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 4;">
+    <li>Según estudios clínicos, aproximadamente el 87% de los casos de LANAP no han requerido retratamiento por más de cinco años, salvo complicaciones imprevistas de salud o accidentes.</li>
+    <li>Entiendo que los resultados dependen de la respuesta de curación individual de cada persona. No hay forma de garantizar un resultado específico para ningún paciente.</li>
+  </ol>
+
+  <!-- ============ RIESGOS Y COMPLICACIONES ============ -->
+  <h2>Riesgos y Posibles Complicaciones</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 6;">
+    <li>Los posibles efectos del tratamiento LANAP incluyen dolor, hinchazón, infección, moretones o decoloración, entumecimiento temporal, espacios entre los dientes, reducción de tejidos, recesión de las encías y exposición de superficies radiculares. La duración y severidad de estos efectos varía de persona a persona. Después de la curación, algunas áreas pueden necesitar tratamiento puntual adicional o ajuste de mordida.</li>
+    <li>El "ajuste oclusal" (ajuste de mordida) me ha sido explicado completamente. Entiendo que ajustar mi mordida es una parte esencial del tratamiento LANAP y continúa en las citas de examen regulares. Entiendo que:
+      <ul>
+        <li>Se requiere mi cooperación total para que este proceso tenga éxito.</li>
+        <li>Hasta que mi mordida esté completamente ajustada, puedo experimentar dolor temporal en la mandíbula, dolor muscular, dolores de cabeza, sensibilidad dental o mordeduras en las mejillas.</li>
+        <li>Ajustar coronas puede remover porcelana, exponer material subyacente o requerir reemplazo de la corona.</li>
+        <li>No completar todas las fases del ajuste de mordida puede resultar en dolor continuo o problemas de mandíbula.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- ============ CASOS SEVEROS ============ -->
+  <h2>Enfermedad Periodontal Severa</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 8;">
+    <li>Entiendo que la enfermedad severa de las encías (Tipo de Caso III o IV) con mediciones de bolsas de 10mm o más puede requerir una segunda ronda de tratamiento LANAP con el mismo costo que el tratamiento inicial. Este retratamiento puede ser necesario en dientes individuales o en toda la boca, dependiendo de la extensión de la enfermedad activa.</li>
+  </ol>
+
+  <!-- ============ CONSECUENCIAS SIN TRATAMIENTO ============ -->
+  <h2>Qué Sucede Sin Tratamiento</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 9;">
+    <li>El Dr. Whatcott me ha explicado que si elijo no someterme al tratamiento, mi enfermedad de encías y hueso puede continuar progresando. Esto puede llevar a:
+      <ul>
+        <li>Pérdida de dientes debido a pérdida ósea o daño relacionado con la mordida.</li>
+        <li>Infecciones en las encías, incluyendo infecciones agudas como GUNA.</li>
+        <li>Acumulación continua de sarro contribuyendo a mayor pérdida ósea.</li>
+        <li>La eventual necesidad de dentaduras parciales removibles si se pierden dientes y no se reemplazan.</li>
+        <li>Mayor estrés en los dientes restantes si los dientes perdidos no se reemplazan, lo que potencialmente acelera mayor pérdida ósea y enfermedad de las encías.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- ============ SUS RESPONSABILIDADES ============ -->
+  <h2>Sus Responsabilidades</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 10;">
+    <li>El Dr. Whatcott me ha explicado la importancia de la higiene oral adecuada después del tratamiento LANAP. Acepto seguir las instrucciones de cuidado en casa y las recomendaciones alimenticias que se me proporcionaron.</li>
+    <li>Entiendo que debo asistir a las citas de seguimiento e higiene al menos una vez cada tres meses, o con mayor frecuencia si el Dr. Whatcott lo requiere. Estas visitas son esenciales para monitorear mi curación y el éxito a largo plazo del tratamiento.</li>
+    <li>Entiendo que fumar, vapear, el uso de tabaco y el consumo excesivo de alcohol pueden perjudicar la curación del tejido de las encías y reducir la longevidad del tratamiento LANAP. También entiendo que el equilibrio de calcio y los factores hormonales pueden afectar la salud ósea continua.</li>
+    <li>Entiendo que completar todas las fases del tratamiento recomendado es necesario para el mejor resultado posible, y acepto hacerlo.</li>
+  </ol>
+
+  <!-- ============ HISTORIAL DE SALUD ============ -->
+  <h2>Historial de Salud</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 14;">
+    <li>Confirmo que he proporcionado un historial de salud preciso y completo. Hasta donde sé, no he ocultado ninguna información sobre mi salud médica o mental, incluyendo alergias o reacciones inusuales a medicamentos, alimentos, picaduras de insectos, anestésicos u otros materiales.</li>
+  </ol>
+
+  <!-- ============ AUTORIZACIÓN DE FOTOS ============ -->
+  <h2>Autorización de Fotos y Medios</h2>
+  <ol class="consent-list" style="counter-reset: consent-item 15;">
+    <li>Si el Dr. Whatcott lo considera apropiado, autorizo que se tomen fotos, videos o radiografías de mi boca durante el tratamiento. Entiendo que estos materiales pueden ser utilizados con fines educativos para ayudar a capacitar a otros profesionales dentales en el protocolo LANAP.</li>
+  </ol>
+
+  <div class="highlight-box">
+    <strong>Al firmar abajo, confirmo que he leído y comprendido la totalidad de este documento, que todas mis preguntas han sido respondidas, y que doy mi consentimiento para proceder con el tratamiento LANAP descrito anteriormente.</strong> Entiendo que puedo pedirle al Dr. Whatcott que me explique cualquier riesgo, detalle del tratamiento o preocupación en cualquier momento antes o durante el curso de mi tratamiento LANAP.
+  </div>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry &nbsp;&middot;&nbsp; (303) 986-9337 &nbsp;&middot;&nbsp; cadentistry.net
+  </div>
+</body>
+</html>

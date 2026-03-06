@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Denture Adjustment Against Recommendation — Colorado Advanced Dentistry</title>
+  <style>
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+    @font-face { font-family: 'Nord'; src: url('/assets/font/nord-bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-regular.otf') format('opentype'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-semibold.otf') format('opentype'); font-weight: 600; font-style: normal; }
+    @font-face { font-family: 'Henderson Sans'; src: url('/assets/font/henderson-sans-basic-bold.otf') format('opentype'); font-weight: 700; font-style: normal; }
+
+    :root {
+      --cad-granite: #454545; --cad-mountain: #447E8A; --cad-sand: #FFEAD6;
+      --cad-sky: #B3DBE2; --cad-aspen: #B9B765; --cad-orange: #FFB456; --cad-white: #ffffff;
+      --font-heading: 'Nord', 'Segoe UI', sans-serif;
+      --font-body: 'Henderson Sans', 'Segoe UI', sans-serif;
+    }
+
+    @page { size: letter; margin: 0.55in 0.6in; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body); color: var(--cad-granite); background: var(--cad-white);
+      max-width: 7.5in; margin: 0 auto; font-size: 10.5pt; line-height: 1.55;
+    }
+
+    @media print {
+      :root { --cad-mountain: #3D8A7E; }
+      body, * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { padding: 0; max-width: none; }
+      h1, h2, h3 { break-after: avoid; }
+      .highlight-box { break-inside: avoid; }
+    }
+
+    .doc-header { display: flex; align-items: center; gap: 14px; padding-bottom: 12px; margin-bottom: 22px; border-bottom: 2px solid var(--cad-mountain); }
+    .doc-header img { height: 56px; flex-shrink: 0; }
+    .doc-header .doc-title { font-family: var(--font-heading); font-size: 17pt; font-weight: 700; color: var(--cad-granite); line-height: 1.2; letter-spacing: -0.01em; }
+    .doc-header .doc-subtitle { font-family: var(--font-body); font-size: 10pt; font-weight: 600; color: var(--cad-mountain); text-transform: uppercase; letter-spacing: 2px; margin-top: 2px; }
+
+    h2 { font-family: var(--font-heading); font-size: 13.5pt; font-weight: 500; color: var(--cad-mountain); line-height: 1.25; margin-top: 18px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    p { margin-bottom: 8px; line-height: 1.55; }
+
+    .highlight-box { border-left: 3px solid var(--cad-orange); background: rgba(255, 234, 214, 0.3); padding: 12px 14px; margin: 12px 0; font-size: 9.5pt; line-height: 1.5; border-radius: 0 4px 4px 0; }
+    .highlight-box strong { color: var(--cad-mountain); }
+    .doc-footer { margin-top: 32px; padding-top: 12px; border-top: 1px solid var(--cad-sky); text-align: center; font-size: 8pt; color: var(--cad-mountain); letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+  <div class="doc-header">
+    <img src="https://raw.githubusercontent.com/markwhat1/cad-flex-branding/master/Flex/public/assets/images/cad-badge.png" alt="Colorado Advanced Dentistry">
+    <div>
+      <div class="doc-title">Denture Adjustment</div>
+      <div class="doc-subtitle">Against Recommendation of Doctor</div>
+    </div>
+  </div>
+
+  <p>I, {{fullname}}, request that Dr. Whatcott further adjust my denture against his recommendations.</p>
+
+  <p>Dr. Whatcott has explained the following to me:</p>
+
+  <ul style="margin: 6px 0 6px 20px; line-height: 1.55;">
+    <li style="margin-bottom: 4px;">Healing from dental extraction can take up to 12 weeks, and adjustments to my denture now may affect its fit later.</li>
+    <li style="margin-bottom: 4px;">If my denture is adjusted too thin, the acrylic can break and require repair or a complete denture remake.</li>
+    <li style="margin-bottom: 4px;">Adjusting the denture around the borders can reduce denture retention and cause the denture to be ill-fitting and looser than it should be.</li>
+  </ul>
+
+  <div class="highlight-box">
+    <strong>Against Dr. Whatcott's recommendation to wait for healing, I am requesting that he continue to adjust the borders of my denture.</strong> I understand and accept the risks described above.
+  </div>
+
+  <div class="doc-footer">
+    Colorado Advanced Dentistry &nbsp;&middot;&nbsp; (303) 986-9337 &nbsp;&middot;&nbsp; cadentistry.net
+  </div>
+</body>
+</html>
