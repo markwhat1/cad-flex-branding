@@ -3,6 +3,9 @@
 # Only track branded emails, templates, & assets
 # ============================================
 
+# Binary archives
+*.zip
+
 # Claude Code internals
 .claude/
 
