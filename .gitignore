@@ -85,3 +85,9 @@ Flex/emails/blast/
 
 # Other email files not part of our branding
 Flex/emails/apptBooked*
+
+# graphify
+.graphify_python
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/.graphify_python

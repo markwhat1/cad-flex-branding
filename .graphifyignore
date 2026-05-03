@@ -1,0 +1,37 @@
+# Build artifacts
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+package-lock.json
+uv.lock
+
+# Output / generated
+output/
+dist/
+build/
+pdf-output/
+*.partial
+
+# Secrets
+.env
+*.env
+*.token
+credentials*.json
+
+# Graphify machine-local
+graphify-out/cache/
+graphify-out/manifest.json
+.graphify_python
+
+# Image exclusion (large image-heavy project — text content is the value)
+*.png
+*.jpg
+*.jpeg
+*.heic
+*.webp
+*.gif
+*.svg
+*.bmp
+*.tiff
+*.ico
