@@ -35,3 +35,9 @@ graphify-out/manifest.json
 *.bmp
 *.tiff
 *.ico
+
+# Flex/ is a read-only snapshot of the self-hosted Flex install (per project CLAUDE.md).
+# Its bundled jQuery/Bootstrap/Summernote vendor JS dominated the prior god nodes.
+Flex/
+**/*.min.js
+**/*.min.css

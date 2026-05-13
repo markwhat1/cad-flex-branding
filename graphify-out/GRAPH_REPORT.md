@@ -1,692 +1,1197 @@
-# Graph Report - .  (2026-05-05)
+# Graph Report - C:/Users/Mark/Claude-Code/flex-updates  (2026-05-12)
 
 ## Corpus Check
-- 0 files · ~99,999 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Large corpus: 256 files · ~182,410 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
-- 7750 nodes · 28299 edges · 112 communities detected
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 2642 edges (avg confidence: 0.8)
+- 235 nodes · 21 edges · 163 communities detected
+- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Program|Program]]
-- [[_COMMUNITY_NSSM Service Runner|NSSM Service Runner]]
-- [[_COMMUNITY_bootstrap.bundle.min.js|bootstrap.bundle.min.js]]
-- [[_COMMUNITY_chunk.201.9574ae801c057a800d93.js|chunk.201.9574ae801c057a800d93.js]]
-- [[_COMMUNITY_chunk.513.6ccf6171f638e4fb58fc.js|chunk.513.6ccf6171f638e4fb58fc.js]]
-- [[_COMMUNITY_jquery.min.js|jquery.min.js]]
-- [[_COMMUNITY_Lodash And jQuery Helpers|Lodash And jQuery Helpers]]
-- [[_COMMUNITY_Date Range Picker Hook|Date Range Picker Hook]]
-- [[_COMMUNITY_chunk.916.d2b7d2cc97b6b95fd79e.js|chunk.916.d2b7d2cc97b6b95fd79e.js]]
-- [[_COMMUNITY_Legacy Ember Bundle Chunk|Legacy Ember Bundle Chunk]]
-- [[_COMMUNITY_.number()|.number()]]
-- [[_COMMUNITY_intro.js|intro.js]]
-- [[_COMMUNITY_jquery-3.6.0.min.js|jquery-3.6.0.min.js]]
-- [[_COMMUNITY_jquery-cron.js|jquery-cron.js]]
-- [[_COMMUNITY_jquery.moment.js|jquery.moment.js]]
-- [[_COMMUNITY_medium-button.min.js|medium-button.min.js]]
-- [[_COMMUNITY_nouislider.js|nouislider.js]]
-- [[_COMMUNITY_summernote-bs4.min.js|summernote-bs4.min.js]]
-- [[_COMMUNITY_Legacy Vendor.js Bundle|Legacy Vendor.js Bundle]]
-- [[_COMMUNITY_xselectable.min.js|xselectable.min.js]]
-- [[_COMMUNITY_pdf.js|pdf.js]]
-- [[_COMMUNITY_pdf.worker.js|pdf.worker.js]]
-- [[_COMMUNITY_jquery-2.1.0.min.js|jquery-2.1.0.min.js]]
-- [[_COMMUNITY_zlib.js|zlib.js]]
-- [[_COMMUNITY_hammer.min.js|hammer.min.js]]
-- [[_COMMUNITY_jquery.cookie.js|jquery.cookie.js]]
-- [[_COMMUNITY_React App Main Bundle|React App Main Bundle]]
-- [[_COMMUNITY_jquery.mousewheel.min.js|jquery.mousewheel.min.js]]
-- [[_COMMUNITY_jquery-ui.min.js|jquery-ui.min.js]]
-- [[_COMMUNITY_prettify.js|prettify.js]]
-- [[_COMMUNITY_debugger.js|debugger.js]]
-- [[_COMMUNITY_viewer.js|viewer.js]]
-- [[_COMMUNITY_AccountsReceivableAgingReport-ClcwxWkf.js|AccountsReceivableAgingReport-ClcwxWkf.js]]
-- [[_COMMUNITY_Chart.js Visualization Library|Chart.js Visualization Library]]
-- [[_COMMUNITY_React Render And Aggregate Layer|React Render And Aggregate Layer]]
-- [[_COMMUNITY_yX()|yX()]]
-- [[_COMMUNITY_Cte()|Cte()]]
-- [[_COMMUNITY_Jte()|Jte()]]
-- [[_COMMUNITY_cne()|cne()]]
-- [[_COMMUNITY_React Index Bundle DRt9IPG6|React Index Bundle DRt9IPG6]]
-- [[_COMMUNITY_My()|My()]]
-- [[_COMMUNITY_statement.cc|statement.cc]]
-- [[_COMMUNITY_index-X9sB7dqF.js|index-X9sB7dqF.js]]
-- [[_COMMUNITY_Material UI Icons And Tabs|Material UI Icons And Tabs]]
-- [[_COMMUNITY_sc|sc]]
-- [[_COMMUNITY_sqlite3.d.ts|sqlite3.d.ts]]
-- [[_COMMUNITY_trace.js|trace.js]]
-- [[_COMMUNITY_async.h|async.h]]
-- [[_COMMUNITY_NSSM nssm.h master header (PATH_LENGTH, throttlekill timeo|NSSM nssm.h: master header (PATH_LENGTH, throttle/kill timeo]]
-- [[_COMMUNITY_NSSM service.cpp (Windows service control logic)|NSSM service.cpp (Windows service control logic)]]
-- [[_COMMUNITY_adler32cs.js (Adler-32 checksum library)|adler32cs.js (Adler-32 checksum library)]]
-- [[_COMMUNITY_flex.js (Flex Dental Ember.js SPA main bundle)|flex.js (Flex Dental Ember.js SPA main bundle)]]
-- [[_COMMUNITY_jquery-ui.min.js (jQuery UI library)|jquery-ui.min.js (jQuery UI library)]]
-- [[_COMMUNITY_medium-button.min.js (Medium-style button UI)|medium-button.min.js (Medium-style button UI)]]
-- [[_COMMUNITY_qrcode.min.js (QR code generator)|qrcode.min.js (QR code generator)]]
-- [[_COMMUNITY_jQuery v2.2.4 (core library)|jQuery v2.2.4 (core library)]]
-- [[_COMMUNITY_PDF.js Module|PDF.js Module]]
-- [[_COMMUNITY_Flex React Assets|Flex React Assets]]
-- [[_COMMUNITY_Flex React Assets Directory|Flex React Assets Directory]]
-- [[_COMMUNITY_Flex React App Bundle|Flex React App Bundle]]
-- [[_COMMUNITY_MUI Icon Components|MUI Icon Components]]
-- [[_COMMUNITY_Flex ReactEmber SPA bundle assets|Flex React/Ember SPA bundle assets]]
-- [[_COMMUNITY_Flex sqlite3 macros.h|Flex sqlite3 macros.h]]
-- [[_COMMUNITY_Flex Updates CLAUDE|Flex Updates CLAUDE.md]]
-- [[_COMMUNITY_Flex Backup Huddle Notes|Flex Backup Huddle Notes]]
-- [[_COMMUNITY_Email Template Birthday|Email Template: Birthday]]
-- [[_COMMUNITY_Email New Appointment|Email: New Appointment]]
-- [[_COMMUNITY_Email Doc|Email: Doc]]
-- [[_COMMUNITY_Email Health History|Email: Health History]]
-- [[_COMMUNITY_Email New Patient|Email: New Patient]]
-- [[_COMMUNITY_Email Post-op Messaging|Email: Post-op Messaging]]
-- [[_COMMUNITY_Flex Email Recall Due 1|Flex Email: Recall Due 1]]
-- [[_COMMUNITY_Flex Email Statement|Flex Email: Statement]]
-- [[_COMMUNITY_Flex Email Review Request|Flex Email: Review Request]]
-- [[_COMMUNITY_Flex Log job.log|Flex Log: job.log]]
-- [[_COMMUNITY_Flex Email Backup Appointment Reminder|Flex Email Backup: Appointment Reminder]]
-- [[_COMMUNITY_NSSM ChangeLog|NSSM ChangeLog]]
-- [[_COMMUNITY_Flex Public index.html|Flex Public: index.html]]
-- [[_COMMUNITY_langREADME|lang/README.md]]
-- [[_COMMUNITY_pdfjsapidraftdisplay_api.js.html|pdfjs/api/draft/display_api.js.html]]
-- [[_COMMUNITY_PDF.js API Draft - RenderTask.html|PDF.js API Draft - RenderTask.html]]
-- [[_COMMUNITY_React Public Index|React Public Index]]
-- [[_COMMUNITY_Flex sqlite3 README|Flex sqlite3 README]]
-- [[_COMMUNITY_Consent Forms|Consent Forms]]
-- [[_COMMUNITY_Consent - Periodontal Surgery|Consent - Periodontal Surgery]]
+- [[_COMMUNITY_Starter Post-Op Template|Starter Post-Op Template]]
+- [[_COMMUNITY_Post-Op Laser Frenectomy|Post-Op: Laser Frenectomy]]
+- [[_COMMUNITY_Frenectomy Stretching Exercises|Frenectomy Stretching Exercises]]
+- [[_COMMUNITY_Flex Template Branding Design Document|Flex Template Branding Design Document]]
+- [[_COMMUNITY_Starter - Education|Starter - Education]]
+- [[_COMMUNITY_Consent - Against Medical Advice|Consent - Against Medical Advice]]
+- [[_COMMUNITY_Consent - Bone Graft|Consent - Bone Graft]]
+- [[_COMMUNITY_Consent - Connective Tissue Graft|Consent - Connective Tissue Graft]]
+- [[_COMMUNITY_Consent - Denture Adjustment Against Recommendation|Consent - Denture Adjustment Against Recommendation]]
 - [[_COMMUNITY_Consent - Esthetic and Reconstructive Services|Consent - Esthetic and Reconstructive Services]]
+- [[_COMMUNITY_Consent - Extractions (Pediatric)|Consent - Extractions (Pediatric)]]
+- [[_COMMUNITY_Consent - Gingivectomy|Consent - Gingivectomy]]
+- [[_COMMUNITY_Consent - LANAP Retainer Removal|Consent - LANAP Retainer Removal]]
+- [[_COMMUNITY_Consent - LANAP Spanish|Consent - LANAP [Spanish]]]
+- [[_COMMUNITY_Consent - Periodontal Surgery|Consent - Periodontal Surgery]]
+- [[_COMMUNITY_Refusal - LANAP Night Guard|Refusal - LANAP Night Guard]]
+- [[_COMMUNITY_Refusal - Recommended Treatment|Refusal - Recommended Treatment]]
+- [[_COMMUNITY_Shade Decision Form|Shade Decision Form]]
+- [[_COMMUNITY_Instructions - Fluoride Carrier|Instructions - Fluoride Carrier]]
+- [[_COMMUNITY_Instructions - Night Guard|Instructions - Night Guard]]
+- [[_COMMUNITY_Pain Management Protocol|Pain Management Protocol]]
 - [[_COMMUNITY_Preview Index|Preview Index]]
-- [[_COMMUNITY_Branded Emails Preview Directory|Branded Emails Preview Directory]]
+- [[_COMMUNITY_Email - Appointment Reminder|Email - Appointment Reminder]]
+- [[_COMMUNITY_Email - Appointment Reminder 1|Email - Appointment Reminder 1]]
+- [[_COMMUNITY_Email - Appointment Reminder HH|Email - Appointment Reminder HH]]
+- [[_COMMUNITY_Email - Appointment Reminder HH 1|Email - Appointment Reminder HH 1]]
+- [[_COMMUNITY_Email - Birthday|Email - Birthday]]
+- [[_COMMUNITY_Email - Birthday 1|Email - Birthday 1]]
+- [[_COMMUNITY_Postop Messaging Email v1|Postop Messaging Email v1]]
 - [[_COMMUNITY_Preop Messaging Email|Preop Messaging Email]]
+- [[_COMMUNITY_Preop Messaging Email v1|Preop Messaging Email v1]]
 - [[_COMMUNITY_Recall Due Email|Recall Due Email]]
+- [[_COMMUNITY_Recall Due Email v1|Recall Due Email v1]]
+- [[_COMMUNITY_Recall Past Due Email|Recall Past Due Email]]
+- [[_COMMUNITY_Recall Past Due Email v1|Recall Past Due Email v1]]
 - [[_COMMUNITY_Resent Statement Email|Resent Statement Email]]
+- [[_COMMUNITY_Resent Statement Email v1|Resent Statement Email v1]]
 - [[_COMMUNITY_Review Request Email|Review Request Email]]
-- [[_COMMUNITY_Cigna Active Patients Blast|Cigna Active Patients Blast]]
-- [[_COMMUNITY_Consent - AirwayMouth Taping|Consent - Airway/Mouth Taping]]
-- [[_COMMUNITY_Flex COVID-19|Flex COVID-19]]
-- [[_COMMUNITY_Membership Plan One|Membership Plan One]]
-- [[_COMMUNITY_Postop - Airway-Appliance Titration Protocol|Postop - Airway-Appliance Titration Protocol]]
-- [[_COMMUNITY_Postop - Pediatric Pulpotomy|Postop - Pediatric Pulpotomy]]
-- [[_COMMUNITY_Postop - Crown Bridge or Veneer with Temporary|Postop - Crown Bridge or Veneer with Temporary]]
-- [[_COMMUNITY_Postop - Extractions|Postop - Extractions]]
-- [[_COMMUNITY_Postop - KöR Whitening|Postop - KöR Whitening]]
-- [[_COMMUNITY_Email - Appointment Booked|Email - Appointment Booked]]
-- [[_COMMUNITY_Email Doc|Email Doc]]
-- [[_COMMUNITY_New Patient Email (variant 1)|New Patient Email (variant 1)]]
-- [[_COMMUNITY_Other Forms Email|Other Forms Email]]
-- [[_COMMUNITY_Post-Op Messaging Email|Post-Op Messaging Email]]
-- [[_COMMUNITY_Recall Due Email|Recall Due Email]]
+- [[_COMMUNITY_Review Request Email v1|Review Request Email v1]]
 - [[_COMMUNITY_Statement Email|Statement Email]]
+- [[_COMMUNITY_Statement Email v1|Statement Email v1]]
+- [[_COMMUNITY_Treatment Forms Email|Treatment Forms Email]]
+- [[_COMMUNITY_Treatment Forms Email v1|Treatment Forms Email v1]]
+- [[_COMMUNITY_Cigna Active Patients Blast|Cigna Active Patients Blast]]
+- [[_COMMUNITY_Cigna Inactive Patients Blast|Cigna Inactive Patients Blast]]
+- [[_COMMUNITY_Cigna Scheduled Patients Blast|Cigna Scheduled Patients Blast]]
+- [[_COMMUNITY_Consent - AirwayMouth Taping|Consent - Airway/Mouth Taping]]
+- [[_COMMUNITY_Consent - Bisphosphonates (IV)|Consent - Bisphosphonates (IV)]]
+- [[_COMMUNITY_Consent - Bisphosphonates (Oral)|Consent - Bisphosphonates (Oral)]]
+- [[_COMMUNITY_Consent - Clear Aligners|Consent - Clear Aligners]]
+- [[_COMMUNITY_Consent - Crowns and Bridges|Consent - Crowns and Bridges]]
+- [[_COMMUNITY_Consent - Endodontic Treatment|Consent - Endodontic Treatment]]
+- [[_COMMUNITY_Consent - Extractions|Consent - Extractions]]
+- [[_COMMUNITY_Consent - Fillings|Consent - Fillings]]
+- [[_COMMUNITY_Consent - Frenectomy|Consent - Frenectomy]]
+- [[_COMMUNITY_Consent - General Restorative|Consent - General Restorative]]
+- [[_COMMUNITY_Consent - Immediate Dentures|Consent - Immediate Dentures]]
+- [[_COMMUNITY_Consent - KoR Whitening|Consent - KoR Whitening]]
+- [[_COMMUNITY_Consent - LANAP|Consent - LANAP]]
+- [[_COMMUNITY_Consent - Orthodontics (General)|Consent - Orthodontics (General)]]
+- [[_COMMUNITY_Consent - Photo Release|Consent - Photo Release]]
+- [[_COMMUNITY_Consent - Pinhole|Consent - Pinhole]]
+- [[_COMMUNITY_Consent - Release of Records|Consent - Release of Records]]
+- [[_COMMUNITY_Consent - Scaling and Root Planing|Consent - Scaling and Root Planing]]
+- [[_COMMUNITY_Consent - Veneers|Consent - Veneers]]
+- [[_COMMUNITY_Flex COVID-19|Flex COVID-19]]
+- [[_COMMUNITY_Postop - LANAP|Postop - LANAP]]
+- [[_COMMUNITY_Postop - Pinhole|Postop - Pinhole]]
+- [[_COMMUNITY_Refusal - Custom Shade|Refusal - Custom Shade]]
+- [[_COMMUNITY_Refusal - Periodontal Treatment|Refusal - Periodontal Treatment]]
+- [[_COMMUNITY_Refusal - X-rays|Refusal - X-rays]]
+- [[_COMMUNITY_Membership Four|Membership Four]]
+- [[_COMMUNITY_Membership Plan One|Membership Plan One]]
+- [[_COMMUNITY_Membership Plan Three|Membership Plan Three]]
+- [[_COMMUNITY_Membership Plan Two|Membership Plan Two]]
+- [[_COMMUNITY_Postop - Airway-Appliance Titration Protocol|Postop - Airway-Appliance Titration Protocol]]
+- [[_COMMUNITY_Postop - Composite Fillings|Postop - Composite Fillings]]
+- [[_COMMUNITY_Postop - Crown Bridge or Veneer with Temporary|Postop - Crown Bridge or Veneer with Temporary]]
+- [[_COMMUNITY_Postop - CrownBridgeVeneer Final Same Day|Postop - Crown/Bridge/Veneer Final Same Day]]
+- [[_COMMUNITY_Postop - Extractions|Postop - Extractions]]
+- [[_COMMUNITY_Postop - Immediate Dentures|Postop - Immediate Dentures]]
+- [[_COMMUNITY_Postop - Implant Placement|Postop - Implant Placement]]
+- [[_COMMUNITY_Postop - In Office Whitening|Postop - In Office Whitening]]
+- [[_COMMUNITY_Postop - KöR Whitening|Postop - KöR Whitening]]
+- [[_COMMUNITY_Postop - Pediatric Pulpotomy|Postop - Pediatric Pulpotomy]]
+- [[_COMMUNITY_Postop - Root Canal Therapy|Postop - Root Canal Therapy]]
+- [[_COMMUNITY_Postop - Sedation|Postop - Sedation]]
+- [[_COMMUNITY_Postop - SRP|Postop - SRP]]
+- [[_COMMUNITY_Postop - Whitening After In-Office Visit|Postop - Whitening After In-Office Visit]]
+- [[_COMMUNITY_Postop - Whitening Instructions At Home|Postop - Whitening Instructions At Home]]
+- [[_COMMUNITY_Email - Appointment Booked|Email - Appointment Booked]]
+- [[_COMMUNITY_Email - Appointment Reminder|Email - Appointment Reminder]]
+- [[_COMMUNITY_Call List Email|Call List Email]]
+- [[_COMMUNITY_Consent Email|Consent Email]]
+- [[_COMMUNITY_Consent Email (variant 1)|Consent Email (variant 1)]]
+- [[_COMMUNITY_Email Confirm|Email Confirm]]
+- [[_COMMUNITY_Email Confirm (variant 1)|Email Confirm (variant 1)]]
+- [[_COMMUNITY_Email Confirm With Forms|Email Confirm With Forms]]
+- [[_COMMUNITY_Email Confirm With Forms (variant 1)|Email Confirm With Forms (variant 1)]]
+- [[_COMMUNITY_Email Doc|Email Doc]]
+- [[_COMMUNITY_Email Doc (variant 1)|Email Doc (variant 1)]]
+- [[_COMMUNITY_Failed Patient RC Payment|Failed Patient RC Payment]]
+- [[_COMMUNITY_Health History Email|Health History Email]]
+- [[_COMMUNITY_Health History Email (variant 1)|Health History Email (variant 1)]]
+- [[_COMMUNITY_Health History Auto|Health History Auto]]
+- [[_COMMUNITY_Health History Auto (variant 1)|Health History Auto (variant 1)]]
+- [[_COMMUNITY_New Appointment Email|New Appointment Email]]
+- [[_COMMUNITY_New Appointment Email (variant 1)|New Appointment Email (variant 1)]]
+- [[_COMMUNITY_New Patient Email|New Patient Email]]
+- [[_COMMUNITY_New Patient Email (variant 1)|New Patient Email (variant 1)]]
+- [[_COMMUNITY_New Patient Emails Sent|New Patient Emails Sent]]
+- [[_COMMUNITY_Other Forms Email|Other Forms Email]]
+- [[_COMMUNITY_Other Forms Email (variant 1)|Other Forms Email (variant 1)]]
+- [[_COMMUNITY_Post-Op Email|Post-Op Email]]
+- [[_COMMUNITY_Post-Op Email (variant 1)|Post-Op Email (variant 1)]]
+- [[_COMMUNITY_Post-Op Messaging Email|Post-Op Messaging Email]]
+- [[_COMMUNITY_Post-Op Messaging Email (variant 1)|Post-Op Messaging Email (variant 1)]]
+- [[_COMMUNITY_Pre-Op Messaging Email|Pre-Op Messaging Email]]
+- [[_COMMUNITY_Pre-Op Messaging Email (variant 1)|Pre-Op Messaging Email (variant 1)]]
+- [[_COMMUNITY_Recall Due Email|Recall Due Email]]
+- [[_COMMUNITY_Recall Due Email (variant 1)|Recall Due Email (variant 1)]]
+- [[_COMMUNITY_Recall Past Due Email|Recall Past Due Email]]
+- [[_COMMUNITY_Recall Past Due Email (variant 1)|Recall Past Due Email (variant 1)]]
+- [[_COMMUNITY_Resent Statement Email|Resent Statement Email]]
+- [[_COMMUNITY_Resent Statement Email (variant 1)|Resent Statement Email (variant 1)]]
 - [[_COMMUNITY_Review Request Email|Review Request Email]]
-- [[_COMMUNITY__Official_CAD-Branding Guide.pdf|_Official_CAD-Branding Guide.pdf]]
-- [[_COMMUNITY_CMYK Color Space|CMYK Color Space]]
+- [[_COMMUNITY_Review Request Email (variant 1)|Review Request Email (variant 1)]]
+- [[_COMMUNITY_Statement Email|Statement Email]]
+- [[_COMMUNITY_Statement Email (variant 1)|Statement Email (variant 1)]]
+- [[_COMMUNITY_Status Report Email|Status Report Email]]
+- [[_COMMUNITY_Treatment Forms Email|Treatment Forms Email]]
+- [[_COMMUNITY_Treatment Forms Email (txforms1.HTML)|Treatment Forms Email (txforms1.HTML)]]
+- [[_COMMUNITY_Newsletter Blast Email|Newsletter Blast Email]]
+- [[_COMMUNITY_Consent - Airway-Mouth Taping|Consent - Airway-Mouth Taping]]
+- [[_COMMUNITY_Consent - Bisphosphonates IV|Consent - Bisphosphonates [IV]]]
+- [[_COMMUNITY_Consent - Bisphosphonates Oral|Consent - Bisphosphonates [Oral]]]
+- [[_COMMUNITY_Consent - Clear Aligners|Consent - Clear Aligners]]
+- [[_COMMUNITY_Consent - Endodontic Treatment|Consent - Endodontic Treatment]]
+- [[_COMMUNITY_Consent - Release of Records|Consent - Release of Records]]
+- [[_COMMUNITY_Flex COVID-19|Flex COVID-19]]
+- [[_COMMUNITY_Postop - LANAP (root templates)|Postop - LANAP (root templates)]]
+- [[_COMMUNITY_Postop - Pinhole (root templates)|Postop - Pinhole (root templates)]]
+- [[_COMMUNITY_Membership One|Membership One]]
+- [[_COMMUNITY_Membership Three|Membership Three]]
+- [[_COMMUNITY_Membership Two|Membership Two]]
+- [[_COMMUNITY_Postop - Airway-Appliance Titration Protocol|Postop - Airway-Appliance Titration Protocol]]
+- [[_COMMUNITY_Postop - Crown Bridge or Veneer with Temporary|Postop - Crown Bridge or Veneer with Temporary]]
+- [[_COMMUNITY_Postop - Crown Bridge or Veneer Same Day Final|Postop - Crown Bridge or Veneer Same Day Final]]
+- [[_COMMUNITY_Postop - Implant Placement|Postop - Implant Placement]]
+- [[_COMMUNITY_Postop - In Office Whitening|Postop - In Office Whitening]]
+- [[_COMMUNITY_PostOp - LANAP (postop subdir)|PostOp - LANAP (postop subdir)]]
+- [[_COMMUNITY_Postop - Pinhole (postop subdir)|Postop - Pinhole (postop subdir)]]
+- [[_COMMUNITY_Postop - Root Canal Therapy|Postop - Root Canal Therapy]]
+- [[_COMMUNITY_CAD-stationery-appointment-card-V2-Print.pdf (example)|CAD-stationery-appointment-card-V2-Print.pdf (example)]]
+- [[_COMMUNITY_CAD-stationery-business-card-DrMark-V2.pdf (example)|CAD-stationery-business-card-DrMark-V2.pdf (example)]]
+- [[_COMMUNITY_CAD-stationery-envelope-V2.pdf (example)|CAD-stationery-envelope-V2.pdf (example)]]
+- [[_COMMUNITY_CAD-stationery-letterhead-V2-Print.pdf (example)|CAD-stationery-letterhead-V2-Print.pdf (example)]]
 - [[_COMMUNITY_CAD Wordmark — Full Color CMYK (Print)|CAD Wordmark — Full Color CMYK (Print)]]
+- [[_COMMUNITY_CAD Wordmark — Grayscale CMYK (Print)|CAD Wordmark — Grayscale CMYK (Print)]]
+- [[_COMMUNITY_CAD Wordmark — Inverted CMYK (Print)|CAD Wordmark — Inverted CMYK (Print)]]
+- [[_COMMUNITY_CAD Wordmark — Mountain Lake CMYK (Print)|CAD Wordmark — Mountain Lake CMYK (Print)]]
+- [[_COMMUNITY_CAD Wordmark — Sky Blue Ice CMYK (Print)|CAD Wordmark — Sky Blue Ice CMYK (Print)]]
+- [[_COMMUNITY_CAD Wordmark — White CMYK (Print)|CAD Wordmark — White CMYK (Print)]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `a()` - 217 edges
-2. `E()` - 215 edges
-3. `n()` - 182 edges
-4. `T()` - 181 edges
-5. `s()` - 173 edges
-6. `n()` - 173 edges
-7. `w()` - 147 edges
-8. `e()` - 147 edges
-9. `r()` - 138 edges
-10. `f()` - 129 edges
+1. `Post-Op: Laser Frenectomy` - 8 edges
+2. `Starter Post-Op Template` - 6 edges
+3. `Frenectomy Stretching Exercises` - 6 edges
+4. `Colorado Advanced Dentistry (CAD) Brand` - 4 edges
+5. `Call Us If (warning-signs section)` - 3 edges
+6. `Flex Updates CLAUDE.md` - 2 edges
+7. `Flex Template Branding Design Document` - 2 edges
+8. `Flex Template Branding Plan` - 2 edges
+9. `Starter Consent Template` - 2 edges
+10. `Frenum Reattachment Prevention` - 2 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `NSSM nssm.h: master header (PATH_LENGTH, throttle/kill timeouts, exit/startup/priority constants)` --semantically_similar_to--> `NSSM nssm.cpp: shared str helpers (str_equiv, str_number, num_cpus, usage)`  [INFERRED] [semantically similar]
-  C:\Users\Mark\Claude-Code\flex-updates\Flex\nssm\src\nssm.h → C:\Users\Mark\Claude-Code\flex-updates\Flex\nssm\src\nssm.cpp
-- `r()` --calls--> `I()`  [INFERRED]
-  public\assets\chunk.571.1a0854d3b3a2a79604b8.js → public\react\assets\TableRow-DgrY1bwv.js
-- `_()` --calls--> `T()`  [INFERRED]
-  public\assets\Deflater.js → public\react\assets\_createAssigner-B7WRBvJI.js
-- `fe()` --calls--> `E()`  [INFERRED]
-  public\assets\jquery-3.6.0.min.js → public\react\assets\_createAssigner-B7WRBvJI.js
-- `ge()` --calls--> `aE()`  [INFERRED]
-  public\assets\jquery-3.6.0.min.js → public\react\assets\useDateRangePicker-DUpto6S8.js
+- `Starter Consent Template` --semantically_similar_to--> `Starter Post-Op Template`  [INFERRED] [semantically similar]
+  new-templates/_starter-consent.html → new-templates/_starter-postop.html
+- `Post-Op: Laser Frenectomy` --semantically_similar_to--> `Frenectomy Stretching Exercises`  [INFERRED] [semantically similar]
+  new-templates/postop/Postop - Frenectomy.html → new-templates/postop/Postop - Frenectomy Stretching Exercises.html
+- `Flex Updates CLAUDE.md` --references--> `Flex Template Branding Design Document`  [EXTRACTED]
+  C:\Users\Mark\Claude-Code\flex-updates\CLAUDE.md → C:\Users\Mark\Claude-Code\flex-updates\docs\plans\2026-02-28-flex-template-branding-design.md
+- `Flex Updates CLAUDE.md` --references--> `Flex Template Branding Plan`  [EXTRACTED]
+  C:\Users\Mark\Claude-Code\flex-updates\CLAUDE.md → C:\Users\Mark\Claude-Code\flex-updates\docs\plans\2026-02-28-flex-template-branding-plan.md
+- `Flex Template Branding Plan` --rationale_for--> `Flex Template Branding Design Document`  [EXTRACTED]
+  C:\Users\Mark\Claude-Code\flex-updates\docs\plans\2026-02-28-flex-template-branding-plan.md → C:\Users\Mark\Claude-Code\flex-updates\docs\plans\2026-02-28-flex-template-branding-design.md
+
+## Hyperedges (group relationships)
+- **Frenectomy Recovery Patient Handout Set** — postop_frenectomy, postop_frenectomy_stretching, concept_frenum_reattachment, concept_stretching_exercise [EXTRACTED 0.95]
+- **CAD Post-Op Template Family** — starter_postop_template, postop_frenectomy, postop_frenectomy_stretching, brand_cad_colorado_advanced_dentistry [INFERRED 0.90]
+- **CAD-Branded Patient Document Set** — starter_consent_template, starter_postop_template, postop_frenectomy, postop_frenectomy_stretching, brand_cad_colorado_advanced_dentistry [INFERRED 0.85]
 
 ## Communities
 
-### Community 67 - "Program"
+### Community 0 - "Starter Post-Op Template"
 Cohesion: 0.5
-Nodes (2): GetDCPW, Program
+Nodes (5): Colorado Advanced Dentistry (CAD) Brand, Call Us If (warning-signs section), H2 Section Heading Structure, Starter Consent Template, Starter Post-Op Template
 
-### Community 8 - "NSSM Service Runner"
-Cohesion: 0.04
-Nodes (169): open_lsa_policy(), username_sid(), canonicalise_username(), username_equiv(), is_localsystem(), well_known_sid(), well_known_username(), grant_logon_as_service() (+161 more)
-
-### Community 28 - "bootstrap.bundle.min.js"
-Cohesion: 0.15
-Nodes (33): i(), o(), a(), t(), Y(), z(), K(), X() (+25 more)
-
-### Community 20 - "chunk.201.9574ae801c057a800d93.js"
-Cohesion: 0.08
-Nodes (41): t(), n(), e(), i(), a(), c(), h(), f() (+33 more)
-
-### Community 23 - "chunk.513.6ccf6171f638e4fb58fc.js"
-Cohesion: 0.26
-Nodes (43): a(), i(), l(), s(), u(), o(), c(), d() (+35 more)
-
-### Community 14 - "jquery.min.js"
-Cohesion: 0.05
-Nodes (57): i(), t(), n(), r(), o(), k(), C(), L() (+49 more)
-
-### Community 2 - "Lodash And jQuery Helpers"
-Cohesion: 0.01
-Nodes (379): e(), r(), B(), A(), SUPPORT_WORD_BREAKING(), n(), e(), s() (+371 more)
-
-### Community 1 - "Date Range Picker Hook"
-Cohesion: 0.01
-Nodes (593): SUPPORT_FOREIGNOBJECT_DRAWING(), t(), _(), p(), x(), i(), n(), o() (+585 more)
-
-### Community 19 - "chunk.916.d2b7d2cc97b6b95fd79e.js"
-Cohesion: 0.09
-Nodes (52): i(), o(), s(), a(), u(), l(), c(), f() (+44 more)
-
-### Community 3 - "Legacy Ember Bundle Chunk"
-Cohesion: 0.03
-Nodes (323): c(), u(), s(), a(), r(), o(), i(), l() (+315 more)
-
-### Community 24 - ".number()"
-Cohesion: 0.33
-Nodes (39): _typeof(), s(), c(), u(), d(), p(), m(), f() (+31 more)
-
-### Community 30 - "intro.js"
-Cohesion: 0.13
-Nodes (19): e(), i(), n(), r(), s(), c(), h(), u() (+11 more)
-
-### Community 22 - "jquery-3.6.0.min.js"
-Cohesion: 0.08
-Nodes (32): m(), x(), T(), se(), le(), ce(), fe(), he() (+24 more)
-
-### Community 76 - "jquery-cron.js"
-Cohesion: 1.0
-Nodes (3): v(), y(), b()
-
-### Community 33 - "jquery.moment.js"
-Cohesion: 0.15
-Nodes (17): n(), s(), r(), i(), a(), o(), u(), d() (+9 more)
-
-### Community 91 - "medium-button.min.js"
-Cohesion: 1.0
-Nodes (2): MediumButton(), getCurrentSelection()
-
-### Community 25 - "nouislider.js"
-Cohesion: 0.14
-Nodes (37): e(), r(), i(), o(), a(), s(), l(), u() (+29 more)
-
-### Community 18 - "summernote-bs4.min.js"
-Cohesion: 0.07
-Nodes (34): r(), a(), t(), s(), b(), y(), k(), w() (+26 more)
-
-### Community 10 - "Legacy Vendor.js Bundle"
-Cohesion: 0.08
-Nodes (129): t(), u(), a(), s(), l(), c(), h(), r() (+121 more)
-
-### Community 56 - "xselectable.min.js"
-Cohesion: 0.47
-Nodes (3): o(), l(), r()
-
-### Community 16 - "pdf.js"
-Cohesion: 0.13
-Nodes (47): r(), a(), u(), l(), c(), e(), b(), _() (+39 more)
-
-### Community 12 - "pdf.worker.js"
-Cohesion: 0.09
-Nodes (51): r(), u(), h(), f(), d(), e(), t(), x() (+43 more)
-
-### Community 26 - "jquery-2.1.0.min.js"
-Cohesion: 0.15
-Nodes (37): y(), re(), ie(), oe(), se(), ae(), ue(), le() (+29 more)
-
-### Community 77 - "zlib.js"
-Cohesion: 0.67
-Nodes (2): n(), f()
-
-### Community 29 - "hammer.min.js"
-Cohesion: 0.13
-Nodes (23): r(), s(), o(), a(), h(), u(), c(), l() (+15 more)
-
-### Community 70 - "jquery.cookie.js"
-Cohesion: 0.6
-Nodes (4): o(), i(), r(), t()
-
-### Community 0 - "React App Main Bundle"
-Cohesion: 0.0
-Nodes (1368): i(), O(), v(), k(), n(), r(), tr(), Sf() (+1360 more)
-
-### Community 78 - "jquery.mousewheel.min.js"
-Cohesion: 0.67
-Nodes (2): t(), n()
-
-### Community 51 - "jquery-ui.min.js"
+### Community 1 - "Post-Op: Laser Frenectomy"
 Cohesion: 0.5
-Nodes (6): e(), i(), s(), n(), t(), r()
+Nodes (4): Frenectomy (procedure), Post-Op Pain Management, Periolase MVP-7 Dental Laser, Post-Op: Laser Frenectomy
 
-### Community 42 - "prettify.js"
-Cohesion: 0.33
-Nodes (13): b(), w(), s(), C(), _(), e(), L(), a() (+5 more)
-
-### Community 44 - "debugger.js"
-Cohesion: 0.22
-Nodes (9): r(), i(), o(), active(), t(), init(), add(), cleanup() (+1 more)
-
-### Community 17 - "viewer.js"
-Cohesion: 0.06
-Nodes (23): n(), a(), C(), T(), I(), K(), X(), me() (+15 more)
-
-### Community 57 - "AccountsReceivableAgingReport-ClcwxWkf.js"
-Cohesion: 0.4
-Nodes (2): _(), fe()
-
-### Community 4 - "Chart.js Visualization Library"
-Cohesion: 0.01
-Nodes (56): GD(), EX(), Xh(), $w(), MO(), uy(), nd(), cA() (+48 more)
-
-### Community 5 - "React Render And Aggregate Layer"
-Cohesion: 0.01
-Nodes (34): Lw(), nte(), ote(), bte(), Rte(), fS(), cR(), wz() (+26 more)
-
-### Community 58 - "yX()"
-Cohesion: 0.33
-Nodes (1): yX()
-
-### Community 48 - "Cte()"
-Cohesion: 0.2
-Nodes (1): Cte()
-
-### Community 79 - "Jte()"
-Cohesion: 0.5
-Nodes (1): Jte()
-
-### Community 13 - "cne()"
-Cohesion: 0.1
-Nodes (8): ine(), cne(), r1e(), a1e(), o1e(), g1e(), js(), r_()
-
-### Community 7 - "React Index Bundle DRt9IPG6"
-Cohesion: 0.03
-Nodes (158): U0(), n(), bz(), $(), B0(), B(), x1(), j() (+150 more)
-
-### Community 49 - "My()"
-Cohesion: 0.2
-Nodes (2): axe(), My()
-
-### Community 11 - "statement.cc"
-Cohesion: 0.03
-Nodes (73): callback(), normalizeMethod(), Init(), Process(), Schedule(), Error(), CleanQueue(), Backup() (+65 more)
-
-### Community 9 - "index-X9sB7dqF.js"
-Cohesion: 0.03
-Nodes (136): Ji(), ea(), na(), oa(), ua(), ha(), pa(), de() (+128 more)
-
-### Community 6 - "Material UI Icons And Tabs"
-Cohesion: 0.02
-Nodes (176): ol(), fs(), hs(), Fo(), ms(), gs(), Gn(), bs() (+168 more)
-
-### Community 15 - "sc"
-Cohesion: 0.06
-Nodes (10): ku(), y(), Hu(), Wu(), Yu(), Xu(), $f, Ie (+2 more)
-
-### Community 97 - "sqlite3.d.ts"
+### Community 2 - "Frenectomy Stretching Exercises"
 Cohesion: 0.67
-Nodes (2): Statement, Database
+Nodes (3): Frenum Reattachment Prevention, Post-Frenectomy Stretching Exercise, Frenectomy Stretching Exercises
 
-### Community 98 - "trace.js"
+### Community 3 - "Flex Template Branding Design Document"
 Cohesion: 1.0
-Nodes (2): extendTrace(), filter()
+Nodes (3): Flex Template Branding Design Document, Flex Template Branding Plan, Flex Updates CLAUDE.md
 
-### Community 59 - "async.h"
-Cohesion: 0.47
-Nodes (4): listener(), finish(), add(), send()
-
-### Community 35 - "NSSM nssm.h: master header (PATH_LENGTH, throttle/kill timeo"
-Cohesion: 0.16
-Nodes (22): GetDCPW: Dentrix document password generator (C#), NSSM account.cpp: LSA SID lookup, logon-as-service rights, NSSM account.h: account/SID API + LocalSystem/LocalService/NetworkService constants, NSSM console.cpp: console allocation/check helpers, NSSM console.h: check_console / alloc_console prototypes, NSSM env.cpp: environment block copy/expand/clear, NSSM env.h: environment manipulation API, NSSM event.cpp: event log + error/message string formatting (+14 more)
-
-### Community 80 - "NSSM service.cpp (Windows service control logic)"
-Cohesion: 0.83
-Nodes (4): NSSM service.cpp (Windows service control logic), NSSM service.h (service struct + control constants), NSSM settings.cpp (registry value get/set helpers), NSSM settings.h (settings_t table type + native key names)
-
-### Community 99 - "adler32cs.js (Adler-32 checksum library)"
+### Community 4 - "Starter - Education"
 Cohesion: 1.0
-Nodes (3): adler32cs.js (Adler-32 checksum library), Deflater.js (DEFLATE compression - PNG/zip support), flashcanvas.js (legacy IE canvas-via-Flash polyfill)
+Nodes (1): Starter - Education
 
-### Community 43 - "flex.js (Flex Dental Ember.js SPA main bundle)"
-Cohesion: 0.22
-Nodes (15): bootstrap.bundle.min.js (Bootstrap 4.6.1 with Popper), chunk.143 (webpack lazy chunk for Flex SPA), chunk.178 (webpack lazy chunk for Flex SPA), chunk.201 (webpack lazy chunk for Flex SPA), chunk.513 (webpack lazy chunk for Flex SPA), chunk.564 (webpack lazy chunk for Flex SPA), chunk.571 (webpack lazy chunk for Flex SPA), chunk.916 (webpack lazy chunk for Flex SPA) (+7 more)
-
-### Community 40 - "jquery-ui.min.js (jQuery UI library)"
-Cohesion: 0.15
-Nodes (18): jquery-cron.js (cron expression UI builder), jquery-ui.min.js (jQuery UI library), jquery.livestamp.js (relative-time auto-updater), jquery.moment.js (Moment.js date library), polyfill.js (console, btoa/atob, Array/Object/String polyfills), slick.js (ddslick jQuery dropdown plugin), smoothscroll.min.js (smooth-scrolling polyfill), sol.js (select-or-list multi-select dropdown) (+10 more)
-
-### Community 113 - "medium-button.min.js (Medium-style button UI)"
+### Community 5 - "Consent - Against Medical Advice"
 Cohesion: 1.0
-Nodes (2): medium-button.min.js (Medium-style button UI), nouislider.js v14.2.0 (range slider)
+Nodes (1): Consent - Against Medical Advice
 
-### Community 114 - "qrcode.min.js (QR code generator)"
+### Community 6 - "Consent - Bone Graft"
 Cohesion: 1.0
-Nodes (2): qrcode.min.js (QR code generator), rasterizeHTML.allinone.js (HTML to canvas rasterizer)
+Nodes (1): Consent - Bone Graft
 
-### Community 36 - "jQuery v2.2.4 (core library)"
-Cohesion: 0.16
-Nodes (22): zlib.js (PNG support, FlateStream/DecodeStream), jQuery collagePlus v0.3.3 (image collage layout), colpick (jQuery color picker plugin), Hammer.JS v2.0.7 (touch gesture library), jQuery v2.2.4 (core library), jQuery Cookie Plugin v1.4.1, blueimp jQuery File Upload - Angular module, blueimp jQuery File Upload - audio preview module (+14 more)
-
-### Community 39 - "PDF.js Module"
-Cohesion: 0.16
-Nodes (19): Flex Vendor JS Libraries, jQuery UI Timepicker Addon, jQuery UI Timepicker Addon (minified), jQuery NiceScroll, jQuery UI Touch Punch, Prettify (vendor assets), RequireJS, PDF.js Module (+11 more)
-
-### Community 52 - "Flex React Assets"
-Cohesion: 0.36
-Nodes (8): Flex React Assets, AccordionDetails (React asset), accounts-receivable-aging (React asset), AccountsReceivableAgingReport (React asset), Alert (React asset), analytics-clinic.state (React asset), Card (React asset), CardContent (React asset)
-
-### Community 31 - "Flex React Assets Directory"
-Cohesion: 0.14
-Nodes (4): Flex React Assets Directory, Provider Reports, UI Components, Financial Reports
-
-### Community 38 - "Flex React App Bundle"
-Cohesion: 0.16
-Nodes (4): Flex React App Bundle, Practice KPI Dashboard Modules, Production Metrics, Patient Metrics
-
-### Community 53 - "MUI Icon Components"
-Cohesion: 0.29
-Nodes (2): MUI Icon Components, Refresh / Polling System
-
-### Community 32 - "Flex React/Ember SPA bundle assets"
-Cohesion: 0.12
-Nodes (24): Tabs-1myoOsZs.js (React asset bundle), ThemeProvider-D5S-Mj3k.js (React theme bundle), unscheduled-treatment-by-provider-DZjn4hSL.js (report bundle), useDateRangePicker-DUpto6S8.js (date-range hook bundle), VerticalNavDemo-BvwXPm9P.js (nav demo bundle), Visibility-BFZTx-Nj.js (icon bundle), Warning-Dpz_E7N2.js (icon bundle), _...all_-CPlHwYoC.js (catch-all route bundle) (+16 more)
-
-### Community 72 - "Flex sqlite3 macros.h"
-Cohesion: 0.6
-Nodes (5): Flex sqlite3 macros.h, Flex sqlite3 node_sqlite3.cc, Flex sqlite3 statement.cc, Flex sqlite3 statement.h, Flex sqlite3 threading.h
-
-### Community 45 - "Flex Updates CLAUDE.md"
-Cohesion: 0.22
-Nodes (13): Flex Updates CLAUDE.md, Flex Template Branding Design Document, Flex Template Branding Plan, Email Template: Appointment Booked, Email Template: Appointment Reminder, Email Template: Appointment Reminder v1, Email Template: Appointment Reminder HH, Email Template: Appointment Reminder HH v1 (+5 more)
-
-### Community 115 - "Flex Backup Huddle Notes"
+### Community 7 - "Consent - Connective Tissue Graft"
 Cohesion: 1.0
-Nodes (2): Flex Backup Huddle Notes, Email Template: Call List
+Nodes (1): Consent - Connective Tissue Graft
 
-### Community 116 - "Email Template: Birthday"
+### Community 8 - "Consent - Denture Adjustment Against Recommendation"
 Cohesion: 1.0
-Nodes (2): Email Template: Birthday, Email Template: Birthday v1
+Nodes (1): Consent - Denture Adjustment Against Recommendation
 
-### Community 54 - "Email: New Appointment"
-Cohesion: 0.29
-Nodes (7): Email: Confirm with Forms (variant 1), Email: Failed Patient RC Payment, Email: New Appointment, Email: New Appointment (variant 1), Email: Other Forms, Email: Other Forms (variant 1), Email: Recall Due
-
-### Community 117 - "Email: Doc"
+### Community 9 - "Consent - Esthetic and Reconstructive Services"
 Cohesion: 1.0
-Nodes (2): Email: Doc, Email: Doc (variant 1)
+Nodes (1): Consent - Esthetic and Reconstructive Services
 
-### Community 81 - "Email: Health History"
-Cohesion: 0.5
-Nodes (4): Email: Health History, Email: Health History (variant 1), Email: Health History Auto, Email: Health History Auto (variant 1)
-
-### Community 100 - "Email: New Patient"
-Cohesion: 0.67
-Nodes (3): Email: New Patient, Email: New Patient (variant 1), Email: NP Emails Sent
-
-### Community 60 - "Email: Post-op Messaging"
-Cohesion: 0.33
-Nodes (6): Email: Post-op, Email: Post-op (variant 1), Email: Post-op Messaging, Email: Post-op Messaging (variant 1), Email: Pre-op Messaging, Email: Pre-op Messaging (variant 1)
-
-### Community 101 - "Flex Email: Recall Due 1"
+### Community 10 - "Consent - Extractions (Pediatric)"
 Cohesion: 1.0
-Nodes (3): Flex Email: Recall Due 1, Flex Email: Recall Past Due, Flex Email: Recall Past Due 1
+Nodes (1): Consent - Extractions (Pediatric)
 
-### Community 61 - "Flex Email: Statement"
-Cohesion: 0.4
-Nodes (6): Flex Email: Resent Statement, Flex Email: Resent Statement 1, Flex Email: Statement, Flex Email: Statement 1, Flex Email: Treatment Forms, Flex Email: Treatment Forms 1
-
-### Community 102 - "Flex Email: Review Request"
-Cohesion: 0.67
-Nodes (3): Flex Email: Review Request, Flex Email: Review Request 1, Flex Email Blast: Newsletter
-
-### Community 82 - "Flex Log: job.log"
-Cohesion: 0.67
-Nodes (4): Flex Email: Status Report, Flex Log: flex.log, Flex Log: http.log, Flex Log: job.log
-
-### Community 118 - "Flex Email Backup: Appointment Reminder"
+### Community 11 - "Consent - Gingivectomy"
 Cohesion: 1.0
-Nodes (2): Flex Email Backup: Appointment Reminder, Flex Email Backup: Appointment Reminder 1
+Nodes (1): Consent - Gingivectomy
 
-### Community 119 - "NSSM ChangeLog"
+### Community 12 - "Consent - LANAP Retainer Removal"
 Cohesion: 1.0
-Nodes (2): NSSM ChangeLog, NSSM README
+Nodes (1): Consent - LANAP Retainer Removal
 
-### Community 120 - "Flex Public: index.html"
+### Community 13 - "Consent - LANAP [Spanish]"
 Cohesion: 1.0
-Nodes (2): Flex Public: index.html, Flex Public: robots.txt
+Nodes (1): Consent - LANAP [Spanish]
 
-### Community 83 - "lang/README.md"
-Cohesion: 0.67
-Nodes (3): lang/CHANGELOG.md, lang/CONTRIBUTING.md, lang/README.md
-
-### Community 47 - "pdfjs/api/draft/display_api.js.html"
-Cohesion: 0.2
-Nodes (12): dbdown/getcreds.html, pdfjs/api/index.html, pdfjs/api/draft/display_api.js.html, pdfjs/api/draft/doc_helper.js.html, pdfjs/api/draft/external-Promise.html, pdfjs/api/draft/global.html, pdfjs/api/draft/index.html, pdfjs/api/draft/PDFDataRangeTransport.html (+4 more)
-
-### Community 55 - "PDF.js API Draft - RenderTask.html"
-Cohesion: 0.43
-Nodes (7): PDF.js API Draft - RenderTask.html, PDF.js API Draft - shared_util.js.html, PDF.js Prettify Apache License 2.0, PDF.js Examples Index, PDF.js Features Index, PDF.js Getting Started Index, PDF.js Web Viewer
-
-### Community 121 - "React Public Index"
+### Community 14 - "Consent - Periodontal Surgery"
 Cohesion: 1.0
-Nodes (2): React Public Index, React Public robots.txt
+Nodes (1): Consent - Periodontal Surgery
 
-### Community 169 - "Flex sqlite3 README"
+### Community 15 - "Refusal - LANAP Night Guard"
 Cohesion: 1.0
-Nodes (1): Flex sqlite3 README
+Nodes (1): Refusal - LANAP Night Guard
 
-### Community 21 - "Consent Forms"
-Cohesion: 0.06
-Nodes (53): Consent - Airway-Mouth Taping, Consent - Bisphosphonates [IV], Consent - Bisphosphonates [Oral], Consent - Clear Aligners, Consent - Crowns and Bridges, Consent - Endodontic Treatment, Consent - Extractions, Consent - Fillings (+45 more)
-
-### Community 46 - "Consent - Periodontal Surgery"
-Cohesion: 0.18
-Nodes (13): Consent - Bone Graft, Consent - Connective Tissue Graft, Consent - Denture Adjustment Against Recommendation, Consent - Extractions (Pediatric), Consent - Gingivectomy, Consent - LANAP Retainer Removal, Consent - LANAP [Spanish], Consent - Periodontal Surgery (+5 more)
-
-### Community 122 - "Consent - Esthetic and Reconstructive Services"
+### Community 16 - "Refusal - Recommended Treatment"
 Cohesion: 1.0
-Nodes (2): Consent - Esthetic and Reconstructive Services, Shade Decision Form
+Nodes (1): Refusal - Recommended Treatment
 
-### Community 37 - "Preview Index"
-Cohesion: 0.13
-Nodes (22): Preview Index, Email - Appointment Reminder, Email - Appointment Reminder 1, Email - Appointment Reminder HH, Email - Appointment Reminder HH 1, Email - Birthday, Email - Birthday 1, Call List Email (+14 more)
-
-### Community 34 - "Branded Emails Preview Directory"
-Cohesion: 0.15
-Nodes (1): Branded Emails Preview Directory
-
-### Community 73 - "Preop Messaging Email"
-Cohesion: 0.4
-Nodes (5): Postop Messaging Email v1, Preop Messaging Email, Preop Messaging Email v1, Treatment Forms Email, Treatment Forms Email v1
-
-### Community 84 - "Recall Due Email"
-Cohesion: 0.67
-Nodes (4): Recall Due Email, Recall Due Email v1, Recall Past Due Email, Recall Past Due Email v1
-
-### Community 85 - "Resent Statement Email"
-Cohesion: 0.67
-Nodes (4): Resent Statement Email, Resent Statement Email v1, Statement Email, Statement Email v1
-
-### Community 123 - "Review Request Email"
+### Community 17 - "Shade Decision Form"
 Cohesion: 1.0
-Nodes (2): Review Request Email, Review Request Email v1
+Nodes (1): Shade Decision Form
 
-### Community 103 - "Cigna Active Patients Blast"
+### Community 18 - "Instructions - Fluoride Carrier"
 Cohesion: 1.0
-Nodes (3): Cigna Active Patients Blast, Cigna Inactive Patients Blast, Cigna Scheduled Patients Blast
+Nodes (1): Instructions - Fluoride Carrier
 
-### Community 86 - "Consent - Airway/Mouth Taping"
+### Community 19 - "Instructions - Night Guard"
 Cohesion: 1.0
-Nodes (4): Consent - Airway/Mouth Taping, Consent - Bisphosphonates (IV), Consent - Bisphosphonates (Oral), Consent - Clear Aligners
+Nodes (1): Instructions - Night Guard
 
-### Community 170 - "Flex COVID-19"
+### Community 20 - "Pain Management Protocol"
+Cohesion: 1.0
+Nodes (1): Pain Management Protocol
+
+### Community 21 - "Preview Index"
+Cohesion: 1.0
+Nodes (1): Preview Index
+
+### Community 22 - "Email - Appointment Reminder"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Reminder
+
+### Community 23 - "Email - Appointment Reminder 1"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Reminder 1
+
+### Community 24 - "Email - Appointment Reminder HH"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Reminder HH
+
+### Community 25 - "Email - Appointment Reminder HH 1"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Reminder HH 1
+
+### Community 26 - "Email - Birthday"
+Cohesion: 1.0
+Nodes (1): Email - Birthday
+
+### Community 27 - "Email - Birthday 1"
+Cohesion: 1.0
+Nodes (1): Email - Birthday 1
+
+### Community 50 - "Postop Messaging Email v1"
+Cohesion: 1.0
+Nodes (1): Postop Messaging Email v1
+
+### Community 51 - "Preop Messaging Email"
+Cohesion: 1.0
+Nodes (1): Preop Messaging Email
+
+### Community 52 - "Preop Messaging Email v1"
+Cohesion: 1.0
+Nodes (1): Preop Messaging Email v1
+
+### Community 53 - "Recall Due Email"
+Cohesion: 1.0
+Nodes (1): Recall Due Email
+
+### Community 54 - "Recall Due Email v1"
+Cohesion: 1.0
+Nodes (1): Recall Due Email v1
+
+### Community 55 - "Recall Past Due Email"
+Cohesion: 1.0
+Nodes (1): Recall Past Due Email
+
+### Community 56 - "Recall Past Due Email v1"
+Cohesion: 1.0
+Nodes (1): Recall Past Due Email v1
+
+### Community 57 - "Resent Statement Email"
+Cohesion: 1.0
+Nodes (1): Resent Statement Email
+
+### Community 58 - "Resent Statement Email v1"
+Cohesion: 1.0
+Nodes (1): Resent Statement Email v1
+
+### Community 59 - "Review Request Email"
+Cohesion: 1.0
+Nodes (1): Review Request Email
+
+### Community 60 - "Review Request Email v1"
+Cohesion: 1.0
+Nodes (1): Review Request Email v1
+
+### Community 61 - "Statement Email"
+Cohesion: 1.0
+Nodes (1): Statement Email
+
+### Community 62 - "Statement Email v1"
+Cohesion: 1.0
+Nodes (1): Statement Email v1
+
+### Community 63 - "Treatment Forms Email"
+Cohesion: 1.0
+Nodes (1): Treatment Forms Email
+
+### Community 64 - "Treatment Forms Email v1"
+Cohesion: 1.0
+Nodes (1): Treatment Forms Email v1
+
+### Community 65 - "Cigna Active Patients Blast"
+Cohesion: 1.0
+Nodes (1): Cigna Active Patients Blast
+
+### Community 66 - "Cigna Inactive Patients Blast"
+Cohesion: 1.0
+Nodes (1): Cigna Inactive Patients Blast
+
+### Community 67 - "Cigna Scheduled Patients Blast"
+Cohesion: 1.0
+Nodes (1): Cigna Scheduled Patients Blast
+
+### Community 68 - "Consent - Airway/Mouth Taping"
+Cohesion: 1.0
+Nodes (1): Consent - Airway/Mouth Taping
+
+### Community 69 - "Consent - Bisphosphonates (IV)"
+Cohesion: 1.0
+Nodes (1): Consent - Bisphosphonates (IV)
+
+### Community 70 - "Consent - Bisphosphonates (Oral)"
+Cohesion: 1.0
+Nodes (1): Consent - Bisphosphonates (Oral)
+
+### Community 71 - "Consent - Clear Aligners"
+Cohesion: 1.0
+Nodes (1): Consent - Clear Aligners
+
+### Community 72 - "Consent - Crowns and Bridges"
+Cohesion: 1.0
+Nodes (1): Consent - Crowns and Bridges
+
+### Community 73 - "Consent - Endodontic Treatment"
+Cohesion: 1.0
+Nodes (1): Consent - Endodontic Treatment
+
+### Community 74 - "Consent - Extractions"
+Cohesion: 1.0
+Nodes (1): Consent - Extractions
+
+### Community 75 - "Consent - Fillings"
+Cohesion: 1.0
+Nodes (1): Consent - Fillings
+
+### Community 76 - "Consent - Frenectomy"
+Cohesion: 1.0
+Nodes (1): Consent - Frenectomy
+
+### Community 77 - "Consent - General Restorative"
+Cohesion: 1.0
+Nodes (1): Consent - General Restorative
+
+### Community 78 - "Consent - Immediate Dentures"
+Cohesion: 1.0
+Nodes (1): Consent - Immediate Dentures
+
+### Community 79 - "Consent - KoR Whitening"
+Cohesion: 1.0
+Nodes (1): Consent - KoR Whitening
+
+### Community 80 - "Consent - LANAP"
+Cohesion: 1.0
+Nodes (1): Consent - LANAP
+
+### Community 81 - "Consent - Orthodontics (General)"
+Cohesion: 1.0
+Nodes (1): Consent - Orthodontics (General)
+
+### Community 82 - "Consent - Photo Release"
+Cohesion: 1.0
+Nodes (1): Consent - Photo Release
+
+### Community 83 - "Consent - Pinhole"
+Cohesion: 1.0
+Nodes (1): Consent - Pinhole
+
+### Community 84 - "Consent - Release of Records"
+Cohesion: 1.0
+Nodes (1): Consent - Release of Records
+
+### Community 85 - "Consent - Scaling and Root Planing"
+Cohesion: 1.0
+Nodes (1): Consent - Scaling and Root Planing
+
+### Community 86 - "Consent - Veneers"
+Cohesion: 1.0
+Nodes (1): Consent - Veneers
+
+### Community 87 - "Flex COVID-19"
 Cohesion: 1.0
 Nodes (1): Flex COVID-19
 
-### Community 104 - "Membership Plan One"
+### Community 88 - "Postop - LANAP"
 Cohesion: 1.0
-Nodes (3): Membership Plan One, Membership Plan Two, Membership Plan Three
+Nodes (1): Postop - LANAP
 
-### Community 171 - "Postop - Airway-Appliance Titration Protocol"
+### Community 89 - "Postop - Pinhole"
+Cohesion: 1.0
+Nodes (1): Postop - Pinhole
+
+### Community 90 - "Refusal - Custom Shade"
+Cohesion: 1.0
+Nodes (1): Refusal - Custom Shade
+
+### Community 91 - "Refusal - Periodontal Treatment"
+Cohesion: 1.0
+Nodes (1): Refusal - Periodontal Treatment
+
+### Community 92 - "Refusal - X-rays"
+Cohesion: 1.0
+Nodes (1): Refusal - X-rays
+
+### Community 93 - "Membership Four"
+Cohesion: 1.0
+Nodes (1): Membership Four
+
+### Community 94 - "Membership Plan One"
+Cohesion: 1.0
+Nodes (1): Membership Plan One
+
+### Community 95 - "Membership Plan Three"
+Cohesion: 1.0
+Nodes (1): Membership Plan Three
+
+### Community 96 - "Membership Plan Two"
+Cohesion: 1.0
+Nodes (1): Membership Plan Two
+
+### Community 97 - "Postop - Airway-Appliance Titration Protocol"
 Cohesion: 1.0
 Nodes (1): Postop - Airway-Appliance Titration Protocol
 
-### Community 65 - "Postop - Pediatric Pulpotomy"
-Cohesion: 0.4
-Nodes (6): Postop - Composite Fillings, Postop - Pediatric Pulpotomy, Postop - Root Canal Therapy, Postop - Crown Bridge or Veneer with Temporary, Postop - Crown Bridge or Veneer Same Day Final, Postop - Root Canal Therapy
-
-### Community 124 - "Postop - Crown Bridge or Veneer with Temporary"
+### Community 98 - "Postop - Composite Fillings"
 Cohesion: 1.0
-Nodes (2): Postop - Crown Bridge or Veneer with Temporary, Postop - Crown/Bridge/Veneer Final Same Day
+Nodes (1): Postop - Composite Fillings
 
-### Community 63 - "Postop - Extractions"
-Cohesion: 0.47
-Nodes (6): Postop - Extractions, Postop - Immediate Dentures, Postop - Implant Placement, Postop - Sedation, Postop - Airway-Appliance Titration Protocol, Postop - Implant Placement
-
-### Community 74 - "Postop - KöR Whitening"
-Cohesion: 0.7
-Nodes (5): Postop - In Office Whitening, Postop - KöR Whitening, Postop - Whitening After In-Office Visit, Postop - Whitening Instructions At Home, Postop - In Office Whitening
-
-### Community 125 - "Email - Appointment Booked"
+### Community 99 - "Postop - Crown Bridge or Veneer with Temporary"
 Cohesion: 1.0
-Nodes (2): Email - Appointment Booked, Email - Appointment Reminder
+Nodes (1): Postop - Crown Bridge or Veneer with Temporary
 
-### Community 126 - "Email Doc"
+### Community 100 - "Postop - Crown/Bridge/Veneer Final Same Day"
 Cohesion: 1.0
-Nodes (2): Email Doc, Email Doc (variant 1)
+Nodes (1): Postop - Crown/Bridge/Veneer Final Same Day
 
-### Community 127 - "New Patient Email (variant 1)"
+### Community 101 - "Postop - Extractions"
 Cohesion: 1.0
-Nodes (2): New Patient Email (variant 1), New Patient Emails Sent
+Nodes (1): Postop - Extractions
 
-### Community 105 - "Other Forms Email"
-Cohesion: 0.67
-Nodes (3): Other Forms Email, Other Forms Email (variant 1), Treatment Forms Email
-
-### Community 64 - "Post-Op Messaging Email"
-Cohesion: 0.33
-Nodes (6): Post-Op Email, Post-Op Email (variant 1), Post-Op Messaging Email, Post-Op Messaging Email (variant 1), Pre-Op Messaging Email, Pre-Op Messaging Email (variant 1)
-
-### Community 87 - "Recall Due Email"
-Cohesion: 0.5
-Nodes (4): Recall Due Email, Recall Due Email (variant 1), Recall Past Due Email, Recall Past Due Email (variant 1)
-
-### Community 75 - "Statement Email"
-Cohesion: 0.4
-Nodes (5): Resent Statement Email, Resent Statement Email (variant 1), Statement Email, Statement Email (variant 1), Status Report Email
-
-### Community 128 - "Review Request Email"
+### Community 102 - "Postop - Immediate Dentures"
 Cohesion: 1.0
-Nodes (2): Review Request Email, Review Request Email (variant 1)
+Nodes (1): Postop - Immediate Dentures
 
-### Community 41 - "_Official_CAD-Branding Guide.pdf"
-Cohesion: 0.21
-Nodes (4): CAD-stationery-appointment-card-V2-Print.pdf (example), CAD-stationery-business-card-DrMark-V2.pdf (example), CAD-stationery-envelope-V2.pdf (example), CAD-stationery-letterhead-V2-Print.pdf (example)
-
-### Community 27 - "CMYK Color Space"
-Cohesion: 0.16
-Nodes (14): CAD Logo System (Print/CMYK), Horizontal Orientation, Icon Orientation, Primary Orientation, Stacked Orientation, Wordmark Orientation, Full Color Variant, Grayscale Variant (+6 more)
-
-### Community 66 - "CAD Wordmark — Full Color CMYK (Print)"
+### Community 103 - "Postop - Implant Placement"
 Cohesion: 1.0
-Nodes (6): CAD Wordmark — Full Color CMYK (Print), CAD Wordmark — Grayscale CMYK (Print), CAD Wordmark — Inverted CMYK (Print), CAD Wordmark — Mountain Lake CMYK (Print), CAD Wordmark — Sky Blue Ice CMYK (Print), CAD Wordmark — White CMYK (Print)
+Nodes (1): Postop - Implant Placement
 
-## Ambiguous Edges - Review These
-- `huddlenotes.txt` → `lang/README.md`  [AMBIGUOUS]
-  C:\Users\Mark\Claude-Code\flex-updates\.graphify_chunk_text_12.txt · relation: conceptually_related_to
-- `dbdown/getcreds.html` → `pdfjs/api/index.html`  [AMBIGUOUS]
-  C:\Users\Mark\Claude-Code\flex-updates\.graphify_chunk_text_12.txt · relation: conceptually_related_to
-- `Flex COVID-19` → `Consent - Release of Records`  [AMBIGUOUS]
-  C:\Users\Mark\Claude-Code\flex-updates\.graphify_chunk_text_22.txt · relation: conceptually_related_to
+### Community 104 - "Postop - In Office Whitening"
+Cohesion: 1.0
+Nodes (1): Postop - In Office Whitening
+
+### Community 105 - "Postop - KöR Whitening"
+Cohesion: 1.0
+Nodes (1): Postop - KöR Whitening
+
+### Community 106 - "Postop - Pediatric Pulpotomy"
+Cohesion: 1.0
+Nodes (1): Postop - Pediatric Pulpotomy
+
+### Community 107 - "Postop - Root Canal Therapy"
+Cohesion: 1.0
+Nodes (1): Postop - Root Canal Therapy
+
+### Community 108 - "Postop - Sedation"
+Cohesion: 1.0
+Nodes (1): Postop - Sedation
+
+### Community 109 - "Postop - SRP"
+Cohesion: 1.0
+Nodes (1): Postop - SRP
+
+### Community 110 - "Postop - Whitening After In-Office Visit"
+Cohesion: 1.0
+Nodes (1): Postop - Whitening After In-Office Visit
+
+### Community 111 - "Postop - Whitening Instructions At Home"
+Cohesion: 1.0
+Nodes (1): Postop - Whitening Instructions At Home
+
+### Community 112 - "Email - Appointment Booked"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Booked
+
+### Community 113 - "Email - Appointment Reminder"
+Cohesion: 1.0
+Nodes (1): Email - Appointment Reminder
+
+### Community 114 - "Call List Email"
+Cohesion: 1.0
+Nodes (1): Call List Email
+
+### Community 115 - "Consent Email"
+Cohesion: 1.0
+Nodes (1): Consent Email
+
+### Community 116 - "Consent Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Consent Email (variant 1)
+
+### Community 117 - "Email Confirm"
+Cohesion: 1.0
+Nodes (1): Email Confirm
+
+### Community 118 - "Email Confirm (variant 1)"
+Cohesion: 1.0
+Nodes (1): Email Confirm (variant 1)
+
+### Community 119 - "Email Confirm With Forms"
+Cohesion: 1.0
+Nodes (1): Email Confirm With Forms
+
+### Community 120 - "Email Confirm With Forms (variant 1)"
+Cohesion: 1.0
+Nodes (1): Email Confirm With Forms (variant 1)
+
+### Community 121 - "Email Doc"
+Cohesion: 1.0
+Nodes (1): Email Doc
+
+### Community 122 - "Email Doc (variant 1)"
+Cohesion: 1.0
+Nodes (1): Email Doc (variant 1)
+
+### Community 123 - "Failed Patient RC Payment"
+Cohesion: 1.0
+Nodes (1): Failed Patient RC Payment
+
+### Community 124 - "Health History Email"
+Cohesion: 1.0
+Nodes (1): Health History Email
+
+### Community 125 - "Health History Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Health History Email (variant 1)
+
+### Community 126 - "Health History Auto"
+Cohesion: 1.0
+Nodes (1): Health History Auto
+
+### Community 127 - "Health History Auto (variant 1)"
+Cohesion: 1.0
+Nodes (1): Health History Auto (variant 1)
+
+### Community 128 - "New Appointment Email"
+Cohesion: 1.0
+Nodes (1): New Appointment Email
+
+### Community 129 - "New Appointment Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): New Appointment Email (variant 1)
+
+### Community 130 - "New Patient Email"
+Cohesion: 1.0
+Nodes (1): New Patient Email
+
+### Community 131 - "New Patient Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): New Patient Email (variant 1)
+
+### Community 132 - "New Patient Emails Sent"
+Cohesion: 1.0
+Nodes (1): New Patient Emails Sent
+
+### Community 133 - "Other Forms Email"
+Cohesion: 1.0
+Nodes (1): Other Forms Email
+
+### Community 134 - "Other Forms Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Other Forms Email (variant 1)
+
+### Community 135 - "Post-Op Email"
+Cohesion: 1.0
+Nodes (1): Post-Op Email
+
+### Community 136 - "Post-Op Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Post-Op Email (variant 1)
+
+### Community 137 - "Post-Op Messaging Email"
+Cohesion: 1.0
+Nodes (1): Post-Op Messaging Email
+
+### Community 138 - "Post-Op Messaging Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Post-Op Messaging Email (variant 1)
+
+### Community 139 - "Pre-Op Messaging Email"
+Cohesion: 1.0
+Nodes (1): Pre-Op Messaging Email
+
+### Community 140 - "Pre-Op Messaging Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Pre-Op Messaging Email (variant 1)
+
+### Community 141 - "Recall Due Email"
+Cohesion: 1.0
+Nodes (1): Recall Due Email
+
+### Community 142 - "Recall Due Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Recall Due Email (variant 1)
+
+### Community 143 - "Recall Past Due Email"
+Cohesion: 1.0
+Nodes (1): Recall Past Due Email
+
+### Community 144 - "Recall Past Due Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Recall Past Due Email (variant 1)
+
+### Community 145 - "Resent Statement Email"
+Cohesion: 1.0
+Nodes (1): Resent Statement Email
+
+### Community 146 - "Resent Statement Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Resent Statement Email (variant 1)
+
+### Community 147 - "Review Request Email"
+Cohesion: 1.0
+Nodes (1): Review Request Email
+
+### Community 148 - "Review Request Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Review Request Email (variant 1)
+
+### Community 149 - "Statement Email"
+Cohesion: 1.0
+Nodes (1): Statement Email
+
+### Community 150 - "Statement Email (variant 1)"
+Cohesion: 1.0
+Nodes (1): Statement Email (variant 1)
+
+### Community 151 - "Status Report Email"
+Cohesion: 1.0
+Nodes (1): Status Report Email
+
+### Community 152 - "Treatment Forms Email"
+Cohesion: 1.0
+Nodes (1): Treatment Forms Email
+
+### Community 153 - "Treatment Forms Email (txforms1.HTML)"
+Cohesion: 1.0
+Nodes (1): Treatment Forms Email (txforms1.HTML)
+
+### Community 154 - "Newsletter Blast Email"
+Cohesion: 1.0
+Nodes (1): Newsletter Blast Email
+
+### Community 155 - "Consent - Airway-Mouth Taping"
+Cohesion: 1.0
+Nodes (1): Consent - Airway-Mouth Taping
+
+### Community 156 - "Consent - Bisphosphonates [IV]"
+Cohesion: 1.0
+Nodes (1): Consent - Bisphosphonates [IV]
+
+### Community 157 - "Consent - Bisphosphonates [Oral]"
+Cohesion: 1.0
+Nodes (1): Consent - Bisphosphonates [Oral]
+
+### Community 158 - "Consent - Clear Aligners"
+Cohesion: 1.0
+Nodes (1): Consent - Clear Aligners
+
+### Community 159 - "Consent - Endodontic Treatment"
+Cohesion: 1.0
+Nodes (1): Consent - Endodontic Treatment
+
+### Community 160 - "Consent - Release of Records"
+Cohesion: 1.0
+Nodes (1): Consent - Release of Records
+
+### Community 161 - "Flex COVID-19"
+Cohesion: 1.0
+Nodes (1): Flex COVID-19
+
+### Community 162 - "Postop - LANAP (root templates)"
+Cohesion: 1.0
+Nodes (1): Postop - LANAP (root templates)
+
+### Community 163 - "Postop - Pinhole (root templates)"
+Cohesion: 1.0
+Nodes (1): Postop - Pinhole (root templates)
+
+### Community 164 - "Membership One"
+Cohesion: 1.0
+Nodes (1): Membership One
+
+### Community 165 - "Membership Three"
+Cohesion: 1.0
+Nodes (1): Membership Three
+
+### Community 166 - "Membership Two"
+Cohesion: 1.0
+Nodes (1): Membership Two
+
+### Community 167 - "Postop - Airway-Appliance Titration Protocol"
+Cohesion: 1.0
+Nodes (1): Postop - Airway-Appliance Titration Protocol
+
+### Community 168 - "Postop - Crown Bridge or Veneer with Temporary"
+Cohesion: 1.0
+Nodes (1): Postop - Crown Bridge or Veneer with Temporary
+
+### Community 169 - "Postop - Crown Bridge or Veneer Same Day Final"
+Cohesion: 1.0
+Nodes (1): Postop - Crown Bridge or Veneer Same Day Final
+
+### Community 170 - "Postop - Implant Placement"
+Cohesion: 1.0
+Nodes (1): Postop - Implant Placement
+
+### Community 171 - "Postop - In Office Whitening"
+Cohesion: 1.0
+Nodes (1): Postop - In Office Whitening
+
+### Community 172 - "PostOp - LANAP (postop subdir)"
+Cohesion: 1.0
+Nodes (1): PostOp - LANAP (postop subdir)
+
+### Community 173 - "Postop - Pinhole (postop subdir)"
+Cohesion: 1.0
+Nodes (1): Postop - Pinhole (postop subdir)
+
+### Community 174 - "Postop - Root Canal Therapy"
+Cohesion: 1.0
+Nodes (1): Postop - Root Canal Therapy
+
+### Community 185 - "CAD-stationery-appointment-card-V2-Print.pdf (example)"
+Cohesion: 1.0
+Nodes (1): CAD-stationery-appointment-card-V2-Print.pdf (example)
+
+### Community 186 - "CAD-stationery-business-card-DrMark-V2.pdf (example)"
+Cohesion: 1.0
+Nodes (1): CAD-stationery-business-card-DrMark-V2.pdf (example)
+
+### Community 187 - "CAD-stationery-envelope-V2.pdf (example)"
+Cohesion: 1.0
+Nodes (1): CAD-stationery-envelope-V2.pdf (example)
+
+### Community 188 - "CAD-stationery-letterhead-V2-Print.pdf (example)"
+Cohesion: 1.0
+Nodes (1): CAD-stationery-letterhead-V2-Print.pdf (example)
+
+### Community 218 - "CAD Wordmark — Full Color CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — Full Color CMYK (Print)
+
+### Community 219 - "CAD Wordmark — Grayscale CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — Grayscale CMYK (Print)
+
+### Community 220 - "CAD Wordmark — Inverted CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — Inverted CMYK (Print)
+
+### Community 221 - "CAD Wordmark — Mountain Lake CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — Mountain Lake CMYK (Print)
+
+### Community 222 - "CAD Wordmark — Sky Blue Ice CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — Sky Blue Ice CMYK (Print)
+
+### Community 223 - "CAD Wordmark — White CMYK (Print)"
+Cohesion: 1.0
+Nodes (1): CAD Wordmark — White CMYK (Print)
 
 ## Knowledge Gaps
-- **123 isolated node(s):** `GetDCPW`, `vC`, `Statement`, `Database`, `GetDCPW: Dentrix document password generator (C#)` (+118 more)
+- **164 isolated node(s):** `Starter - Education`, `Consent - Against Medical Advice`, `Consent - Bone Graft`, `Consent - Connective Tissue Graft`, `Consent - Denture Adjustment Against Recommendation` (+159 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Program`** (5 nodes): `Program.cs`, `GetDCPW`, `Program`, `.DTX_GetDCPW()`, `.Main()`
+- **Thin community `Starter - Education`** (1 nodes): `Starter - Education`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `medium-button.min.js`** (3 nodes): `medium-button.min.js`, `MediumButton()`, `getCurrentSelection()`
+- **Thin community `Consent - Against Medical Advice`** (1 nodes): `Consent - Against Medical Advice`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `zlib.js`** (4 nodes): `zlib.js`, `e()`, `n()`, `f()`
+- **Thin community `Consent - Bone Graft`** (1 nodes): `Consent - Bone Graft`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `jquery.mousewheel.min.js`** (4 nodes): `jquery.mousewheel.min.js`, `t()`, `i()`, `n()`
+- **Thin community `Consent - Connective Tissue Graft`** (1 nodes): `Consent - Connective Tissue Graft`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `AccountsReceivableAgingReport-ClcwxWkf.js`** (6 nodes): `AccountsReceivableAgingReport-ClcwxWkf.js`, `me()`, `ye()`, `_()`, `fe()`, `xe()`
+- **Thin community `Consent - Denture Adjustment Against Recommendation`** (1 nodes): `Consent - Denture Adjustment Against Recommendation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `yX()`** (6 nodes): `yX()`, `.constructor()`, `.getDerivedStateFromError()`, `.getDerivedStateFromProps()`, `.componentDidCatch()`, `.render()`
+- **Thin community `Consent - Esthetic and Reconstructive Services`** (1 nodes): `Consent - Esthetic and Reconstructive Services`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Cte()`** (10 nodes): `Cte()`, `.constructor()`, `.startChangePos()`, `.insertedCount()`, `.inserted()`, `.removedCount()`, `.removed()`, `.head()`, `.tail()`, `.removeDirection()`
+- **Thin community `Consent - Extractions (Pediatric)`** (1 nodes): `Consent - Extractions (Pediatric)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Jte()`** (4 nodes): `Jte()`, `.constructor()`, `.[Symbol.toStringTag]()`, `.toJSON()`
+- **Thin community `Consent - Gingivectomy`** (1 nodes): `Consent - Gingivectomy`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `My()`** (10 nodes): `axe()`, `My()`, `.acquireContext()`, `.releaseContext()`, `.addEventListener()`, `.removeEventListener()`, `.getDevicePixelRatio()`, `.getMaximumSize()`, `.isAttached()`, `.updateConfig()`
+- **Thin community `Consent - LANAP Retainer Removal`** (1 nodes): `Consent - LANAP Retainer Removal`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `sqlite3.d.ts`** (3 nodes): `sqlite3.d.ts`, `Statement`, `Database`
+- **Thin community `Consent - LANAP [Spanish]`** (1 nodes): `Consent - LANAP [Spanish]`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `trace.js`** (3 nodes): `trace.js`, `extendTrace()`, `filter()`
+- **Thin community `Consent - Periodontal Surgery`** (1 nodes): `Consent - Periodontal Surgery`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `medium-button.min.js (Medium-style button UI)`** (2 nodes): `medium-button.min.js (Medium-style button UI)`, `nouislider.js v14.2.0 (range slider)`
+- **Thin community `Refusal - LANAP Night Guard`** (1 nodes): `Refusal - LANAP Night Guard`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `qrcode.min.js (QR code generator)`** (2 nodes): `qrcode.min.js (QR code generator)`, `rasterizeHTML.allinone.js (HTML to canvas rasterizer)`
+- **Thin community `Refusal - Recommended Treatment`** (1 nodes): `Refusal - Recommended Treatment`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `MUI Icon Components`** (8 nodes): `InfoOutlined-CuDviVMu.js`, `Refresh-BN2XvpaY.js`, `RefreshContext-CwdfGwsb.js`, `Search-BF0-7R9A.js`, `Snackbar-C8gzVvon.js`, `TableRow-DgrY1bwv.js`, `MUI Icon Components`, `Refresh / Polling System`
+- **Thin community `Shade Decision Form`** (1 nodes): `Shade Decision Form`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Flex Backup Huddle Notes`** (2 nodes): `Flex Backup Huddle Notes`, `Email Template: Call List`
+- **Thin community `Instructions - Fluoride Carrier`** (1 nodes): `Instructions - Fluoride Carrier`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Email Template: Birthday`** (2 nodes): `Email Template: Birthday`, `Email Template: Birthday v1`
+- **Thin community `Instructions - Night Guard`** (1 nodes): `Instructions - Night Guard`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Email: Doc`** (2 nodes): `Email: Doc`, `Email: Doc (variant 1)`
+- **Thin community `Pain Management Protocol`** (1 nodes): `Pain Management Protocol`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Flex Email Backup: Appointment Reminder`** (2 nodes): `Flex Email Backup: Appointment Reminder`, `Flex Email Backup: Appointment Reminder 1`
+- **Thin community `Preview Index`** (1 nodes): `Preview Index`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `NSSM ChangeLog`** (2 nodes): `NSSM ChangeLog`, `NSSM README`
+- **Thin community `Email - Appointment Reminder`** (1 nodes): `Email - Appointment Reminder`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Flex Public: index.html`** (2 nodes): `Flex Public: index.html`, `Flex Public: robots.txt`
+- **Thin community `Email - Appointment Reminder 1`** (1 nodes): `Email - Appointment Reminder 1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `React Public Index`** (2 nodes): `React Public Index`, `React Public robots.txt`
+- **Thin community `Email - Appointment Reminder HH`** (1 nodes): `Email - Appointment Reminder HH`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Flex sqlite3 README`** (1 nodes): `Flex sqlite3 README`
+- **Thin community `Email - Appointment Reminder HH 1`** (1 nodes): `Email - Appointment Reminder HH 1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Consent - Esthetic and Reconstructive Services`** (2 nodes): `Consent - Esthetic and Reconstructive Services`, `Shade Decision Form`
+- **Thin community `Email - Birthday`** (1 nodes): `Email - Birthday`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Branded Emails Preview Directory`** (23 nodes): `Branded Emails Preview Directory`, `consent.HTML`, `consent1.HTML`, `emailconfirm.HTML`, `emailconfirm1.HTML`, `emailConfirmWithForms.HTML`, `emailConfirmWithForms1.HTML`, `emaildoc.HTML`, `emaildoc1.HTML`, `failedPatientRCPayment.html`, `healthhistory.HTML`, `healthhistory1.HTML`, `healthhistoryauto.HTML`, `healthhistoryauto1.HTML`, `newappointment.HTML`, `newappointment1.HTML`, `newpatient.HTML`, `newpatient1.HTML`, `otherforms.HTML`, `otherforms1.HTML`, `postop.HTML`, `postop1.HTML`, `postopMessaging.html`
+- **Thin community `Email - Birthday 1`** (1 nodes): `Email - Birthday 1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Review Request Email`** (2 nodes): `Review Request Email`, `Review Request Email v1`
+- **Thin community `Postop Messaging Email v1`** (1 nodes): `Postop Messaging Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Preop Messaging Email`** (1 nodes): `Preop Messaging Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Preop Messaging Email v1`** (1 nodes): `Preop Messaging Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Due Email`** (1 nodes): `Recall Due Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Due Email v1`** (1 nodes): `Recall Due Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Past Due Email`** (1 nodes): `Recall Past Due Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Past Due Email v1`** (1 nodes): `Recall Past Due Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Resent Statement Email`** (1 nodes): `Resent Statement Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Resent Statement Email v1`** (1 nodes): `Resent Statement Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Review Request Email`** (1 nodes): `Review Request Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Review Request Email v1`** (1 nodes): `Review Request Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Statement Email`** (1 nodes): `Statement Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Statement Email v1`** (1 nodes): `Statement Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Treatment Forms Email`** (1 nodes): `Treatment Forms Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Treatment Forms Email v1`** (1 nodes): `Treatment Forms Email v1`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Cigna Active Patients Blast`** (1 nodes): `Cigna Active Patients Blast`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Cigna Inactive Patients Blast`** (1 nodes): `Cigna Inactive Patients Blast`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Cigna Scheduled Patients Blast`** (1 nodes): `Cigna Scheduled Patients Blast`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Airway/Mouth Taping`** (1 nodes): `Consent - Airway/Mouth Taping`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Bisphosphonates (IV)`** (1 nodes): `Consent - Bisphosphonates (IV)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Bisphosphonates (Oral)`** (1 nodes): `Consent - Bisphosphonates (Oral)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Clear Aligners`** (1 nodes): `Consent - Clear Aligners`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Crowns and Bridges`** (1 nodes): `Consent - Crowns and Bridges`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Endodontic Treatment`** (1 nodes): `Consent - Endodontic Treatment`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Extractions`** (1 nodes): `Consent - Extractions`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Fillings`** (1 nodes): `Consent - Fillings`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Frenectomy`** (1 nodes): `Consent - Frenectomy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - General Restorative`** (1 nodes): `Consent - General Restorative`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Immediate Dentures`** (1 nodes): `Consent - Immediate Dentures`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - KoR Whitening`** (1 nodes): `Consent - KoR Whitening`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - LANAP`** (1 nodes): `Consent - LANAP`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Orthodontics (General)`** (1 nodes): `Consent - Orthodontics (General)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Photo Release`** (1 nodes): `Consent - Photo Release`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Pinhole`** (1 nodes): `Consent - Pinhole`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Release of Records`** (1 nodes): `Consent - Release of Records`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Scaling and Root Planing`** (1 nodes): `Consent - Scaling and Root Planing`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Veneers`** (1 nodes): `Consent - Veneers`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Flex COVID-19`** (1 nodes): `Flex COVID-19`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - LANAP`** (1 nodes): `Postop - LANAP`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Pinhole`** (1 nodes): `Postop - Pinhole`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Refusal - Custom Shade`** (1 nodes): `Refusal - Custom Shade`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Refusal - Periodontal Treatment`** (1 nodes): `Refusal - Periodontal Treatment`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Refusal - X-rays`** (1 nodes): `Refusal - X-rays`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Four`** (1 nodes): `Membership Four`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Plan One`** (1 nodes): `Membership Plan One`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Plan Three`** (1 nodes): `Membership Plan Three`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Plan Two`** (1 nodes): `Membership Plan Two`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Postop - Airway-Appliance Titration Protocol`** (1 nodes): `Postop - Airway-Appliance Titration Protocol`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Postop - Crown Bridge or Veneer with Temporary`** (2 nodes): `Postop - Crown Bridge or Veneer with Temporary`, `Postop - Crown/Bridge/Veneer Final Same Day`
+- **Thin community `Postop - Composite Fillings`** (1 nodes): `Postop - Composite Fillings`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Email - Appointment Booked`** (2 nodes): `Email - Appointment Booked`, `Email - Appointment Reminder`
+- **Thin community `Postop - Crown Bridge or Veneer with Temporary`** (1 nodes): `Postop - Crown Bridge or Veneer with Temporary`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Email Doc`** (2 nodes): `Email Doc`, `Email Doc (variant 1)`
+- **Thin community `Postop - Crown/Bridge/Veneer Final Same Day`** (1 nodes): `Postop - Crown/Bridge/Veneer Final Same Day`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `New Patient Email (variant 1)`** (2 nodes): `New Patient Email (variant 1)`, `New Patient Emails Sent`
+- **Thin community `Postop - Extractions`** (1 nodes): `Postop - Extractions`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Review Request Email`** (2 nodes): `Review Request Email`, `Review Request Email (variant 1)`
+- **Thin community `Postop - Immediate Dentures`** (1 nodes): `Postop - Immediate Dentures`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Implant Placement`** (1 nodes): `Postop - Implant Placement`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - In Office Whitening`** (1 nodes): `Postop - In Office Whitening`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - KöR Whitening`** (1 nodes): `Postop - KöR Whitening`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Pediatric Pulpotomy`** (1 nodes): `Postop - Pediatric Pulpotomy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Root Canal Therapy`** (1 nodes): `Postop - Root Canal Therapy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Sedation`** (1 nodes): `Postop - Sedation`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - SRP`** (1 nodes): `Postop - SRP`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Whitening After In-Office Visit`** (1 nodes): `Postop - Whitening After In-Office Visit`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Whitening Instructions At Home`** (1 nodes): `Postop - Whitening Instructions At Home`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email - Appointment Booked`** (1 nodes): `Email - Appointment Booked`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email - Appointment Reminder`** (1 nodes): `Email - Appointment Reminder`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Call List Email`** (1 nodes): `Call List Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent Email`** (1 nodes): `Consent Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent Email (variant 1)`** (1 nodes): `Consent Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Confirm`** (1 nodes): `Email Confirm`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Confirm (variant 1)`** (1 nodes): `Email Confirm (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Confirm With Forms`** (1 nodes): `Email Confirm With Forms`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Confirm With Forms (variant 1)`** (1 nodes): `Email Confirm With Forms (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Doc`** (1 nodes): `Email Doc`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Email Doc (variant 1)`** (1 nodes): `Email Doc (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Failed Patient RC Payment`** (1 nodes): `Failed Patient RC Payment`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Health History Email`** (1 nodes): `Health History Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Health History Email (variant 1)`** (1 nodes): `Health History Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Health History Auto`** (1 nodes): `Health History Auto`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Health History Auto (variant 1)`** (1 nodes): `Health History Auto (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `New Appointment Email`** (1 nodes): `New Appointment Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `New Appointment Email (variant 1)`** (1 nodes): `New Appointment Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `New Patient Email`** (1 nodes): `New Patient Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `New Patient Email (variant 1)`** (1 nodes): `New Patient Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `New Patient Emails Sent`** (1 nodes): `New Patient Emails Sent`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Other Forms Email`** (1 nodes): `Other Forms Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Other Forms Email (variant 1)`** (1 nodes): `Other Forms Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Post-Op Email`** (1 nodes): `Post-Op Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Post-Op Email (variant 1)`** (1 nodes): `Post-Op Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Post-Op Messaging Email`** (1 nodes): `Post-Op Messaging Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Post-Op Messaging Email (variant 1)`** (1 nodes): `Post-Op Messaging Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Pre-Op Messaging Email`** (1 nodes): `Pre-Op Messaging Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Pre-Op Messaging Email (variant 1)`** (1 nodes): `Pre-Op Messaging Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Due Email`** (1 nodes): `Recall Due Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Due Email (variant 1)`** (1 nodes): `Recall Due Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Past Due Email`** (1 nodes): `Recall Past Due Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Recall Past Due Email (variant 1)`** (1 nodes): `Recall Past Due Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Resent Statement Email`** (1 nodes): `Resent Statement Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Resent Statement Email (variant 1)`** (1 nodes): `Resent Statement Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Review Request Email`** (1 nodes): `Review Request Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Review Request Email (variant 1)`** (1 nodes): `Review Request Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Statement Email`** (1 nodes): `Statement Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Statement Email (variant 1)`** (1 nodes): `Statement Email (variant 1)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Status Report Email`** (1 nodes): `Status Report Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Treatment Forms Email`** (1 nodes): `Treatment Forms Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Treatment Forms Email (txforms1.HTML)`** (1 nodes): `Treatment Forms Email (txforms1.HTML)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Newsletter Blast Email`** (1 nodes): `Newsletter Blast Email`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Airway-Mouth Taping`** (1 nodes): `Consent - Airway-Mouth Taping`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Bisphosphonates [IV]`** (1 nodes): `Consent - Bisphosphonates [IV]`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Bisphosphonates [Oral]`** (1 nodes): `Consent - Bisphosphonates [Oral]`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Clear Aligners`** (1 nodes): `Consent - Clear Aligners`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Endodontic Treatment`** (1 nodes): `Consent - Endodontic Treatment`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Consent - Release of Records`** (1 nodes): `Consent - Release of Records`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Flex COVID-19`** (1 nodes): `Flex COVID-19`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - LANAP (root templates)`** (1 nodes): `Postop - LANAP (root templates)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Pinhole (root templates)`** (1 nodes): `Postop - Pinhole (root templates)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership One`** (1 nodes): `Membership One`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Three`** (1 nodes): `Membership Three`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Membership Two`** (1 nodes): `Membership Two`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Airway-Appliance Titration Protocol`** (1 nodes): `Postop - Airway-Appliance Titration Protocol`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Crown Bridge or Veneer with Temporary`** (1 nodes): `Postop - Crown Bridge or Veneer with Temporary`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Crown Bridge or Veneer Same Day Final`** (1 nodes): `Postop - Crown Bridge or Veneer Same Day Final`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Implant Placement`** (1 nodes): `Postop - Implant Placement`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - In Office Whitening`** (1 nodes): `Postop - In Office Whitening`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `PostOp - LANAP (postop subdir)`** (1 nodes): `PostOp - LANAP (postop subdir)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Pinhole (postop subdir)`** (1 nodes): `Postop - Pinhole (postop subdir)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Postop - Root Canal Therapy`** (1 nodes): `Postop - Root Canal Therapy`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD-stationery-appointment-card-V2-Print.pdf (example)`** (1 nodes): `CAD-stationery-appointment-card-V2-Print.pdf (example)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD-stationery-business-card-DrMark-V2.pdf (example)`** (1 nodes): `CAD-stationery-business-card-DrMark-V2.pdf (example)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD-stationery-envelope-V2.pdf (example)`** (1 nodes): `CAD-stationery-envelope-V2.pdf (example)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD-stationery-letterhead-V2-Print.pdf (example)`** (1 nodes): `CAD-stationery-letterhead-V2-Print.pdf (example)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — Full Color CMYK (Print)`** (1 nodes): `CAD Wordmark — Full Color CMYK (Print)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — Grayscale CMYK (Print)`** (1 nodes): `CAD Wordmark — Grayscale CMYK (Print)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — Inverted CMYK (Print)`** (1 nodes): `CAD Wordmark — Inverted CMYK (Print)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — Mountain Lake CMYK (Print)`** (1 nodes): `CAD Wordmark — Mountain Lake CMYK (Print)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — Sky Blue Ice CMYK (Print)`** (1 nodes): `CAD Wordmark — Sky Blue Ice CMYK (Print)`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `CAD Wordmark — White CMYK (Print)`** (1 nodes): `CAD Wordmark — White CMYK (Print)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What is the exact relationship between `huddlenotes.txt` and `lang/README.md`?**
-  _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `dbdown/getcreds.html` and `pdfjs/api/index.html`?**
-  _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **What is the exact relationship between `Flex COVID-19` and `Consent - Release of Records`?**
-  _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `n()` connect `React App Main Bundle` to `Date Range Picker Hook`, `Lodash And jQuery Helpers`, `Chart.js Visualization Library`, `React Render And Aggregate Layer`, `Material UI Icons And Tabs`, `index-X9sB7dqF.js`, `cne()`, `.number()`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
-- **Why does `sX()` connect `React App Main Bundle` to `Date Range Picker Hook`, `Lodash And jQuery Helpers`, `Legacy Ember Bundle Chunk`, `Chart.js Visualization Library`, `Material UI Icons And Tabs`, `index-X9sB7dqF.js`, `Legacy Vendor.js Bundle`, `cne()`, `sc`, `.number()`?**
-  _High betweenness centrality (0.052) - this node is a cross-community bridge._
-- **Why does `_e()` connect `Legacy Ember Bundle Chunk` to `React App Main Bundle`, `Date Range Picker Hook`, `Lodash And jQuery Helpers`, `Legacy Vendor.js Bundle`, `pdf.worker.js`, `jquery.min.js`, `pdf.js`, `chunk.916.d2b7d2cc97b6b95fd79e.js`, `.number()`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `n()` (e.g. with `Error()` and `_n()`) actually correct?**
-  _`n()` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `Post-Op: Laser Frenectomy` connect `Post-Op: Laser Frenectomy` to `Starter Post-Op Template`, `Frenectomy Stretching Exercises`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Starter Post-Op Template` connect `Starter Post-Op Template` to `Post-Op: Laser Frenectomy`, `Frenectomy Stretching Exercises`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Frenectomy Stretching Exercises` connect `Frenectomy Stretching Exercises` to `Starter Post-Op Template`, `Post-Op: Laser Frenectomy`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `Post-Op: Laser Frenectomy` (e.g. with `Frenectomy Stretching Exercises` and `Starter Post-Op Template`) actually correct?**
+  _`Post-Op: Laser Frenectomy` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `Starter Post-Op Template` (e.g. with `Post-Op: Laser Frenectomy` and `Frenectomy Stretching Exercises`) actually correct?**
+  _`Starter Post-Op Template` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `Frenectomy Stretching Exercises` (e.g. with `Post-Op: Laser Frenectomy` and `Starter Post-Op Template`) actually correct?**
+  _`Frenectomy Stretching Exercises` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `Starter - Education`, `Consent - Against Medical Advice`, `Consent - Bone Graft` to the rest of the system?**
+  _164 weakly-connected nodes found - possible documentation gaps or missing edges._
