@@ -45,10 +45,7 @@ The `schema.graphql` is the most directly useful artifact in there: it shows the
 
 ## Brand standards
 
-Same as `patient-documents/` (see that project's `CLAUDE.md` for the full spec):
-
-- **Fonts**: Nord (headings), Henderson Sans (body). Fallback: Segoe UI.
-- **Colors**: `--cad-granite #454545`, `--cad-mountain #447E8A`, `--cad-sand #FFEAD6`, `--cad-sky #B3DBE2`, `--cad-aspen #B9B765`, `--cad-orange #FFB456`.
+See workspace `docs/brand.md` for the canonical spec (fonts, colors, page layout). The flex-updates starters are the authoritative typography source — copy from them, not from this file.
 
 ## Gotchas
 
