@@ -45,7 +45,9 @@ The `schema.graphql` is the most directly useful artifact in there: it shows the
 
 ## Brand standards
 
-See workspace `docs/brand.md` for the canonical spec (fonts, colors, page layout). The flex-updates starters are the authoritative typography source — copy from them, not from this file.
+The brand source of truth is `shared/branding/tokens/cad-tokens.css` (governed by `shared/branding/RECONCILED-SPEC.md`); `docs/brand.md` is the prose version. Author or re-brand any doc with the `/cad:doc` skill, which extends `shared/branding/starters/patient-doc.css`. Until `/cad:doc` ships, extend that starter directly.
+
+The `_starter-*.html` files in `new-templates/` are NOT the typography source anymore. They are generated artifacts, re-stamped from the canonical starter, and they currently fork the print page model (private `:root`, `0.5in` margins, `10pt` body). Do not hand-copy their `<style>` blocks.
 
 ## Gotchas
 
