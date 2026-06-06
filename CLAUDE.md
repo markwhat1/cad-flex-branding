@@ -40,12 +40,13 @@ The `schema.graphql` is the most directly useful artifact in there: it shows the
 2. Author at letter size (8.5x11"), 0.55in margins, max-width 7.5in, base 10.5pt, line-height 1.55. CSS variables for the brand colors live in the starter.
 3. For emails: use table-based layout, inline every style, absolute image URLs.
 4. For forms: keep merge tokens as `{{variable_name}}`. Flex substitutes them on render.
-5. Preview locally: open the HTML in a browser, or use the per-project `preview/` workflow.
-6. Final pass: paste into Flex's BEE Editor (emails) or import as a form template (forms). BEE silently strips unsupported HTML, so always verify in Flex itself before declaring done.
+5. Preview locally: open the HTML in a browser. The `preview/` directory holds browser output files only; there are no scripts in it.
+6. There is no package.json or build toolchain in this project. Authoring is open-in-browser.
+7. Final pass: paste into Flex's BEE Editor (emails) or import as a form template (forms). BEE silently strips unsupported HTML, so always verify in Flex itself before declaring done.
 
 ## Brand standards
 
-The brand source of truth is `shared/branding/tokens/cad-tokens.css` (governed by `shared/branding/RECONCILED-SPEC.md`); `docs/brand.md` is the prose version. Author or re-brand any doc with the `/cad:doc` skill, which extends `shared/branding/starters/patient-doc.css`. Until `/cad:doc` ships, extend that starter directly.
+The brand source of truth is `shared/branding/tokens/cad-tokens.css` (governed by `shared/branding/RECONCILED-SPEC.md`). Author or re-brand any doc with the `/cad:doc` skill, which extends `shared/branding/starters/patient-doc.css`. Until `/cad:doc` ships, extend that starter directly.
 
 The `_starter-*.html` files in `new-templates/` are NOT the typography source anymore. They are generated artifacts, re-stamped from the canonical starter, and they currently fork the print page model (private `:root`, `0.5in` margins, `10pt` body). Do not hand-copy their `<style>` blocks.
 
